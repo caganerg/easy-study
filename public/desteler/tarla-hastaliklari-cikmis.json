@@ -1,0 +1,1188 @@
+{
+  "surum": 1,
+  "id": "tarla-hastaliklari-cikmis",
+  "baslik": "Tarla Bitkileri Genel Hastalıkları – Çıkmış Sorular",
+  "ders": "Tarla Bitkileri Genel Hastalıkları",
+  "aciklama": "Yarıyıl sonu ve test sınavlarından çıkmış sorular ile el yazısı konu notlarından derlenmiş sorular: paslar, sürme, rastık, külleme, yaprak lekeleri, kök çürüklükleri.",
+  "sorular": [
+    {
+      "id": "q001",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdaki kök çürüklüğü etmenlerinden hangisi subcrown-internode bölgesinde kararma yapar?",
+      "secenekler": [
+        "*Bipolaris sorokiniana*",
+        "*Rhizoctonia solani*",
+        "*Fusarium culmorum*",
+        "*Pseudocercosporella herpotrichoides*"
+      ],
+      "dogru": 0,
+      "aciklama": "*Bipolaris sorokiniana* (*Cochliobolus sativus*) adi kök çürüklüğü yapar; subcrown internode'da kahverengi-siyah renk değişimi tipiktir.",
+      "etiketler": [
+        "kok-curuklugu"
+      ]
+    },
+    {
+      "id": "q002",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdaki fungal etmenlerden hangisinin eşeyli dönemi **bilinmemektedir**?",
+      "secenekler": [
+        "*Pyrenophora teres*",
+        "*Rhynchosporium commune*",
+        "*Fusarium graminearum*",
+        "*Mycosphaerella graminicola*"
+      ],
+      "dogru": 1,
+      "aciklama": "Arpa yaprak lekesi etmeni *Rhynchosporium*'un eşeyli dönemi bilinmez. *Pyrenophora* ve *Mycosphaerella* zaten eşeyli dönem adlarıdır; *F. graminearum*'un eşeylisi *Gibberella zeae*'dir.",
+      "etiketler": [
+        "yaprak-lekesi"
+      ]
+    },
+    {
+      "id": "q003",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdaki fungal etmenlerden hangisi eşeyli döneminde chasmothecium (kasmotesyum) oluşturur?",
+      "secenekler": [
+        "*Septoria tritici*",
+        "*Ustilago nuda*",
+        "*Erysiphe graminis*",
+        "*Tilletia caries*"
+      ],
+      "dogru": 2,
+      "aciklama": "Tahıl küllemesi etmeni *Erysiphe (Blumeria) graminis* eşeyli üreme organı olarak kasmotesyum oluşturur.",
+      "etiketler": [
+        "kulleme"
+      ]
+    },
+    {
+      "id": "q004",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdakilerden hangisi karantinaya tabi bir fungal etmendir?",
+      "secenekler": [
+        "*Pyrenophora graminea*",
+        "*Erysiphe graminis*",
+        "*Cochliobolus sativus*",
+        "*Neovossia indica*"
+      ],
+      "dogru": 3,
+      "aciklama": "Hint sürmesi etmeni *Neovossia (Tilletia) indica* ülkemizde yoktur ve karantinaya tabidir.",
+      "etiketler": [
+        "surme",
+        "karantina"
+      ]
+    },
+    {
+      "id": "q005",
+      "tip": "coktan_secmeli",
+      "soru": "Buğday bitkisinde ak başak belirtisi oluşturan fungus hangisidir?",
+      "secenekler": [
+        "*Fusarium culmorum*",
+        "*Bipolaris sorokiniana*",
+        "*Rhizoctonia solani*",
+        "*Phytophthora infestans*"
+      ],
+      "dogru": 0,
+      "aciklama": "*Fusarium culmorum* kök boğazı çürüklüğü yapar; bunun sonucunda başaklar beyaz (ak) kalır.",
+      "etiketler": [
+        "kok-curuklugu"
+      ]
+    },
+    {
+      "id": "q006",
+      "tip": "coktan_secmeli",
+      "soru": "Sklerotları ergot alkaloidleri olarak bilinen zehirli alkaloidler içeren fungal hastalık hangisidir?",
+      "secenekler": [
+        "*Sclerotinia* kök çürüklüğü",
+        "Çavdar mahmuzu",
+        "*Rhynchosporium* yaprak lekesi",
+        "Arpa ağbenek hastalığı"
+      ],
+      "dogru": 1,
+      "aciklama": "Çavdar mahmuzu (*Claviceps purpurea*) sklerotları ergot alkaloidleri içerir.",
+      "etiketler": [
+        "diger-hastaliklar"
+      ]
+    },
+    {
+      "id": "q007",
+      "tip": "coktan_secmeli",
+      "soru": "Teliosporlarının üst kısmında karakteristik çıkıntılar bulunan fungus hangisidir?",
+      "secenekler": [
+        "*Puccinia recondita*",
+        "*Puccinia striiformis*",
+        "*Puccinia coronata* f. sp. *avenae*",
+        "*Puccinia graminis*"
+      ],
+      "dogru": 2,
+      "aciklama": "Yulaf taç pası etmeni *P. coronata*'nın teliospor ucunda taç gibi çıkıntılar vardır.",
+      "etiketler": [
+        "pas"
+      ]
+    },
+    {
+      "id": "q008",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdaki buğday pas türlerinden hangisinin sıcaklık isteği düşüktür?",
+      "secenekler": [
+        "Kahverengi pas",
+        "Kara pas",
+        "Mısır pası",
+        "Sarı pas"
+      ],
+      "dogru": 3,
+      "aciklama": "Sarı pas erkenci pastır; en fazla yaklaşık 15 °C'de yaşar. Kara pas sıcak sever (>20 °C).",
+      "etiketler": [
+        "pas"
+      ]
+    },
+    {
+      "id": "q009",
+      "tip": "coktan_secmeli",
+      "soru": "Arpa yapraklarında baklava dilimi şeklinde klorotik ve nekrotik dokular oluşturan fungus hangisidir?",
+      "secenekler": [
+        "*Rhynchosporium commune*",
+        "*Pyrenophora teres*",
+        "*Pyrenophora graminea*",
+        "*Erysiphe graminis*"
+      ],
+      "dogru": 0,
+      "aciklama": "*Rhynchosporium commune (secalis)* arpa yaprak lekesi etmenidir; lekeler ovalimsi, baklava dilimi şeklindedir.",
+      "etiketler": [
+        "yaprak-lekesi"
+      ]
+    },
+    {
+      "id": "q010",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdakilerden hangisi **yanlıştır**?",
+      "secenekler": [
+        "Buğdayda sarı, kahverengi ve kara pas görülür.",
+        "Buğday paslarında karmaşık bir hayat çemberi görülür.",
+        "Üredosporlar ilkbaharda bol üretilir ve salgında en önemli sporlardır.",
+        "Üredosporlar rüzgârla yayılır; yeni enfeksiyon aralığı 8 güne kadar kısalabilir.",
+        "Buğday paslarında görülen üredosporlar 2 hücreli ve dikaryotik yapıdadır."
+      ],
+      "dogru": 4,
+      "aciklama": "Üredosporlar tek hücrelidir; 2 hücreli olan spor teliospordur.",
+      "etiketler": [
+        "pas"
+      ]
+    },
+    {
+      "id": "q011",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdakilerden hangisi **doğrudur**?",
+      "secenekler": [
+        "Buğdayda kara pas *Puccinia recondita tritici*'dir.",
+        "Kara pas, ara (alternatif) konukçularında da bulunabilir.",
+        "Buğdayda kahverengi pas *Puccinia graminis tritici*'dir.",
+        "Sarı pas daha çok yaprakta, kahverengi pas daha çok gövdede görülür.",
+        "Ug99 ülkemizde 1999 yılında saptanmıştır."
+      ],
+      "dogru": 1,
+      "aciklama": "Kara pasın ara konukçusu *Berberis vulgaris*'tir. Kara pas *P. graminis*, kahverengi pas *P. recondita*'dır; gövdede görülen kara pastır; Ug99 1999'da Uganda'da bulunmuştur.",
+      "etiketler": [
+        "pas"
+      ]
+    },
+    {
+      "id": "q012",
+      "tip": "coktan_secmeli",
+      "soru": "Kara pas ile ilgili aşağıdakilerden hangisi **yanlıştır**?",
+      "secenekler": [
+        "Teliosporlar ilkbaharda çimlenir ve basidium oluşturur.",
+        "Basidium üzerinde oluşan basidiosporlar *Berberis*'i enfekte eder.",
+        "*Berberis* yaprağının üst yüzünde spermagonium, içinde spermatium ve alıcı hifler bulunur.",
+        "Spermatiumlar alıcı hifleri döller; uyuşabilenler yeni ırk oluşturabilir.",
+        "*Berberis* yapraklarının alt yüzünde üredium yatakları ve üredosporlar bulunur."
+      ],
+      "dogru": 4,
+      "aciklama": "Ara konukçu yaprağının alt yüzünde üredium değil **esidium** yatakları ve esiosporlar bulunur.",
+      "etiketler": [
+        "pas",
+        "kara-pas"
+      ]
+    },
+    {
+      "id": "q013",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdakilerden hangisi **yanlıştır**?",
+      "secenekler": [
+        "Pas hastalıklarında etmenin birçok ırkı vardır.",
+        "Pas hastalıklarıyla mücadelede dayanıklı çeşit önemlidir.",
+        "Kahverengi pas sahil bölgelerinde yaygın değildir.",
+        "Arpada ağbeneğin nokta formu *Drechslera teres* f. *maculata*'dır.",
+        "Kahverengi pas etmeninin teliosporlarının uç kısmı sivri değildir."
+      ],
+      "dogru": 2,
+      "aciklama": "Kahverengi pas kıyı (sahil) ve nemli bölgelerde yaygındır.",
+      "etiketler": [
+        "pas"
+      ]
+    },
+    {
+      "id": "q014",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdakilerden hangisi **yanlıştır**?",
+      "secenekler": [
+        "Kahverengi pas daha çok yaprakta görülür ve yaprak pası olarak bilinir.",
+        "Sarı pasın ortaya çıkması iklime, pasın virülensliğine ve konukçu genotipine bağlıdır.",
+        "Sarı pas bölgemizde son yıllarda yaygın ve büyük zarar verir.",
+        "Ara konukçusu ve eşeyli dönemi bilinmeyen *P. striiformis* buğday dışında arpa, çavdar ve tritikaleyi de hastalandırır.",
+        "Kara pasın dayanıklı formu olan teliosporlar koyu kahve-siyah ve 2 hücrelidir."
+      ],
+      "dogru": 3,
+      "aciklama": "Ders notlarına göre sarı pasın (*P. striiformis*) ara konukçusu *Berberis*'tir; yani “ara konukçusu bilinmeyen” ifadesi yanlıştır.",
+      "etiketler": [
+        "pas",
+        "sari-pas"
+      ]
+    },
+    {
+      "id": "q015",
+      "tip": "coktan_secmeli",
+      "soru": "Buğdayda sürme ile ilgili aşağıdakilerden hangisi **yanlıştır**?",
+      "secenekler": [
+        "Adi sürmenin etmenleri *Tilletia caries* ve *T. foetida*'dır.",
+        "Basidiosporların uyuşabilen çiftleri ortadan birleşerek H harfi şeklinde yapı oluşturur.",
+        "Hastalık etmeni tohumda veya toprakta teliospor olarak bulunur.",
+        "Teliosporlar çimlenince basidium üzerinde terminal, renksiz basidiosporlar oluşur.",
+        "*T. foetida* teliosporlarının duvarı desenli, *T. caries*'te düzgündür."
+      ],
+      "dogru": 4,
+      "aciklama": "Desen ilişkisi terstir: *T. caries* duvarı ağ/bal peteği desenli, *T. foetida* (*T. laevis*) duvarı düzgündür. (Kâğıtta “8–16 basidiospor” şıkkı işaretliydi; derleme notu bu şıkkın da kontrol edilmesini öneriyor.)",
+      "etiketler": [
+        "surme"
+      ]
+    },
+    {
+      "id": "q016",
+      "tip": "coktan_secmeli",
+      "soru": "Kapalı rastık etmeni *Ustilago hordei* ile ilgili aşağıdakilerden hangisi **yanlıştır**?",
+      "secenekler": [
+        "Tohum ilaçlaması ile mücadele başarılı değildir.",
+        "Dünyanın her yerinde görülür.",
+        "Yarı açık ve açık rastıktan daha yaygındır.",
+        "Teliosporları tohum çimlendiği zaman çimlenir.",
+        "Hastalıklı başaklar çoğu zaman bayrak yaprağı kınında sıkışır."
+      ],
+      "dogru": 0,
+      "aciklama": "Kapalı rastıkta tohum ilaçlaması başarılı bir mücadele yöntemidir.",
+      "etiketler": [
+        "rastik"
+      ]
+    },
+    {
+      "id": "q017",
+      "tip": "coktan_secmeli",
+      "soru": "Buğday pasları ile ilgili aşağıdakilerden hangisi **doğrudur**?",
+      "secenekler": [
+        "Yayılımı sınırlıdır, fazla zararı yoktur.",
+        "Sarı pasın ara konukçusu *Berberis*'tir.",
+        "Kahverengi pas *Puccinia striiformis*'tir.",
+        "Kara pasta üredosporlar hastalığın yayılmasında önemli değildir.",
+        "Kahverengi pasın alternatif konukçuları arasında *Berberis* spp. önemlidir."
+      ],
+      "dogru": 1,
+      "aciklama": "Sarı pasın (ve kara pasın) ara konukçusu *Berberis*'tir. Kahverengi pasın ara konukçuları *Thalictrum*, *Anchusa*, *Clematis*, *Isopyrum*'dur.",
+      "etiketler": [
+        "pas"
+      ]
+    },
+    {
+      "id": "q018",
+      "tip": "coktan_secmeli",
+      "soru": "Sürmeler ile ilgili aşağıdakilerden hangisi **doğrudur**?",
+      "secenekler": [
+        "*Tilletia* türleri buğdayın yaprağını tahrip eder.",
+        "Cüce sürmenin patojeni *Tilletia caries*'tir.",
+        "*T. controversa* enfeksiyonlarının hemen hepsi topraktaki teliosporlarla gerçekleşir.",
+        "Hint sürmesi ülkemizde yaygın görülen bir hastalıktır.",
+        "Adi sürmede mücadelede tohum ilaçlaması etkisizdir."
+      ],
+      "dogru": 2,
+      "aciklama": "Cüce sürmede (*T. controversa*) enfeksiyon kaynağı topraktaki teliosporlardır. *Tilletia* türleri başağı tahrip eder; cüce sürme etmeni *T. controversa*'dır. (Kâğıttaki şıkta “piknid” baskı hatasıydı.)",
+      "etiketler": [
+        "surme"
+      ]
+    },
+    {
+      "id": "q019",
+      "tip": "coktan_secmeli",
+      "soru": "Arpa kapalı rastık ile ilgili aşağıdakilerden hangisi **yanlıştır**?",
+      "secenekler": [
+        "Teliosporlar küremsi, 5–8 µm, zeytinimsi kahverengi ve düzgün yüzeylidir.",
+        "Teliosporlar çimlenerek 4 hücreli basidium ve ovalimsi uzun basidiosporlar oluşturur.",
+        "Uygun şartlarda basidiosporlar maya benzeri tomurcuklanmayla ikincil basidiosporlar oluşturur.",
+        "Enfekte eden dikaryotik miselyum gelişmekte olan embriyo ve skutellum dokusu içine yerleşir.",
+        "Basidiosporlar çimlenerek tek çekirdekli primer miselyum üretir."
+      ],
+      "dogru": 3,
+      "aciklama": "Embriyoya yerleşme açık rastığın çiçek enfeksiyonuna özgüdür; kapalı rastık fide döneminde enfekte eder.",
+      "etiketler": [
+        "rastik"
+      ]
+    },
+    {
+      "id": "q020",
+      "tip": "coktan_secmeli",
+      "soru": "Arpa ağbenek hastalığı ile ilgili aşağıdakilerden hangisi **yanlıştır**?",
+      "secenekler": [
+        "*Drechslera teres* f. *maculata* nokta formunu oluşturur.",
+        "*Drechslera teres* f. *teres* ağ formunu oluşturur.",
+        "*Drechslera teres* etmenin eşeysiz dönemidir.",
+        "*Pyrenophora teres* etmenin eşeyli dönemidir.",
+        "Pseudotheciumları içinde bol miktarda konidi oluşur."
+      ],
+      "dogru": 4,
+      "aciklama": "Pseudothecium eşeyli yapıdır; içinde konidi değil askus ve askosporlar oluşur. (Kâğıtta d işaretliydi ama *P. teres* gerçekten eşeyli dönem adıdır.)",
+      "etiketler": [
+        "yaprak-lekesi",
+        "agbenek"
+      ]
+    },
+    {
+      "id": "q021",
+      "tip": "coktan_secmeli",
+      "soru": "Buğday kara pası ile ilgili aşağıdakilerden hangisi **doğrudur**?",
+      "secenekler": [
+        "Üredosporlar sekonder (tekrarlayan) enfeksiyonları oluşturur.",
+        "Telial yataklar kiremit kırmızısı renktedir.",
+        "Sporangiumlar içinde esiosporlar ve alıcı hifler bulunur.",
+        "Daha çok yaprakta görülür.",
+        "Sporangiumlar aynı özellikleri taşıyan alıcı hifleri döller."
+      ],
+      "dogru": 0,
+      "aciklama": "Kara pasta yaz boyunca üredosporlar rüzgârla yayılarak tekrarlayan enfeksiyonlar yapar. Kara pas daha çok sapta görülür.",
+      "etiketler": [
+        "pas",
+        "kara-pas"
+      ]
+    },
+    {
+      "id": "q022",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdakilerden hangisi **yanlıştır**?",
+      "secenekler": [
+        "*Puccinia triticina* bazı arpa çeşitlerinde ve *Aegilops*, *Agropyron* türlerinde zayıf parazittir.",
+        "Kahverengi pas üredial püstüllerinin çizgi şeklinde dizilmesi ayırt edici özelliğidir.",
+        "Kahverengi pas nemin sınırlayıcı olmadığı durumlarda 15–22 °C arasında hızla gelişir.",
+        "*Thalictrum speciosissimum* kahverengi pasın ara konukçusudur.",
+        "Kahverengi pasın teliosporlarının uçları küttür."
+      ],
+      "dogru": 1,
+      "aciklama": "Çizgi (makine dikişi) şeklinde dizilim sarı pasın özelliğidir; kahverengi pas püstülleri yaprakta dağınıktır.",
+      "etiketler": [
+        "pas",
+        "kahverengi-pas"
+      ]
+    },
+    {
+      "id": "q023",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdakilerden hangisi **yanlıştır**?",
+      "secenekler": [
+        "Hububatta *Fusarium* türleri ve *Bipolaris sorokiniana* kök çürüklüğü oluşturabilir.",
+        "*Pythium*, *Diplodia maydis* ve *Macrophomina phaseolina* mısırda kök ve sap çürüklüğü yapabilir.",
+        "*Rosellinia necatrix* mısırda kök çürüklüğü oluşturan yaygın bir fungustur.",
+        "*Helminthosporium maydis* ve *H. turcicum* mısırda yaprak lekeleri oluşturabilir.",
+        "Mısırda koçan ve dane çürüklükleri *Penicillium*, *Aspergillus* ve *Fusarium* ile oluşur."
+      ],
+      "dogru": 2,
+      "aciklama": "*Rosellinia necatrix* meyve ağaçları ve bağlarda beyaz kök çürüklüğü etmenidir; mısır etmeni değildir.",
+      "etiketler": [
+        "kok-curuklugu",
+        "misir"
+      ]
+    },
+    {
+      "id": "q024",
+      "tip": "coktan_secmeli",
+      "soru": "Buğdayda embriyo kararması (danede siyahlaşma ve leke) ile ilgili hangisi **doğru değildir**?",
+      "secenekler": [
+        "Nem oranı yüksek durumlarda problem olabilir.",
+        "Tohum olgunlaşması sırasındaki yağışlar danede siyahlaşmayı teşvik eder.",
+        "Hastalanmış danelerin uç kısımları koyulaşmış veya siyahlaşmış olabilir.",
+        "Embriyo istilaya uğrasa bile çimlenme gücünde azalma görülmez.",
+        "Hastalıklı danelerden yapılan gıdalarda istenmeyen koku olabilir."
+      ],
+      "dogru": 3,
+      "aciklama": "Embriyo istila edilirse çimlenme gücü düşer. (Kâğıtta e işaretliydi; e aslında doğru bir ifadedir.)",
+      "etiketler": [
+        "dane-hastaliklari"
+      ]
+    },
+    {
+      "id": "q025",
+      "tip": "coktan_secmeli",
+      "soru": "Arpa kapalı rastık ile ilgili aşağıdakilerden hangisi **yanlıştır**?",
+      "secenekler": [
+        "Teliosporlar çimlenerek 4 hücreli bir basidium oluşturur.",
+        "Basidiosporlar maya benzeri tomurcuklanmayla ikincil basidiosporlar oluşturabilir.",
+        "Basidiosporlar çimlenerek tek çekirdekli primer miselyum oluşturur.",
+        "Enfeksiyon 14–25 °C ve nispeten yüksek toprak neminde oluşabilir.",
+        "Teliosporlar dikenli bir yüzey yapısındadır."
+      ],
+      "dogru": 4,
+      "aciklama": "Kapalı rastık teliosporları düzgün yüzeylidir.",
+      "etiketler": [
+        "rastik"
+      ]
+    },
+    {
+      "id": "q026",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdakilerden hangisi **yanlıştır**?",
+      "secenekler": [
+        "*Rhynchosporium secalis*'in eşeyli dönemi hastalık oluşumunda çok önemlidir.",
+        "Arpa yaprak lekesi *Rhynchosporium secalis* tarafından oluşturulur.",
+        "*R. secalis* konidileri bir stroma üzerinde gelişir ve bir bölmelidir.",
+        "*R. secalis* arpa ve çavdardan başka bitkileri de hastalandırır.",
+        "*R. secalis* lekeleri baklava dilimini andırır ve yaprak damarlarıyla sınırlı değildir."
+      ],
+      "dogru": 0,
+      "aciklama": "*Rhynchosporium*'un eşeyli dönemi bilinmemektedir.",
+      "etiketler": [
+        "yaprak-lekesi"
+      ]
+    },
+    {
+      "id": "q027",
+      "tip": "coktan_secmeli",
+      "soru": "Arpada rastık hastalıkları ile ilgili aşağıdakilerden hangisi **yanlıştır**?",
+      "secenekler": [
+        "Kapalı rastığın etmeni *Ustilago hordei*'dir.",
+        "Rastık hastalıkları kolaylıkla birbirinden ayrılabilir.",
+        "Açık rastığın etmeni *Ustilago nuda*'dır.",
+        "Yarı açık rastığın etmeni *Ustilago nigra*'dır.",
+        "Kapalı rastıkta hastalıklı başaklar bazen bayrak yaprağı kınında kalabilir."
+      ],
+      "dogru": 1,
+      "aciklama": "Özellikle yarı açık ve açık rastık tarlada zor ayrılır; ayırmanın yolu teliosporları çimlendirmektir.",
+      "etiketler": [
+        "rastik"
+      ]
+    },
+    {
+      "id": "q028",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdakilerden hangisi obligat parazit bir fungusun oluşturduğu hastalıktır?",
+      "secenekler": [
+        "*Fusarium* kök çürüklüğü",
+        "Septoria yaprak lekesi",
+        "Arpa çizgili yaprak lekesi",
+        "Tahıl küllemesi"
+      ],
+      "dogru": 3,
+      "aciklama": "Külleme etmeni *Erysiphe graminis* obligattır, yapay ortamda yetiştirilemez. Pas hastalıkları ve mildiyöler de obligat parazitlerle oluşur.",
+      "etiketler": [
+        "kulleme",
+        "genel"
+      ]
+    },
+    {
+      "id": "q029",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdakilerden hangisi bitki bünyesinde sistemik ilerleyen bir hastalıktır?",
+      "secenekler": [
+        "Mısır ur rastığı",
+        "Septoria yaprak lekesi",
+        "Açık rastık",
+        "Tahıl küllemesi"
+      ],
+      "dogru": 2,
+      "aciklama": "Rastıklar (açık, kapalı, yarı açık), sürmeler ve arpa çizgili yaprak lekesi sistemiktir. Mısır ur rastığı lokal enfeksiyon yapar.",
+      "etiketler": [
+        "genel",
+        "rastik"
+      ]
+    },
+    {
+      "id": "q030",
+      "tip": "coktan_secmeli",
+      "soru": "Kara pasın ara konukçu yaprağının **alt** yüzünde hangi yapı oluşur?",
+      "secenekler": [
+        "Pignidium (spermagonium)",
+        "Esidium (aesium)",
+        "Üredium",
+        "Telium"
+      ],
+      "dogru": 1,
+      "aciklama": "Ara konukçu yaprağının üst yüzünde pignidium, alt yüzünde esidium yatakları ve esiosporlar oluşur.",
+      "etiketler": [
+        "pas",
+        "kara-pas"
+      ]
+    },
+    {
+      "id": "q031",
+      "tip": "coktan_secmeli",
+      "soru": "Kara pas döngüsünde ilkbaharda çimlenen teliosporlar hangi yapıyı oluşturur?",
+      "secenekler": [
+        "Esidium",
+        "Üredium",
+        "Basidium",
+        "Pignidium"
+      ],
+      "dogru": 2,
+      "aciklama": "Teliospor çimlenerek basidium oluşturur; basidiosporlar ara konukçu *Berberis*'i enfekte eder.",
+      "etiketler": [
+        "pas",
+        "kara-pas"
+      ]
+    },
+    {
+      "id": "q032",
+      "tip": "coktan_secmeli",
+      "soru": "Sürmeyi rastıktan ayırmada en pratik ipucu hangisidir?",
+      "secenekler": [
+        "Başağın dışarıdan simsiyah görünmesi",
+        "Sporların açıkta rüzgârla dağılması",
+        "Yalnızca başak ekseninin kalması",
+        "Ezilen danenin çürük balık gibi kötü kokması"
+      ],
+      "dogru": 3,
+      "aciklama": "Sürmeli başak dışarıdan normal görünür, ezilince içi siyah teliosporla dolu olup çok kötü kokar. Rastıklı başak simsiyahtır ve koku yoktur.",
+      "etiketler": [
+        "surme",
+        "rastik"
+      ]
+    },
+    {
+      "id": "q033",
+      "tip": "coktan_secmeli",
+      "soru": "*Pseudocercosporella herpotrichoides* hangi hastalığın etmenidir?",
+      "secenekler": [
+        "Göz lekesi (sap kırılması)",
+        "Ak başak",
+        "Pembe kar küfü",
+        "Arpa ağbenek"
+      ],
+      "dogru": 0,
+      "aciklama": "*P. herpotrichoides* tahıllarda göz lekesi / sap kırılması yapan bir kök ve sap hastalığı etmenidir.",
+      "etiketler": [
+        "kok-curuklugu"
+      ]
+    },
+    {
+      "id": "q034",
+      "tip": "coktan_secmeli",
+      "soru": "Kara pas, sarı pas ve kahverengi pası teliosporlarına bakarak ayırırken hangi özellik kara pasa aittir?",
+      "secenekler": [
+        "Teliospor ucunun küt olması",
+        "Teliospor ucunun sivri olması",
+        "Teliospor ucunda taç gibi çıkıntılar bulunması",
+        "Teliosporların tek hücreli olması"
+      ],
+      "dogru": 1,
+      "aciklama": "Kara pasın teliospor ucu sivri; sarı ve kahverengi pasınki küttür. Taç gibi çıkıntılar yulaf taç pasına (*P. coronata*) aittir.",
+      "etiketler": [
+        "pas"
+      ]
+    },
+    {
+      "id": "q035",
+      "tip": "dogru_yanlis",
+      "soru": "Pas hastalıklarında üredosporlar yazlık, teliosporlar kışlık sporlardır.",
+      "dogru": true,
+      "aciklama": "Üredosporlar yaz boyunca tekrarlayan enfeksiyon yapar; teliosporlar mevsim sonunda oluşan dayanıklı formdur.",
+      "etiketler": [
+        "pas"
+      ]
+    },
+    {
+      "id": "q036",
+      "tip": "dogru_yanlis",
+      "soru": "Kara pasta teliosporların ucu küttür.",
+      "dogru": false,
+      "aciklama": "Kara pasta teliospor ucu sivridir; sarı ve kahverengi pasta küttür.",
+      "etiketler": [
+        "pas",
+        "kara-pas"
+      ]
+    },
+    {
+      "id": "q037",
+      "tip": "dogru_yanlis",
+      "soru": "Kara pasın ara konukçuları *Berberis* ve *Mahonia*'dır.",
+      "dogru": true,
+      "aciklama": "Esiospor ve pignidium evreleri bu ara konukçularda gerçekleşir.",
+      "etiketler": [
+        "pas",
+        "kara-pas"
+      ]
+    },
+    {
+      "id": "q038",
+      "tip": "dogru_yanlis",
+      "soru": "Sarı pas sıcak seven, bitkinin geç döneminde ortaya çıkan bir pastır.",
+      "dogru": false,
+      "aciklama": "Sarı pas erkenci pastır, serin sever (en fazla ~15 °C). Sıcak seven geççi pas kara pastır.",
+      "etiketler": [
+        "pas",
+        "sari-pas"
+      ]
+    },
+    {
+      "id": "q039",
+      "tip": "dogru_yanlis",
+      "soru": "Sarı pas yaprakta makine dikişi şeklinde dizilmiş püstüller oluşturur.",
+      "dogru": true,
+      "aciklama": "Sarı pas düz çizgi (makine dikişi), kahverengi pas dağınık püstüller oluşturur.",
+      "etiketler": [
+        "pas",
+        "sari-pas"
+      ]
+    },
+    {
+      "id": "q040",
+      "tip": "dogru_yanlis",
+      "soru": "Sarı pas belirtileri genellikle geç dönemde ortaya çıkar.",
+      "dogru": false,
+      "aciklama": "Sarı pas erkenci pastır; belirtileri erken dönemde görülür.",
+      "etiketler": [
+        "pas",
+        "sari-pas"
+      ]
+    },
+    {
+      "id": "q041",
+      "tip": "dogru_yanlis",
+      "soru": "Kara pasta ara konukçuda spermatiumların uyuşabilen alıcı hifleri döllemesi yeni ırkların ortaya çıkmasını sağlar.",
+      "dogru": true,
+      "aciklama": "(+) ve (−) uyuşabilen tipler pignidiumda birleşir; bu eşeyli döllenme yeni ırk oluşumunun kaynağıdır.",
+      "etiketler": [
+        "pas",
+        "kara-pas"
+      ]
+    },
+    {
+      "id": "q042",
+      "tip": "dogru_yanlis",
+      "soru": "Pas fungusları yapay besi ortamlarında kolayca yetiştirilebilir.",
+      "dogru": false,
+      "aciklama": "Paslar obligat parazittir; yalnızca canlı konukçu üzerinde gelişir.",
+      "etiketler": [
+        "pas",
+        "genel"
+      ]
+    },
+    {
+      "id": "q043",
+      "tip": "dogru_yanlis",
+      "soru": "Hastalık oluşması için hassas konukçu, virülent patojen ve uygun çevre koşullarının bir arada bulunması gerekir.",
+      "dogru": true,
+      "aciklama": "Hastalık = hassas konukçu + virülent patojen + uygun çevre.",
+      "etiketler": [
+        "genel"
+      ]
+    },
+    {
+      "id": "q044",
+      "tip": "dogru_yanlis",
+      "soru": "Kahverengi pasın üredosporları kara pasınkine göre daha eliptiktir.",
+      "dogru": false,
+      "aciklama": "Kara pas üredosporları eliptiktir; sarı ve kahverengi pasınkiler daha yuvarlaktır.",
+      "etiketler": [
+        "pas",
+        "kahverengi-pas"
+      ]
+    },
+    {
+      "id": "q045",
+      "tip": "dogru_yanlis",
+      "soru": "Sürmeli başak dışarıdan normal görünür.",
+      "dogru": true,
+      "aciklama": "Sürmede kavuzlar durur, dane yerine sürme kesesi oluşur; başak dışarıdan normal görünür. Rastıklı başak ise simsiyahtır.",
+      "etiketler": [
+        "surme"
+      ]
+    },
+    {
+      "id": "q046",
+      "tip": "dogru_yanlis",
+      "soru": "Açık rastıkta teliosporları bir arada tutan bir zar bulunur.",
+      "dogru": false,
+      "aciklama": "Açık rastıkta zar yoktur; zar kapalı rastıkta (ve sertliği farklı olarak yarı açıkta) bulunur.",
+      "etiketler": [
+        "rastik"
+      ]
+    },
+    {
+      "id": "q047",
+      "tip": "dogru_yanlis",
+      "soru": "Arpada kapalı rastık, buğdayda ise açık rastık yaygındır.",
+      "dogru": true,
+      "aciklama": "Ders notlarında arpada kapalı, buğdayda açık rastığın yaygın olduğu belirtilir.",
+      "etiketler": [
+        "rastik"
+      ]
+    },
+    {
+      "id": "q048",
+      "tip": "dogru_yanlis",
+      "soru": "Açık rastıkta enfeksiyon, teliosporların rüzgârla komşu bitkilerin açık çiçeklerine taşınmasıyla olur.",
+      "dogru": true,
+      "aciklama": "Açık rastık çiçek (embriyo) enfeksiyonu yapar; mücadelede sistemik fungisit ve sıcak su muamelesi kullanılır.",
+      "etiketler": [
+        "rastik"
+      ]
+    },
+    {
+      "id": "q049",
+      "tip": "dogru_yanlis",
+      "soru": "Hint sürmesi ülkemizde yaygın görülen bir buğday hastalığıdır.",
+      "dogru": false,
+      "aciklama": "Hint sürmesi (*Neovossia indica*) ülkemizde yoktur ve karantinaya tabidir.",
+      "etiketler": [
+        "surme",
+        "karantina"
+      ]
+    },
+    {
+      "id": "q050",
+      "tip": "dogru_yanlis",
+      "soru": "Cüce sürme, kışlık buğdayın uzun süre kar altında kalmasıyla ilişkilidir.",
+      "dogru": true,
+      "aciklama": "*Tilletia controversa* toprağa yakın çimlenir; kışlık buğdayda daha zararlıdır.",
+      "etiketler": [
+        "surme"
+      ]
+    },
+    {
+      "id": "q051",
+      "tip": "dogru_yanlis",
+      "soru": "Mısır ur rastığı (*Ustilago maydis*) sistemik bir hastalıktır.",
+      "dogru": false,
+      "aciklama": "Mısır ur rastığı lokal enfeksiyon yapar; sistemik değildir.",
+      "etiketler": [
+        "rastik",
+        "misir"
+      ]
+    },
+    {
+      "id": "q052",
+      "tip": "dogru_yanlis",
+      "soru": "Tahıl küllemesi etmeni yaprak dokusunun içinde gelişen endofit bir fungustur.",
+      "dogru": false,
+      "aciklama": "*Erysiphe graminis* ektofittir; yaprağın dışında gelişir ve yaprağı un serpilmiş gibi kaplar.",
+      "etiketler": [
+        "kulleme"
+      ]
+    },
+    {
+      "id": "q053",
+      "tip": "dogru_yanlis",
+      "soru": "Tahıl küllemesine karşı en ekonomik mücadele yöntemi dayanıklı çeşit kullanmaktır.",
+      "dogru": true,
+      "aciklama": "Sık ekimden ve fazla azottan kaçınmak da önerilir; en ekonomik yöntem dayanıklı çeşittir.",
+      "etiketler": [
+        "kulleme"
+      ]
+    },
+    {
+      "id": "q054",
+      "tip": "dogru_yanlis",
+      "soru": "Ilıman iklimde (ör. Adana) tahıl küllemesi genellikle kasmotesyum oluşturmadan eşeysiz döngüsünü sürdürür.",
+      "dogru": true,
+      "aciklama": "Koşullar uygunsa kasmotesyum oluşturmaz; Erzurum gibi soğuk yerlerde kasmotesyum oluşturur.",
+      "etiketler": [
+        "kulleme"
+      ]
+    },
+    {
+      "id": "q055",
+      "tip": "dogru_yanlis",
+      "soru": "Septoria yaprak lekesinde ilk enfeksiyon üst yapraklarda başlar ve aşağı doğru yayılır.",
+      "dogru": false,
+      "aciklama": "İlk enfeksiyon alt yapraklarda başlar, üste doğru yayılır.",
+      "etiketler": [
+        "yaprak-lekesi",
+        "septoria"
+      ]
+    },
+    {
+      "id": "q056",
+      "tip": "dogru_yanlis",
+      "soru": "Septoria lekelerinin üzerinde görülen küçük siyah noktalar piknidiumlardır.",
+      "dogru": true,
+      "aciklama": "Piknidiumlar eşeysiz üreme yapılarıdır; etmen anız ve bitki artıklarında kışlar.",
+      "etiketler": [
+        "yaprak-lekesi",
+        "septoria"
+      ]
+    },
+    {
+      "id": "q057",
+      "tip": "dogru_yanlis",
+      "soru": "Arpa çizgili yaprak lekesi tohum kökenli bir hastalıktır.",
+      "dogru": true,
+      "aciklama": "*Pyrenophora graminea* tohumla taşınır; mücadelede tohum ilaçlaması yapılır.",
+      "etiketler": [
+        "yaprak-lekesi"
+      ]
+    },
+    {
+      "id": "q058",
+      "tip": "dogru_yanlis",
+      "soru": "Arpa çizgili yaprak lekesi 20 °C'nin üzerindeki sıcaklıkları sever.",
+      "dogru": false,
+      "aciklama": "Hastalık 12 °C ve altını sever; 15 °C'nin üzerinde azalır.",
+      "etiketler": [
+        "yaprak-lekesi"
+      ]
+    },
+    {
+      "id": "q059",
+      "tip": "dogru_yanlis",
+      "soru": "Akhisar 98, *Rhynchosporium secalis*'e dayanıklı bir arpa çeşididir.",
+      "dogru": true,
+      "aciklama": "Dayanıklı: Akhisar 98, Erginel 90, Çetin 2000, Avcı 2002, Kral 97. Hassas: Kalaycı 97, Çumra 2001, Yesevi 93, Obruk, Bülbül 89.",
+      "etiketler": [
+        "cesitler",
+        "yaprak-lekesi"
+      ]
+    },
+    {
+      "id": "q060",
+      "tip": "dogru_yanlis",
+      "soru": "Bülbül 89, *Drechslera teres* f. *maculata*'ya dayanıklı bir arpa çeşididir.",
+      "dogru": false,
+      "aciklama": "Bülbül 89 hassastır. Dayanıklı çeşitler: Avcı 2002, Vamıkhoca 98, Çetin 2000, Şahin 91, Akhisar 98.",
+      "etiketler": [
+        "cesitler",
+        "agbenek"
+      ]
+    },
+    {
+      "id": "q061",
+      "tip": "bosluk",
+      "soru": "Patates hastalıklarından ___ ülkemizde karantinaya tabidir.",
+      "cevaplar": [
+        [
+          "patates siğili",
+          "siğil",
+          "Synchytrium endobioticum",
+          "S. endobioticum"
+        ]
+      ],
+      "aciklama": "Patates siğili (*Synchytrium endobioticum*) karantina etmenidir.",
+      "etiketler": [
+        "karantina",
+        "patates"
+      ]
+    },
+    {
+      "id": "q062",
+      "tip": "bosluk",
+      "soru": "Yulaf taç pası (*Puccinia coronata* f. sp. *avenae*) fungusunun ara konukçusu ___ türleridir.",
+      "cevaplar": [
+        [
+          "Rhamnus",
+          "cehri"
+        ]
+      ],
+      "aciklama": "Yulaf taç pasının ara konukçusu *Rhamnus* (cehri) türleridir.",
+      "etiketler": [
+        "pas"
+      ]
+    },
+    {
+      "id": "q063",
+      "tip": "bosluk",
+      "soru": "Kahverengi pasın en çok anılan ara konukçusu *speciosissimum* türüyle bilinen ___ cinsidir.",
+      "cevaplar": [
+        [
+          "Thalictrum"
+        ]
+      ],
+      "aciklama": "*Thalictrum speciosissimum*; diğer ara konukçular *Anchusa*, *Clematis*, *Isopyrum*'dur.",
+      "etiketler": [
+        "pas",
+        "kahverengi-pas"
+      ]
+    },
+    {
+      "id": "q064",
+      "tip": "bosluk",
+      "soru": "Mısırın sap, boğum, koçan ve tepe püskülünde ur oluşturan rastığın etmeni *Ustilago* ___'dir.",
+      "cevaplar": [
+        [
+          "maydis",
+          "zeae"
+        ]
+      ],
+      "aciklama": "Mısır ur rastığı: *Ustilago maydis* (= *U. zeae*).",
+      "etiketler": [
+        "rastik",
+        "misir"
+      ]
+    },
+    {
+      "id": "q065",
+      "tip": "bosluk",
+      "soru": "Çavdar mahmuzunun etmeni *Claviceps* ___'dır.",
+      "cevaplar": [
+        [
+          "purpurea"
+        ]
+      ],
+      "aciklama": "*Claviceps purpurea* sklerotları ergot alkaloidleri içerir.",
+      "etiketler": [
+        "diger-hastaliklar"
+      ]
+    },
+    {
+      "id": "q066",
+      "tip": "bosluk",
+      "soru": "Kara pas, sap pası ya da ___ pas olarak da bilinir.",
+      "cevaplar": [
+        [
+          "geççi",
+          "geç"
+        ]
+      ],
+      "aciklama": "Kara pas sıcak sever ve bitkinin geç döneminde ortaya çıkar.",
+      "etiketler": [
+        "pas",
+        "kara-pas"
+      ]
+    },
+    {
+      "id": "q067",
+      "tip": "bosluk",
+      "soru": "Sarı pas en fazla yaklaşık ___ °C'ye kadar canlılığını sürdürür.",
+      "cevaplar": [
+        [
+          "15",
+          "on beş"
+        ]
+      ],
+      "aciklama": "Sarı pas erkenci ve serin seven bir pastır.",
+      "etiketler": [
+        "pas",
+        "sari-pas"
+      ]
+    },
+    {
+      "id": "q068",
+      "tip": "bosluk",
+      "soru": "Kahverengi pas, nemin sınırlayıcı olmadığı durumlarda en düşük ___ °C, en yüksek ___ °C arasında hızla gelişir.",
+      "cevaplar": [
+        [
+          "15",
+          "on beş"
+        ],
+        [
+          "22",
+          "yirmi iki"
+        ]
+      ],
+      "aciklama": "Kahverengi pas 15–22 °C arasında gelişir.",
+      "etiketler": [
+        "pas",
+        "kahverengi-pas"
+      ]
+    },
+    {
+      "id": "q069",
+      "tip": "bosluk",
+      "soru": "Kara pasın 1999'da Uganda'da bulunan önemli ırkı ___'dur.",
+      "cevaplar": [
+        [
+          "Ug99",
+          "Ug 99",
+          "Ug-99"
+        ]
+      ],
+      "aciklama": "Ug99 hava akımlarıyla uzak mesafelere yayılmıştır.",
+      "etiketler": [
+        "pas",
+        "kara-pas"
+      ]
+    },
+    {
+      "id": "q070",
+      "tip": "bosluk",
+      "soru": "Adi sürmede teliospor duvarı bal peteği desenli olan tür *Tilletia* ___, duvarı düzgün olan tür ise *Tilletia* ___'dır.",
+      "cevaplar": [
+        [
+          "caries",
+          "tritici"
+        ],
+        [
+          "foetida",
+          "laevis"
+        ]
+      ],
+      "aciklama": "*T. caries*: ağ/bal peteği desenli duvar; *T. foetida* (*T. laevis*): düzgün duvar. (İki derlemeden birinde bu ilişki ters yazılmış.)",
+      "etiketler": [
+        "surme"
+      ]
+    },
+    {
+      "id": "q071",
+      "tip": "bosluk",
+      "soru": "Cüce sürmenin etmeni *Tilletia* ___'dır.",
+      "cevaplar": [
+        [
+          "controversa"
+        ]
+      ],
+      "aciklama": "Cüce sürme: *Tilletia controversa*; enfeksiyon topraktaki teliosporlarla olur.",
+      "etiketler": [
+        "surme"
+      ]
+    },
+    {
+      "id": "q072",
+      "tip": "bosluk",
+      "soru": "Arpada kapalı rastığın etmeni *Ustilago* ___, açık rastığın etmeni ise *Ustilago* ___'dır.",
+      "cevaplar": [
+        [
+          "hordei"
+        ],
+        [
+          "nuda"
+        ]
+      ],
+      "aciklama": "Yarı açık rastığın etmeni ise *Ustilago nigra*'dır.",
+      "etiketler": [
+        "rastik"
+      ]
+    },
+    {
+      "id": "q073",
+      "tip": "bosluk",
+      "soru": "Yarı açık rastığı açık rastıktan ayırmanın yolu ___ çimlendirmektir.",
+      "cevaplar": [
+        [
+          "teliosporları",
+          "teliospor",
+          "teliosporlar"
+        ]
+      ],
+      "aciklama": "İki hastalık tarlada zor ayrılır; teliosporlar çimlendirilerek ayırt edilir.",
+      "etiketler": [
+        "rastik"
+      ]
+    },
+    {
+      "id": "q074",
+      "tip": "bosluk",
+      "soru": "Tahıl küllemesinin eşeyli üreme organı ___'dur.",
+      "cevaplar": [
+        [
+          "kasmotesyum",
+          "chasmothecium",
+          "kazmotezyum",
+          "kasmotezyum",
+          "kleistotesyum"
+        ]
+      ],
+      "aciklama": "Kasmotesyumda askuslar düzgün sıralıdır; yaprak lekesinin eşeyli organı peritesyumdur.",
+      "etiketler": [
+        "kulleme"
+      ]
+    },
+    {
+      "id": "q075",
+      "tip": "bosluk",
+      "soru": "Septoria yaprak lekesinin eşeyli dönemi *Zymoseptoria tritici*, eşeysiz dönemi ise *___ tritici*'dir.",
+      "cevaplar": [
+        [
+          "Septoria"
+        ]
+      ],
+      "aciklama": "Eşeysiz dönem *Septoria tritici*'dir; hastalık %25–50 ürün kaybına neden olabilir.",
+      "etiketler": [
+        "yaprak-lekesi",
+        "septoria"
+      ]
+    },
+    {
+      "id": "q076",
+      "tip": "bosluk",
+      "soru": "Septoria yaprak lekesi ülkemizde ilk kez ___ tarafından tespit edilmiştir.",
+      "cevaplar": [
+        [
+          "İren"
+        ]
+      ],
+      "aciklama": "Ders notuna göre hastalık ülkemizde İren tarafından tespit edilmiştir.",
+      "etiketler": [
+        "yaprak-lekesi",
+        "septoria"
+      ]
+    },
+    {
+      "id": "q077",
+      "tip": "bosluk",
+      "soru": "Tahıl küllemesi %___'e varan verim kaybına neden olabilir.",
+      "cevaplar": [
+        [
+          "34"
+        ]
+      ],
+      "aciklama": "Külleme yaprağı kaplayarak fotosentezi engeller; %34'e varan verim kaybı yapar.",
+      "etiketler": [
+        "kulleme"
+      ]
+    },
+    {
+      "id": "q078",
+      "tip": "bosluk",
+      "soru": "Arpa çizgili yaprak lekesinin eşeyli dönemi *Pyrenophora graminea*, eşeysiz dönemi ise *Drechslera* ___'dır.",
+      "cevaplar": [
+        [
+          "graminea"
+        ]
+      ],
+      "aciklama": "Eşeysiz dönem: *Drechslera graminea*.",
+      "etiketler": [
+        "yaprak-lekesi"
+      ]
+    },
+    {
+      "id": "q079",
+      "tip": "bosluk",
+      "soru": "*Bipolaris sorokiniana*'nın eşeyli dönemi *Cochliobolus* ___'dur.",
+      "cevaplar": [
+        [
+          "sativus"
+        ]
+      ],
+      "aciklama": "*B. sorokiniana* = *Cochliobolus sativus*; adi kök çürüklüğü etmenidir.",
+      "etiketler": [
+        "kok-curuklugu"
+      ]
+    },
+    {
+      "id": "q080",
+      "tip": "bosluk",
+      "soru": "*Fusarium graminearum*'un eşeyli dönemi *___ zeae*'dir.",
+      "cevaplar": [
+        [
+          "Gibberella"
+        ]
+      ],
+      "aciklama": "*F. graminearum*'un eşeyli dönemi *Gibberella zeae*'dir.",
+      "etiketler": [
+        "kok-curuklugu"
+      ]
+    },
+    {
+      "id": "q081",
+      "tip": "bosluk",
+      "soru": "Buğdayda pembe kar küfü hastalığının etmeni *Fusarium* ___'dir.",
+      "cevaplar": [
+        [
+          "nivale"
+        ]
+      ],
+      "aciklama": "Pembe kar küfü: *Fusarium nivale*.",
+      "etiketler": [
+        "diger-hastaliklar"
+      ]
+    }
+  ]
+}

@@ -9,7 +9,11 @@ import { fixtureler, jsonOku, KOK, semaDogrulayici } from "./yardimci";
 const sema = semaDogrulayici();
 
 describe("geçerli desteler hem şemadan hem koddan geçer", () => {
-  const liste = [...fixtureler("gecerli"), { ad: "public/ornek.json", veri: jsonOku(join(KOK, "public", "desteler", "ornek.json")) }];
+  const yayindakiler = (jsonOku(join(KOK, "public", "desteler", "index.json")) as { desteler: { dosya: string }[] }).desteler.map((d) => ({
+    ad: `public/desteler/${d.dosya}`,
+    veri: jsonOku(join(KOK, "public", "desteler", d.dosya)),
+  }));
+  const liste = [...fixtureler("gecerli"), ...yayindakiler];
   test.each(liste.map((f) => [f.ad, f.veri] as const))("%s", (_, veri) => {
     const gecerli = sema(veri);
     expect(sema.errors ?? []).toEqual([]);

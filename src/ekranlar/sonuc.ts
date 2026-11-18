@@ -18,7 +18,7 @@ export function sonucEkrani(): HTMLElement {
 
   const yanlisListesi =
     oz.yanlislar.length === 0
-      ? el("p", { class: "tebrik" }, M.hepsiDogru)
+      ? el("p", { class: "tebrik" }, oz.bos > 0 ? M.yanlisYok : M.hepsiDogru)
       : el(
           "section",
           null,
@@ -61,6 +61,7 @@ export function sonucEkrani(): HTMLElement {
         halka,
         el("p", { class: "dogru" }, el("span", { attr: { "aria-hidden": "true" } }, "✓ "), M.dogruSayisi(oz.dogru)),
         el("p", { class: "yanlis" }, el("span", { attr: { "aria-hidden": "true" } }, "✗ "), M.yanlisSayisi(oz.yanlis)),
+        oz.bos > 0 ? el("p", { class: "bos" }, el("span", { attr: { "aria-hidden": "true" } }, "○ "), M.bosSayisi(oz.bos)) : null,
       ),
       dugmeler,
       yanlisListesi,

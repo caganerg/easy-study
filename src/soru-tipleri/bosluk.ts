@@ -142,9 +142,11 @@ export const bosluk: SoruTipiTanim<"bosluk"> = {
         // Dokunmatik cihazda klavyeyi kendiliğinden açma; masaüstünde odakla.
         if (window.matchMedia("(pointer: fine)").matches) kutular[0]?.focus();
       },
-      sonucuGoster(_cevap, sonuc) {
+      sonucuGoster(cevap, sonuc) {
         dugme.remove();
         kutular.forEach((k, i) => {
+          // Cevaplanmış soruya geri dönüldüğünde girilen cevap yeniden gösterilir.
+          if (k.value === "") k.value = cevap.girilen[i] ?? "";
           k.readOnly = true;
           const dogru = sonuc.bosluklar?.[i] ?? sonuc.dogru;
           k.classList.add(dogru ? "dogru" : "yanlis");

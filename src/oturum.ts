@@ -18,14 +18,17 @@ export interface SoruSonucu {
   cevap: Cevap;
   /** "Aslında doğruydu" ile düzeltildi mi? */
   duzeltildi: boolean;
+  /** Cevaptan önceki ilerleme kaydı; "Aslında doğruydu" bununla yeniden hesaplanır. */
+  oncekiKayit?: IlerlemeKaydi;
 }
 
 export interface Oturum {
   baslik: string;
   sorular: OturumSorusu[];
-  /** Şu an gösterilen sorunun indeksi. */
+  /** Şu an gösterilen sorunun indeksi; sorular.length ise oturum bitmiştir. */
   indeks: number;
-  sonuclar: SoruSonucu[];
+  /** sorular ile aynı uzunlukta; boş bırakılan (cevaplanmamış) sorular null. */
+  sonuclar: (SoruSonucu | null)[];
 }
 
 export type SoruAdedi = number | "tumu";
@@ -108,7 +111,7 @@ export function soruSec(
 }
 
 export function oturumOlustur(baslik: string, sorular: readonly OturumSorusu[]): Oturum {
-  return { baslik, sorular: [...sorular], indeks: 0, sonuclar: [] };
+  return { baslik, sorular: [...sorular], indeks: 0, sonuclar: sorular.map(() => null) };
 }
 
 export function mevcutSoru(o: Oturum): OturumSorusu | undefined {
@@ -119,46 +122,72 @@ export function bittiMi(o: Oturum): boolean {
   return o.indeks >= o.sorular.length;
 }
 
+/** Mevcut sorunun sonucu; cevaplanmadıysa null. */
+export function mevcutSonuc(o: Oturum): SoruSonucu | null {
+  return o.sonuclar[o.indeks] ?? null;
+}
+
 /** Mevcut soru cevaplandı mı (geri bildirim gösteriliyor mu)? */
 export function cevaplandiMi(o: Oturum): boolean {
-  return o.sonuclar.length > o.indeks;
+  return mevcutSonuc(o) !== null;
 }
 
-export function cevapKaydet(o: Oturum, cevap: Cevap, dogru: boolean): Oturum {
+export function cevapKaydet(o: Oturum, cevap: Cevap, dogru: boolean, oncekiKayit?: IlerlemeKaydi): Oturum {
   const s = mevcutSoru(o);
   if (!s || cevaplandiMi(o)) return o;
-  const sonuc: SoruSonucu = { desteId: s.desteId, soruId: s.soru.id, dogru, cevap, duzeltildi: false };
-  return { ...o, sonuclar: [...o.sonuclar, sonuc] };
+  const sonuc: SoruSonucu = { desteId: s.desteId, soruId: s.soru.id, dogru, cevap, duzeltildi: false, oncekiKayit };
+  const sonuclar = [...o.sonuclar];
+  sonuclar[o.indeks] = sonuc;
+  return { ...o, sonuclar };
 }
 
-/** Son cevabı doğru sayar ("Aslında doğruydu"). */
+/** Mevcut sorunun cevabını doğru sayar ("Aslında doğruydu"). */
 export function dogruSay(o: Oturum): Oturum {
-  const son = o.sonuclar[o.indeks];
+  const son = mevcutSonuc(o);
   if (!son || son.dogru) return o;
   const sonuclar = [...o.sonuclar];
   sonuclar[o.indeks] = { ...son, dogru: true, duzeltildi: true };
   return { ...o, sonuclar };
 }
 
-export function ilerle(o: Oturum): Oturum {
-  return cevaplandiMi(o) ? { ...o, indeks: o.indeks + 1 } : o;
+/** Verilen soruya geçer (cevaplanmış olsun ya da olmasın); sorular.length oturumu bitirir. */
+export function git(o: Oturum, indeks: number): Oturum {
+  const yeni = Math.min(Math.max(0, indeks), o.sorular.length);
+  return yeni === o.indeks ? o : { ...o, indeks: yeni };
+}
+
+/** Sonraki soruya geçer; mevcut soru boş bırakılabilir. Son sorudan sonra oturum biter. */
+export function sonraki(o: Oturum): Oturum {
+  return git(o, o.indeks + 1);
+}
+
+export function onceki(o: Oturum): Oturum {
+  return git(o, o.indeks - 1);
+}
+
+/** Cevaplanmamış (boş bırakılmış) soru sayısı. */
+export function bosSayisi(o: Oturum): number {
+  return o.sonuclar.filter((s) => s === null).length;
 }
 
 export interface OturumOzeti {
   dogru: number;
   yanlis: number;
-  /** 0–100 arası tam sayı. */
+  bos: number;
+  /** Doğruların tüm sorulara oranı; 0–100 arası tam sayı. */
   yuzde: number;
   yanlislar: OturumSorusu[];
 }
 
 export function ozet(o: Oturum): OturumOzeti {
-  const dogru = o.sonuclar.filter((s) => s.dogru).length;
-  const yanlis = o.sonuclar.length - dogru;
+  const cevaplanan = o.sonuclar.filter((s): s is SoruSonucu => s !== null);
+  const dogru = cevaplanan.filter((s) => s.dogru).length;
+  const yanlis = cevaplanan.length - dogru;
+  const bos = o.sonuclar.length - cevaplanan.length;
   const yanlislar = o.sonuclar.flatMap((s, i) => {
     const os = o.sorular[i];
-    return !s.dogru && os ? [os] : [];
+    return s && !s.dogru && os ? [os] : [];
   });
-  const yuzde = o.sonuclar.length === 0 ? 0 : Math.round((dogru / o.sonuclar.length) * 100);
-  return { dogru, yanlis, yuzde, yanlislar };
+  const yuzde = o.sorular.length === 0 ? 0 : Math.round((dogru / o.sorular.length) * 100);
+  return { dogru, yanlis, bos, yuzde, yanlislar };
 }

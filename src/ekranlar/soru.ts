@@ -4,7 +4,7 @@ import { el, simgeliMetin } from "../dom";
 import { durum, gezinti } from "../durum";
 import { cevabiKaydet, kayitBul } from "../ilerleme";
 import { M } from "../metinler";
-import { bittiMi, cevapKaydet, dogruSay, ilerle, karistir, mevcutSoru } from "../oturum";
+import { bittiMi, bosSayisi, cevapKaydet, dogruSay, karistir, mevcutSonuc, mevcutSoru, onceki, sonraki } from "../oturum";
 import { onayIste } from "../pencere";
 import { SORU_TIPLERI } from "../soru-tipleri/kayit";
 import { kapsamli, type CizimBaglami } from "../soru-tipleri/ortak";
@@ -60,8 +60,7 @@ export function soruEkrani(): HTMLElement {
   const { soru } = os;
   const toplam = o.sorular.length;
   const kimlik = { desteId: os.desteId, soruId: soru.id };
-  // "Aslında doğruydu" için cevaptan önceki kayıt saklanır.
-  const onceki = kayitBul(kimlik.desteId, kimlik.soruId);
+  const sonSoru = o.indeks === toplam - 1;
 
   const cik = el(
     "button",
@@ -94,26 +93,69 @@ export function soruEkrani(): HTMLElement {
     const cur = durum.oturum;
     if (!cur) return;
     const sonuc = cevapKontrol(soru, cevap, durum.ayarlar);
-    durum.oturum = cevapKaydet(cur, cevap, sonuc.dogru);
-    cevabiKaydet(onceki, kimlik, sonuc.dogru, Date.now());
+    // "Aslında doğruydu" için cevaptan önceki kayıt sonuçla birlikte saklanır.
+    const oncekiKayit = kayitBul(kimlik.desteId, kimlik.soruId);
+    durum.oturum = cevapKaydet(cur, cevap, sonuc.dogru, oncekiKayit);
+    cevabiKaydet(oncekiKayit, kimlik, sonuc.dogru, Date.now());
     cizim.sonucuGoster(cevap, sonuc);
-    geriBildirimGoster(sonuc);
+    geriBildirimGoster(sonuc, false, true);
   };
 
-  const devam = () => {
-    const cur = durum.oturum;
-    if (!cur) return;
-    durum.oturum = ilerle(cur);
-    if (bittiMi(durum.oturum)) location.replace("#/sonuc");
+  const gec = (yeni: NonNullable<typeof durum.oturum>) => {
+    durum.oturum = yeni;
+    if (bittiMi(yeni)) location.replace("#/sonuc");
     else gezinti.yenidenCiz();
   };
 
-  const geriBildirimGoster = (sonuc: Degerlendirme) => {
-    const devamDugmesi = el("button", { type: "button", class: "dugme birincil genis", onclick: devam }, M.devam);
+  const sonrakineGec = async () => {
+    const cur = durum.oturum;
+    if (!cur) return;
+    const yeni = sonraki(cur);
+    if (bittiMi(yeni)) {
+      const bos = bosSayisi(yeni);
+      if (bos > 0 && !(await onayIste({ baslik: M.bitirilsinMi, aciklama: M.bosKalanlarAciklama(bos), onay: M.bitir }))) return;
+    }
+    gec(yeni);
+  };
+
+  const oncekineGec = () => {
+    const cur = durum.oturum;
+    if (cur) gec(onceki(cur));
+  };
+
+  const oncekiDugmesi = el(
+    "button",
+    { type: "button", class: "dugme ikincil", disabled: o.indeks === 0, onclick: oncekineGec },
+    el("span", { attr: { "aria-hidden": "true" } }, "←"),
+    M.oncekiSoru,
+  );
+  const sonrakiDugmesi = el(
+    "button",
+    { type: "button", class: `dugme ${mevcutSonuc(o) ? "birincil" : "ikincil"}`, onclick: () => void sonrakineGec() },
+    sonSoru ? M.bitir : M.sonrakiSoru,
+    sonSoru ? null : el("span", { attr: { "aria-hidden": "true" } }, "→"),
+  );
+  const bosBilgisi = el("p", { class: "bos-bilgisi", attr: { "aria-live": "polite" } });
+  const bosGuncelle = () => {
+    // Geride boş bırakılan sorular (henüz gelinmemiş sorular sayılmaz).
+    const cur = durum.oturum;
+    const n = cur ? cur.sonuclar.slice(0, cur.indeks).filter((x) => x === null).length : 0;
+    bosBilgisi.textContent = n > 0 ? M.bosSoruVar(n) : "";
+  };
+  bosGuncelle();
+  const gezintiCubugu = el(
+    "nav",
+    { class: "soru-gezintisi", attr: { "aria-label": M.soruGezintisi } },
+    el("div", { class: "dugme-satiri" }, oncekiDugmesi, sonrakiDugmesi),
+    bosBilgisi,
+  );
+
+  const geriBildirimGoster = (sonuc: Degerlendirme, duzeltildi: boolean, yeniCevap: boolean) => {
+    sonrakiDugmesi.className = "dugme birincil";
     const baslik = el(
       "p",
       { class: `sonuc-baslik ${sonuc.dogru ? "dogru" : "yanlis"}` },
-      simgeliMetin(sonuc.dogru ? "✓" : "✗", sonuc.dogru ? M.dogruCevap : M.yanlisCevap),
+      duzeltildi ? simgeliMetin("✓", M.dogruSayildi) : simgeliMetin(sonuc.dogru ? "✓" : "✗", sonuc.dogru ? M.dogruCevap : M.yanlisCevap),
     );
     const parcalar: (HTMLElement | null)[] = [baslik];
     if (!sonuc.dogru) {
@@ -130,30 +172,49 @@ export function soruEkrani(): HTMLElement {
           onclick: () => {
             const cur = durum.oturum;
             if (!cur) return;
+            const kayit = mevcutSonuc(cur);
             durum.oturum = dogruSay(cur);
-            cevabiKaydet(onceki, kimlik, true, Date.now());
+            cevabiKaydet(kayit?.oncekiKayit, kimlik, true, Date.now());
             baslik.className = "sonuc-baslik dogru";
             baslik.replaceChildren(simgeliMetin("✓", M.dogruSayildi));
             aslinda.remove();
-            devamDugmesi.focus();
+            sonrakiDugmesi.focus();
           },
         },
         M.aslindaDogruydu,
       );
       dugmeler.append(aslinda);
+      parcalar.push(dugmeler);
     }
-    dugmeler.append(devamDugmesi);
-    parcalar.push(dugmeler);
     geriBildirim.replaceChildren(...parcalar.filter((p): p is HTMLElement => p !== null));
     geriBildirim.classList.add("gorunur", sonuc.dogru ? "dogru" : "yanlis");
-    devamDugmesi.focus({ preventScroll: true });
-    geriBildirim.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    bosGuncelle();
+    if (yeniCevap) {
+      sonrakiDugmesi.focus({ preventScroll: true });
+      gezintiCubugu.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    }
   };
 
   const cizim = soruCiz(soru, cevapla);
-  const govde = el("main", { class: "icerik soru-ekrani" }, el("article", { class: "kart soru-karti" }, cizim.el), geriBildirim);
+  const govde = el(
+    "main",
+    { class: "icerik soru-ekrani" },
+    el("article", { class: "kart soru-karti" }, cizim.el),
+    geriBildirim,
+    gezintiCubugu,
+  );
   const sayfa = ekran(ust, cubuk, govde);
-  // Ekrana eklendikten sonra odakla.
-  queueMicrotask(() => cizim.odakla?.());
+
+  // Daha önce cevaplanmış bir soruya dönüldüyse cevabı ve geri bildirimi göster.
+  const kayitli = mevcutSonuc(o);
+  if (kayitli) {
+    const sonuc = { ...cevapKontrol(soru, kayitli.cevap, durum.ayarlar), dogru: kayitli.dogru };
+    cizim.sonucuGoster(kayitli.cevap, sonuc);
+    geriBildirimGoster(sonuc, kayitli.duzeltildi, false);
+    queueMicrotask(() => sonrakiDugmesi.focus({ preventScroll: true }));
+  } else {
+    // Ekrana eklendikten sonra odakla.
+    queueMicrotask(() => cizim.odakla?.());
+  }
   return sayfa;
 }

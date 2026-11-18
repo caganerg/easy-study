@@ -5,7 +5,10 @@ import {
   cevapKaydet,
   dogruSay,
   haritadanBul,
-  ilerle,
+  onceki,
+  sonraki,
+  bosSayisi,
+  cevaplandiMi,
   mevcutSoru,
   oturumOlustur,
   ozet,
@@ -114,19 +117,40 @@ describe("oturum akışı", () => {
   test("cevapla, düzelt, ilerle, özet", () => {
     let o = oturumOlustur("T", havuz.slice(0, 3));
     expect(mevcutSoru(o)?.soru.id).toBe("q001");
-    o = ilerle(o); // cevapsız ilerlenemez
-    expect(o.indeks).toBe(0);
     o = cevapKaydet(o, { tip: "coktan_secmeli", secilen: 1 }, false);
     o = cevapKaydet(o, { tip: "coktan_secmeli", secilen: 0 }, true); // ikinci cevap yok sayılır
-    expect(o.sonuclar).toHaveLength(1);
+    expect(o.sonuclar[0]).toMatchObject({ dogru: false, cevap: { secilen: 1 } });
     o = dogruSay(o);
     expect(o.sonuclar[0]).toMatchObject({ dogru: true, duzeltildi: true });
-    o = ilerle(o);
-    o = ilerle(cevapKaydet(o, { tip: "dogru_yanlis", secilen: false }, false));
-    o = ilerle(cevapKaydet(o, { tip: "bosluk", girilen: ["a"] }, true));
+    o = sonraki(o);
+    o = sonraki(cevapKaydet(o, { tip: "dogru_yanlis", secilen: false }, false));
+    o = sonraki(cevapKaydet(o, { tip: "bosluk", girilen: ["a"] }, true));
     expect(bittiMi(o)).toBe(true);
     const oz = ozet(o);
-    expect(oz).toMatchObject({ dogru: 2, yanlis: 1, yuzde: 67 });
+    expect(oz).toMatchObject({ dogru: 2, yanlis: 1, bos: 0, yuzde: 67 });
     expect(idler(oz.yanlislar)).toEqual(["q002"]);
+  });
+
+  test("boş bırakma, geri dönme ve sonradan cevaplama", () => {
+    let o = oturumOlustur("T", havuz.slice(0, 3));
+    o = onceki(o); // ilk sorudan geri gidilemez
+    expect(o.indeks).toBe(0);
+    o = sonraki(o); // q001 boş
+    expect(o.indeks).toBe(1);
+    expect(cevaplandiMi(o)).toBe(false);
+    o = sonraki(cevapKaydet(o, { tip: "dogru_yanlis", secilen: true }, true));
+    expect(bosSayisi(o)).toBe(2);
+    o = onceki(onceki(o));
+    expect(mevcutSoru(o)?.soru.id).toBe("q001");
+    o = cevapKaydet(o, { tip: "coktan_secmeli", secilen: 0 }, false);
+    o = sonraki(o);
+    expect(cevaplandiMi(o)).toBe(true); // q002'nin cevabı korunur
+    o = cevapKaydet(o, { tip: "dogru_yanlis", secilen: false }, false); // yeniden cevaplanamaz
+    expect(o.sonuclar[1]).toMatchObject({ dogru: true });
+    o = sonraki(sonraki(o)); // q003 boş, oturum biter
+    expect(bittiMi(o)).toBe(true);
+    o = sonraki(o);
+    expect(o.indeks).toBe(3);
+    expect(ozet(o)).toMatchObject({ dogru: 1, yanlis: 1, bos: 1, yuzde: 33 });
   });
 });

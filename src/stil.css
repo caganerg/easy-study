@@ -392,21 +392,28 @@ a { color: var(--vurgu); }
 .dogru-cevap { overflow-wrap: anywhere; }
 .soru-aciklama { color: var(--soluk); }
 
+.soru-gezintisi { margin-top: 1rem; }
+.soru-gezintisi .dugme-satiri { margin-top: 0; }
+.soru-gezintisi .dugme-satiri > .dugme { flex: 1 1 0; gap: 0.4rem; }
+.soru-gezintisi .dugme:disabled { opacity: 0.45; cursor: default; }
+.bos-bilgisi { margin: 0.5rem 0 0; text-align: center; color: var(--soluk); font-size: 0.9em; min-height: 1.2em; }
+
 /* ---- Sonuç ekranı ---- */
 
 .oturum-baslik { color: var(--soluk); font-size: 1em; font-weight: 500; }
 .sonuc-ozet {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: auto auto;
+  align-content: center;
   align-items: center;
   column-gap: 1.25rem;
 }
 .sonuc-ozet p { margin: 0.2rem 0; font-weight: 600; font-size: 1.1em; }
 .sonuc-ozet .dogru { color: var(--dogru); }
 .sonuc-ozet .yanlis { color: var(--yanlis); }
+.sonuc-ozet .bos { color: var(--soluk); }
 .yuzde-halka {
-  grid-row: span 2;
+  grid-row: span 3;
   width: 6.5rem;
   height: 6.5rem;
   border-radius: 50%;

@@ -73,12 +73,18 @@ export const M = {
   oturumdanCikAciklama: "Bu oturumda henüz kaydedilmemiş cevap kaybolmaz; çözülen sorular kaydedildi.",
   cik: "Çık",
   devamEt: "Devam et",
+  oncekiSoru: "Önceki",
+  sonrakiSoru: "Sonraki",
+  bitir: "Bitir",
+  soruGezintisi: "Sorular arasında gezinme",
+  bosSoruVar: (n: number) => `${n} soru boş`,
+  bitirilsinMi: "Oturum bitirilsin mi?",
+  bosKalanlarAciklama: (n: number) => `${n} soru boş bırakıldı. Boş sorular yanlış sayılmaz ve ilerlemeye işlenmez.`,
 
   // Geri bildirim
   dogruCevap: "Doğru!",
   yanlisCevap: "Yanlış",
   dogruCevapNe: "Doğru cevap:",
-  devam: "Devam",
   aslindaDogruydu: "Aslında doğruydu",
   dogruSayildi: "Doğru sayıldı",
 
@@ -86,9 +92,11 @@ export const M = {
   sonuc: "Sonuç",
   dogruSayisi: (n: number) => `Doğru: ${n}`,
   yanlisSayisi: (n: number) => `Yanlış: ${n}`,
+  bosSayisi: (n: number) => `Boş: ${n}`,
   yuzde: (n: number) => `%${n}`,
   yanlisSorular: "Yanlış cevaplanan sorular",
   hepsiDogru: "Tebrikler, hepsi doğru!",
+  yanlisYok: "Yanlış cevabınız yok.",
   yanlislariTekrarCoz: "Yanlışları tekrar çöz",
   oturumYok: "Aktif oturum yok.",
 

@@ -1,0 +1,878 @@
+{
+  "surum": 1,
+  "id": "molekuler-biyoteknoloji-cikmis",
+  "baslik": "Moleküler Biyoloji ve Bitki Biyoteknolojisi – Çıkmış Sorular",
+  "ders": "Moleküler Biyoloji ve Bitki Biyoteknolojisi",
+  "aciklama": "Çıkmış soru-cevap listesinden: Agrobacterium ve T-DNA, vir genleri, doğrudan gen aktarımı, seçici markörler, GD bitkiler.",
+  "sorular": [
+    {
+      "id": "q001",
+      "tip": "coktan_secmeli",
+      "soru": "Dünyada en fazla GD (transgenik) bitki üreten ülke hangisidir?",
+      "secenekler": [
+        "ABD",
+        "Brezilya",
+        "Hindistan",
+        "Çin"
+      ],
+      "dogru": 0,
+      "aciklama": "Çıkmış soru cevabına göre en fazla GD bitki üreten ülke ABD'dir.",
+      "etiketler": [
+        "gd-bitkiler"
+      ]
+    },
+    {
+      "id": "q002",
+      "tip": "coktan_secmeli",
+      "soru": "Dünyada en fazla ekim alanına sahip GD bitki türü hangisidir?",
+      "secenekler": [
+        "Mısır",
+        "Soya",
+        "Pamuk",
+        "Kanola"
+      ],
+      "dogru": 1,
+      "aciklama": "GD ekim alanında ilk sırada soya vardır.",
+      "etiketler": [
+        "gd-bitkiler"
+      ]
+    },
+    {
+      "id": "q003",
+      "tip": "coktan_secmeli",
+      "soru": "Hindistan'da en fazla üretilen GD bitki hangisidir?",
+      "secenekler": [
+        "Soya",
+        "Pirinç",
+        "Pamuk",
+        "Mısır"
+      ],
+      "dogru": 2,
+      "aciklama": "Hindistan'da GD üretimi ağırlıklı olarak Bt pamuktur.",
+      "etiketler": [
+        "gd-bitkiler"
+      ]
+    },
+    {
+      "id": "q004",
+      "tip": "coktan_secmeli",
+      "soru": "Dünya genelinde en fazla üretilen GD bitkilere hangi özellik kazandırılmıştır?",
+      "secenekler": [
+        "Kuraklığa tolerans",
+        "Besin değerinin artırılması",
+        "Virüslere dayanıklılık",
+        "Herbisit ve böceklere dayanıklılık"
+      ],
+      "dogru": 3,
+      "aciklama": "En yaygın GD özellikleri herbisit toleransı ve böcek dayanıklılığıdır.",
+      "etiketler": [
+        "gd-bitkiler"
+      ]
+    },
+    {
+      "id": "q005",
+      "tip": "coktan_secmeli",
+      "soru": "*VirA* geni genel olarak bitkinin salgıladığı hangi bileşikler tarafından uyarılır?",
+      "secenekler": [
+        "Fenolikler",
+        "Opinler",
+        "Oksinler",
+        "Sitokininler"
+      ],
+      "dogru": 0,
+      "aciklama": "Yaralı bitki hücrelerinin salgıladığı fenolik bileşikler (ör. asetosiringon) *VirA*'yı uyarır.",
+      "etiketler": [
+        "agrobacterium",
+        "vir-genleri"
+      ]
+    },
+    {
+      "id": "q006",
+      "tip": "coktan_secmeli",
+      "soru": "Virülens genleri içinde daima aktif olan gen hangisidir?",
+      "secenekler": [
+        "*VirG*",
+        "*VirA*",
+        "*VirD2*",
+        "*VirE*"
+      ],
+      "dogru": 1,
+      "aciklama": "*VirA* sürekli ifade edilir; fenoliklerle uyarılınca *VirG*'yi aktive eder.",
+      "etiketler": [
+        "agrobacterium",
+        "vir-genleri"
+      ]
+    },
+    {
+      "id": "q007",
+      "tip": "coktan_secmeli",
+      "soru": "Virülens bölgesinin hangi özelliği kullanılarak binary (ikili) vektörler oluşturulmuştur?",
+      "secenekler": [
+        "Cis hareket",
+        "Onkogenik etki",
+        "Trans hareket",
+        "Opin sentezi"
+      ],
+      "dogru": 2,
+      "aciklama": "Vir genleri T-DNA'ya ayrı bir plazmitten (trans) etki edebildiği için binary vektörler mümkündür.",
+      "etiketler": [
+        "agrobacterium",
+        "vektorler"
+      ]
+    },
+    {
+      "id": "q008",
+      "tip": "coktan_secmeli",
+      "soru": "*Bacillus thuringiensis* bakterileri sporülasyon sırasında hangi etkiyi gösteren yapılar oluşturur?",
+      "secenekler": [
+        "Herbisit",
+        "Fungisit",
+        "Bakterisit",
+        "İnsektisit"
+      ],
+      "dogru": 3,
+      "aciklama": "Bt sporülasyon sırasında insektisit etkili kristal proteinler (Cry, endotoksin) üretir.",
+      "etiketler": [
+        "bt",
+        "bocek-dayanikliligi"
+      ]
+    },
+    {
+      "id": "q009",
+      "tip": "coktan_secmeli",
+      "soru": "Böceklere dayanıklı transgenik bitkilerin geliştirilmesinde en yaygın kullanılan yöntemde hangi genler aktarılır?",
+      "secenekler": [
+        "*Bacillus thuringiensis* endotoksin genleri",
+        "*Agrobacterium* onkogenleri",
+        "*Streptomyces bar* genleri",
+        "NPT-II genleri"
+      ],
+      "dogru": 0,
+      "aciklama": "Bt endotoksin (Cry) genleri böcek dayanıklılığı için en yaygın kullanılan genlerdir.",
+      "etiketler": [
+        "bt",
+        "bocek-dayanikliligi"
+      ]
+    },
+    {
+      "id": "q010",
+      "tip": "coktan_secmeli",
+      "soru": "Zararlı böceklerin zamanla transgenik bitkilere dayanıklılık kazanmaması için hangi strateji uygulanır?",
+      "secenekler": [
+        "Monokültür uygulaması",
+        "Sıraya ekim (refüj/sığınak alan)",
+        "İnsektisit dozunun artırılması",
+        "Tek bir Cry geninin kullanılması"
+      ],
+      "dogru": 1,
+      "aciklama": "GD olmayan sığınak alanlar (sıraya ekim) dayanıklılık gelişimini yavaşlatır.",
+      "etiketler": [
+        "bocek-dayanikliligi"
+      ]
+    },
+    {
+      "id": "q011",
+      "tip": "coktan_secmeli",
+      "soru": "Partikül tabancasıyla gen aktarımında mikro-taşıyıcı olarak hangi partiküller kullanılır?",
+      "secenekler": [
+        "Gümüş veya bakır",
+        "Demir veya nikel",
+        "Altın veya tungsten",
+        "Platin veya kurşun"
+      ],
+      "dogru": 2,
+      "aciklama": "Mikro-taşıyıcı olarak altın veya tungsten partiküller kullanılır.",
+      "etiketler": [
+        "partikul-tabancasi"
+      ]
+    },
+    {
+      "id": "q012",
+      "tip": "coktan_secmeli",
+      "soru": "Partikül tabancasıyla gen aktarımında tabancanın vakum pompasıyla boşaltılmasının amacı nedir?",
+      "secenekler": [
+        "DNA'yı partiküllere yapıştırmak",
+        "Hücreleri sterilize etmek",
+        "Helyum basıncını düşürmek",
+        "Mikro-taşıyıcıların sürtünmesini azaltmak"
+      ],
+      "dogru": 3,
+      "aciklama": "Vakum, mikro-taşıyıcıların hava sürtünmesiyle yavaşlamasını önler.",
+      "etiketler": [
+        "partikul-tabancasi"
+      ]
+    },
+    {
+      "id": "q013",
+      "tip": "coktan_secmeli",
+      "soru": "Partikül tabancasıyla gen aktarımında DNA'nın mikro-taşıyıcılara yapışması için hangi bileşikler kullanılır?",
+      "secenekler": [
+        "Spermidin ve CaCl₂",
+        "Etanol ve NaCl",
+        "EDTA ve Tris",
+        "Kanamisin ve sakkaroz"
+      ],
+      "dogru": 0,
+      "aciklama": "DNA, spermidin ve kalsiyum klorür ile altın/tungsten partiküllere çöktürülür.",
+      "etiketler": [
+        "partikul-tabancasi"
+      ]
+    },
+    {
+      "id": "q014",
+      "tip": "coktan_secmeli",
+      "soru": "Partikül tabancasındaki kırılıcı diskin kullanım amacı nedir?",
+      "secenekler": [
+        "Mikro-taşıyıcıları makro-taşıyıcıda tutmak",
+        "Artan helyum basıncıyla kırılarak makro-taşıyıcıyı hızlandırmak",
+        "Hücreleri yüksek basınçtan korumak",
+        "DNA'yı mikro-taşıyıcıdan ayırmak"
+      ],
+      "dogru": 1,
+      "aciklama": "Helyum basıncı belli değere ulaşınca disk kırılır ve makro-taşıyıcı hızlanır.",
+      "etiketler": [
+        "partikul-tabancasi"
+      ]
+    },
+    {
+      "id": "q015",
+      "tip": "coktan_secmeli",
+      "soru": "Partikül tabancasıyla gen aktarımının amacı nedir?",
+      "secenekler": [
+        "Bitki hücrelerinde tümör oluşturmak",
+        "Protoplastların zar geçirgenliğini azaltmak",
+        "Aktarılacak DNA'yı bitki hücrelerine taşımak",
+        "Bakteri kromozomunu bitkiye aktarmak"
+      ],
+      "dogru": 2,
+      "aciklama": "Partikül tabancası, DNA kaplı mikro-taşıyıcıları hücrelere fırlatan doğrudan gen aktarım yöntemidir.",
+      "etiketler": [
+        "partikul-tabancasi"
+      ]
+    },
+    {
+      "id": "q016",
+      "tip": "coktan_secmeli",
+      "soru": "Herbisitlere dayanıklılık için aktarılan *bar* ve *pat* genleri hangi bakteri cinsinden izole edilmiştir?",
+      "secenekler": [
+        "*Bacillus*",
+        "*Agrobacterium*",
+        "*Pseudomonas*",
+        "*Streptomyces*"
+      ],
+      "dogru": 3,
+      "aciklama": "*bar* ve *pat* genleri *Streptomyces* türlerinden izole edilmiştir.",
+      "etiketler": [
+        "herbisit-dayanikliligi"
+      ]
+    },
+    {
+      "id": "q017",
+      "tip": "coktan_secmeli",
+      "soru": "*bar* ve *pat* genleri aktarılan bitkiler hangi herbisite dayanıklı hâle gelir?",
+      "secenekler": [
+        "Glifosinat amonyum (Basta)",
+        "Glifosat (Round Up)",
+        "2,4-D",
+        "Atrazin"
+      ],
+      "dogru": 0,
+      "aciklama": "*bar/pat* fosfinotrisin asetil transferaz kodlar ve glifosinat amonyuma dayanıklılık sağlar.",
+      "etiketler": [
+        "herbisit-dayanikliligi"
+      ]
+    },
+    {
+      "id": "q018",
+      "tip": "coktan_secmeli",
+      "soru": "*bar* ve *pat* genlerinin herbisit dayanıklılığı sağlama mekanizması nedir?",
+      "secenekler": [
+        "Hedef enzimi aşırı miktarda üretir",
+        "Herbisitin etken maddesini detoksifiye eder",
+        "Herbisitin hücreye alımını engeller",
+        "Herbisiti hücreden dışarı pompalar"
+      ],
+      "dogru": 1,
+      "aciklama": "*bar/pat* ürünü enzim, glifosinatı asetilleyerek etkisiz hâle getirir (detoksifikasyon).",
+      "etiketler": [
+        "herbisit-dayanikliligi"
+      ]
+    },
+    {
+      "id": "q019",
+      "tip": "coktan_secmeli",
+      "soru": "Bitkilerde EPSPS (5-enolpiruvil-şikimat-3-fosfat sentaz) aktivitesi 20 kat artırılarak hangi herbisite tolerans sağlanmıştır?",
+      "secenekler": [
+        "Glifosinat amonyum (Basta)",
+        "2,4-D",
+        "Glifosat (Round Up)",
+        "Atrazin"
+      ],
+      "dogru": 2,
+      "aciklama": "Glifosat EPSPS enzimini hedef alır; enzim fazlası toleransı sağlar.",
+      "etiketler": [
+        "herbisit-dayanikliligi"
+      ]
+    },
+    {
+      "id": "q020",
+      "tip": "coktan_secmeli",
+      "soru": "Seçici işaret geni neomisin fosfotransferaz (NPT-II) aktarılan bitki hücresini hangi bileşiğe dayanıklı hâle getirir?",
+      "secenekler": [
+        "Higromisin",
+        "Ampisilin",
+        "Glifosat",
+        "Kanamisin"
+      ],
+      "dogru": 3,
+      "aciklama": "NPT-II, kanamisin gibi aminoglikozit antibiyotiklere dayanıklılık sağlar.",
+      "etiketler": [
+        "secici-marker"
+      ]
+    },
+    {
+      "id": "q021",
+      "tip": "coktan_secmeli",
+      "soru": "Çok sayıda bitki hücresi içinden gen aktarılan az sayıdaki hücrenin seçilmesinde hangi genler kullanılır?",
+      "secenekler": [
+        "Seçici markör (işaret) genleri",
+        "Onkogenler",
+        "Opin sentez genleri",
+        "*vir* genleri"
+      ],
+      "dogru": 0,
+      "aciklama": "Seçici markör genleri (ör. NPT-II) yalnızca dönüştürülmüş hücrelerin seçici ortamda yaşamasını sağlar.",
+      "etiketler": [
+        "secici-marker"
+      ]
+    },
+    {
+      "id": "q022",
+      "tip": "coktan_secmeli",
+      "soru": "Bakteri kökenli genlerin bitkide aktif olabilmesi için ne yapılmalıdır?",
+      "secenekler": [
+        "Genler bakteri kromozomuna yerleştirilmelidir",
+        "Promotör ve terminatör bölgeleri bitkide aktif olacak şekilde değiştirilmelidir",
+        "Genlerin intronları çıkarılmalıdır",
+        "Genler opin genleriyle birleştirilmelidir"
+      ],
+      "dogru": 1,
+      "aciklama": "Bitkide ifade için bitkide çalışan promotör ve terminatör gerekir.",
+      "etiketler": [
+        "gen-aktarimi"
+      ]
+    },
+    {
+      "id": "q023",
+      "tip": "coktan_secmeli",
+      "soru": "*Agrobacterium tumefaciens* ile bitki dokularının in vitro **ko-kültivasyonu** aşamasında ne gerçekleşir?",
+      "secenekler": [
+        "*Agrobacterium* yaralanan hücrelere tutunur ve çoğalmaya başlar",
+        "Dönüştürülmüş hücreler seçici ortamda seçilir",
+        "*Agrobacterium*'dan bitki hücrelerine T-DNA aktarımı gerçekleşir",
+        "Bakteriler antibiyotikle ortamdan uzaklaştırılır"
+      ],
+      "dogru": 2,
+      "aciklama": "Ko-kültivasyonda T-DNA aktarımı gerçekleşir; bakterinin hücrelere tutunması inokülasyon aşamasıdır.",
+      "etiketler": [
+        "agrobacterium"
+      ]
+    },
+    {
+      "id": "q024",
+      "tip": "coktan_secmeli",
+      "soru": "*Agrobacterium tumefaciens* ile bitki dokularının in vitro **inokülasyonu** aşamasında ne gerçekleşir?",
+      "secenekler": [
+        "*Agrobacterium*'dan bitki hücrelerine T-DNA aktarımı gerçekleşir",
+        "Dönüştürülmüş hücreler seçici ortamda seçilir",
+        "Bakteriler antibiyotikle ortamdan uzaklaştırılır",
+        "*Agrobacterium* yaralanan hücrelere tutunur ve çoğalmaya başlar"
+      ],
+      "dogru": 3,
+      "aciklama": "İnokülasyonda bakteri yaralı hücrelere tutunup çoğalır; T-DNA aktarımı ko-kültivasyonda olur.",
+      "etiketler": [
+        "agrobacterium"
+      ]
+    },
+    {
+      "id": "q025",
+      "tip": "dogru_yanlis",
+      "soru": "Türkiye'de GD (transgenik) bitkilerin gıda olarak kullanımına izin verilmemiştir.",
+      "dogru": true,
+      "aciklama": "Çıkmış soru cevabına göre ifade doğrudur.",
+      "etiketler": [
+        "gd-bitkiler"
+      ]
+    },
+    {
+      "id": "q026",
+      "tip": "dogru_yanlis",
+      "soru": "Türkiye'de GD (transgenik) pamuk ekimi serbesttir.",
+      "dogru": false,
+      "aciklama": "Türkiye'de GD bitki ekimine izin yoktur.",
+      "etiketler": [
+        "gd-bitkiler"
+      ]
+    },
+    {
+      "id": "q027",
+      "tip": "dogru_yanlis",
+      "soru": "Herbisitlere dayanıklı transgenik bitkilere aktarılan genlerin tozlaşmayla yakın akraba bitkilere geçmesi herhangi bir risk oluşturmaz.",
+      "dogru": false,
+      "aciklama": "Gen kaçışı, yabani akrabalarda herbisite dayanıklı yabancı otlar oluşturma riski taşır.",
+      "etiketler": [
+        "gd-bitkiler",
+        "herbisit-dayanikliligi"
+      ]
+    },
+    {
+      "id": "q028",
+      "tip": "dogru_yanlis",
+      "soru": "Böceklere dayanıklı GD bitkiler üretildiğinde böcek ilacı kullanımı artar.",
+      "dogru": false,
+      "aciklama": "Bitki kendi insektisit proteinini ürettiği için böcek ilacı kullanımı azalır.",
+      "etiketler": [
+        "gd-bitkiler",
+        "bocek-dayanikliligi"
+      ]
+    },
+    {
+      "id": "q029",
+      "tip": "dogru_yanlis",
+      "soru": "Böceklere dayanıklı transgenik bitkilerde böcek zararı azaldığı için danede mikotoksin üretiminde azalma görülür.",
+      "dogru": true,
+      "aciklama": "Böcek yaraları fungal enfeksiyonun giriş kapısıdır; zarar azalınca mikotoksin de azalır.",
+      "etiketler": [
+        "bocek-dayanikliligi"
+      ]
+    },
+    {
+      "id": "q030",
+      "tip": "dogru_yanlis",
+      "soru": "GD (transgenik) bitkilerin üretimiyle çiftçinin gelirinde artış olur.",
+      "dogru": true,
+      "aciklama": "Çıkmış soru cevabına göre ifade doğrudur.",
+      "etiketler": [
+        "gd-bitkiler"
+      ]
+    },
+    {
+      "id": "q031",
+      "tip": "dogru_yanlis",
+      "soru": "*Cry* genlerinin ürünleri böcek bağırsağında asidik pH'da aktif hâle gelir.",
+      "dogru": false,
+      "aciklama": "Cry proteinleri böcek orta bağırsağının **bazik** pH'ında aktifleşir.",
+      "etiketler": [
+        "bt",
+        "bocek-dayanikliligi"
+      ]
+    },
+    {
+      "id": "q032",
+      "tip": "dogru_yanlis",
+      "soru": "Mikroenjeksiyon, DNA'nın hücrenin istenen bölmesine enjekte edilmesini sağlayan ve doğrudan gen aktarım yöntemleri arasında en kesin bilinen yöntemdir.",
+      "dogru": true,
+      "aciklama": "Mikroenjeksiyonda DNA doğrudan hedef bölmeye verilir.",
+      "etiketler": [
+        "gen-aktarimi"
+      ]
+    },
+    {
+      "id": "q033",
+      "tip": "dogru_yanlis",
+      "soru": "Mikroenjeksiyonla gen aktarımında pahalı bir donanıma ve deneyime ihtiyaç yoktur.",
+      "dogru": false,
+      "aciklama": "Mikroenjeksiyon pahalı donanım ve deneyim gerektirir.",
+      "etiketler": [
+        "gen-aktarimi"
+      ]
+    },
+    {
+      "id": "q034",
+      "tip": "dogru_yanlis",
+      "soru": "Süspansiyon hâlindeki protoplastlara yüksek voltajlı elektrik akımı uygulandığında hücre zarının geçirgenliği azalır.",
+      "dogru": false,
+      "aciklama": "Elektroporasyonda zar geçirgenliği **artar**; DNA hücreye bu sayede girer.",
+      "etiketler": [
+        "gen-aktarimi"
+      ]
+    },
+    {
+      "id": "q035",
+      "tip": "dogru_yanlis",
+      "soru": "Doğrudan gen aktarım yöntemleri fiziksel yöntemlerdir.",
+      "dogru": true,
+      "aciklama": "Partikül tabancası, mikroenjeksiyon, elektroporasyon gibi yöntemler fizikseldir.",
+      "etiketler": [
+        "gen-aktarimi"
+      ]
+    },
+    {
+      "id": "q036",
+      "tip": "dogru_yanlis",
+      "soru": "Seçici işaret (markör) genleri ağırlıkla bitkisel kökenlidir.",
+      "dogru": false,
+      "aciklama": "Seçici markör genleri ağırlıkla bakteri kökenlidir (ör. NPT-II, *bar*).",
+      "etiketler": [
+        "secici-marker"
+      ]
+    },
+    {
+      "id": "q037",
+      "tip": "dogru_yanlis",
+      "soru": "*Agrobacterium* asıl olarak iki çenekli bitkilerin hastalık etmenidir.",
+      "dogru": true,
+      "aciklama": "*A. tumefaciens* özellikle iki çeneklilerde kök boğazı urlarına neden olur.",
+      "etiketler": [
+        "agrobacterium"
+      ]
+    },
+    {
+      "id": "q038",
+      "tip": "dogru_yanlis",
+      "soru": "*Agrobacterium* havada yaşayan bir bakteridir.",
+      "dogru": false,
+      "aciklama": "*Agrobacterium* bir toprak bakterisidir.",
+      "etiketler": [
+        "agrobacterium"
+      ]
+    },
+    {
+      "id": "q039",
+      "tip": "dogru_yanlis",
+      "soru": "*Agrobacterium*'un bitki hücrelerini enfekte edebilmesi için hücrelerin yaralanmasına gerek yoktur.",
+      "dogru": false,
+      "aciklama": "Enfeksiyon için yara gerekir; yaralı hücreler *vir* genlerini uyaran fenolikleri salgılar.",
+      "etiketler": [
+        "agrobacterium"
+      ]
+    },
+    {
+      "id": "q040",
+      "tip": "dogru_yanlis",
+      "soru": "Virülens bölgesindeki genler T-DNA'nın bakteri hücresinden bitki hücresine aktarılmasını sağlar.",
+      "dogru": true,
+      "aciklama": "*vir* genleri T-DNA'nın kesilmesi, taşınması ve entegrasyonunu sağlar.",
+      "etiketler": [
+        "agrobacterium",
+        "vir-genleri"
+      ]
+    },
+    {
+      "id": "q041",
+      "tip": "dogru_yanlis",
+      "soru": "*VirD2* proteini T-DNA'yı sınırlardan keser, 5′ ucuna bağlı kalarak bitki hücresine taşır ve bitki kromozomuna entegre eder.",
+      "dogru": true,
+      "aciklama": "*VirD2* bir endonükleazdır; kestiği T-DNA zincirinin 5′ ucuna bağlı kalır.",
+      "etiketler": [
+        "agrobacterium",
+        "vir-genleri"
+      ]
+    },
+    {
+      "id": "q042",
+      "tip": "dogru_yanlis",
+      "soru": "Uyarılan *VirG* proteini kendi geni ve *vir* genleri için transkripsiyon aktivatörü (işlemcisi) görevi yapar.",
+      "dogru": true,
+      "aciklama": "*VirA* tarafından fosforillenen *VirG*, *vir* genlerinin transkripsiyonunu başlatır.",
+      "etiketler": [
+        "agrobacterium",
+        "vir-genleri"
+      ]
+    },
+    {
+      "id": "q043",
+      "tip": "dogru_yanlis",
+      "soru": "Virülens bölgesi 13 operondan (lokustan) oluşur.",
+      "dogru": false,
+      "aciklama": "Virülens bölgesi 8 operondan oluşur; 13, tümör oluşturan T-DNA'daki gen sayısıdır.",
+      "etiketler": [
+        "agrobacterium",
+        "vir-genleri"
+      ]
+    },
+    {
+      "id": "q044",
+      "tip": "dogru_yanlis",
+      "soru": "*iaaM*, *iaaH*, *ipt* ve *6b* genleri hormon dengesini bozup tümör oluşturduğu için onkogen (onc) olarak adlandırılır.",
+      "dogru": true,
+      "aciklama": "Bu genler oksin ve sitokinin sentezini sağlar; hormon dengesi bozulunca tümör oluşur.",
+      "etiketler": [
+        "agrobacterium",
+        "t-dna"
+      ]
+    },
+    {
+      "id": "q045",
+      "tip": "dogru_yanlis",
+      "soru": "Tümör oluşturan genlerin restriksiyon enzimleriyle T-DNA'dan çıkarılması bitki hücresine gen aktarımını engeller.",
+      "dogru": false,
+      "aciklama": "Aktarım için yalnızca sınır dizileri ve *vir* genleri gerekir; onkogenler çıkarılınca aktarım sürer (non-onkogenik vektörler).",
+      "etiketler": [
+        "agrobacterium",
+        "t-dna"
+      ]
+    },
+    {
+      "id": "q046",
+      "tip": "dogru_yanlis",
+      "soru": "İki T-DNA sınırı arasına yerleştirilen bir DNA parçası kolayca bitki hücresine aktarılabilir.",
+      "dogru": true,
+      "aciklama": "Sınır dizileri arasındaki her DNA T-DNA olarak aktarılabilir; vektörler buna dayanır.",
+      "etiketler": [
+        "agrobacterium",
+        "t-dna"
+      ]
+    },
+    {
+      "id": "q047",
+      "tip": "dogru_yanlis",
+      "soru": "*A. tumefaciens* enfeksiyonu sonucunda T-DNA bölgesi bitki kromozomuna aktarılır.",
+      "dogru": true,
+      "aciklama": "T-DNA, Ti plazmitinden bitki kromozomuna entegre olur.",
+      "etiketler": [
+        "agrobacterium",
+        "t-dna"
+      ]
+    },
+    {
+      "id": "q048",
+      "tip": "dogru_yanlis",
+      "soru": "*Agrobacterium* ile bir bitki hücresine birden fazla T-DNA aktarılabilir.",
+      "dogru": true,
+      "aciklama": "Aynı hücreye birden fazla T-DNA kopyası aktarılabilir.",
+      "etiketler": [
+        "agrobacterium",
+        "t-dna"
+      ]
+    },
+    {
+      "id": "q049",
+      "tip": "dogru_yanlis",
+      "soru": "Nopalin tipi plazmitlerde tek bir T-DNA bölgesi bulunur.",
+      "dogru": true,
+      "aciklama": "Nopalin tipi Ti plazmitlerinde tek T-DNA bölgesi vardır.",
+      "etiketler": [
+        "agrobacterium",
+        "ti-plazmit"
+      ]
+    },
+    {
+      "id": "q050",
+      "tip": "dogru_yanlis",
+      "soru": "*Agrobacterium* suşları oktopin ve nopalin olarak iki ana grupta toplanır.",
+      "dogru": true,
+      "aciklama": "Gruplama tümörde sentezlenen opin türüne göre yapılır.",
+      "etiketler": [
+        "agrobacterium",
+        "ti-plazmit"
+      ]
+    },
+    {
+      "id": "q051",
+      "tip": "dogru_yanlis",
+      "soru": "*PscA* geni *Agrobacterium* kromozomunda bulunur.",
+      "dogru": true,
+      "aciklama": "*PscA* kromozomal bir gendir; bakterinin bitki hücresine tutunmasında rol oynar.",
+      "etiketler": [
+        "agrobacterium"
+      ]
+    },
+    {
+      "id": "q052",
+      "tip": "dogru_yanlis",
+      "soru": "*Agrobacterium* kromozomunda bulunan genlerin bitki hücrelerine gen aktarımında hiçbir işlevi yoktur.",
+      "dogru": false,
+      "aciklama": "Kromozomal genler (ör. *PscA*) bakterinin bitki hücresine tutunmasında görev alır.",
+      "etiketler": [
+        "agrobacterium"
+      ]
+    },
+    {
+      "id": "q053",
+      "tip": "dogru_yanlis",
+      "soru": "*Agrobacterium* tarafından oluşturulan tümörler in vitro koşullarda büyüyebilir.",
+      "dogru": true,
+      "aciklama": "Tümör hücreleri kendi hormonlarını ürettiği için hormonsuz ortamda büyüyebilir.",
+      "etiketler": [
+        "agrobacterium"
+      ]
+    },
+    {
+      "id": "q054",
+      "tip": "dogru_yanlis",
+      "soru": "NPT-II geni aktarılan bitki hücreleri glifosata dayanıklı hâle gelir.",
+      "dogru": false,
+      "aciklama": "NPT-II kanamisine dayanıklılık sağlar; glifosat toleransı EPSPS ile ilişkilidir.",
+      "etiketler": [
+        "secici-marker"
+      ]
+    },
+    {
+      "id": "q055",
+      "tip": "bosluk",
+      "soru": "*Agrobacterium tumefaciens*'te bulunan ve tümör oluşturan plazmidin adı ___ plazmitidir.",
+      "cevaplar": [
+        [
+          "Ti",
+          "tümör indükleyici"
+        ]
+      ],
+      "aciklama": "Ti (tumor-inducing) plazmit.",
+      "etiketler": [
+        "agrobacterium",
+        "ti-plazmit"
+      ]
+    },
+    {
+      "id": "q056",
+      "tip": "bosluk",
+      "soru": "*Agrobacterium* enfeksiyonu sonucunda tümörlü dokuda üretilen şekerlere ___ denir.",
+      "cevaplar": [
+        [
+          "opin",
+          "opinler"
+        ]
+      ],
+      "aciklama": "Opinler bakteri tarafından besin kaynağı olarak kullanılır.",
+      "etiketler": [
+        "agrobacterium"
+      ]
+    },
+    {
+      "id": "q057",
+      "tip": "bosluk",
+      "soru": "Tümör oluşturan *Agrobacterium*'un T-DNA bölgesinde ___ gen bulunur.",
+      "cevaplar": [
+        [
+          "13",
+          "on üç"
+        ]
+      ],
+      "aciklama": "T-DNA'da 13 gen bulunur.",
+      "etiketler": [
+        "agrobacterium",
+        "t-dna"
+      ]
+    },
+    {
+      "id": "q058",
+      "tip": "bosluk",
+      "soru": "*Agrobacterium*'un virülens bölgesi ___ operondan (lokustan) oluşur.",
+      "cevaplar": [
+        [
+          "8",
+          "sekiz"
+        ]
+      ],
+      "aciklama": "Virülens bölgesi 8 operondan oluşur.",
+      "etiketler": [
+        "agrobacterium",
+        "vir-genleri"
+      ]
+    },
+    {
+      "id": "q059",
+      "tip": "bosluk",
+      "soru": "Oktopin ve nopalin tipi plazmitlerde T-DNA bölgesi sağ ve sol ___ nükleotitlik dizilerle sınırlandırılmıştır.",
+      "cevaplar": [
+        [
+          "24",
+          "yirmi dört"
+        ]
+      ],
+      "aciklama": "T-DNA sınırları 24 bp'lik tekrar dizileridir.",
+      "etiketler": [
+        "agrobacterium",
+        "t-dna"
+      ]
+    },
+    {
+      "id": "q060",
+      "tip": "bosluk",
+      "soru": "*Agrobacterium*'dan bitki hücrelerine T-DNA aktarımı için optimum sıcaklık en az ___ °C, en fazla ___ °C'dir.",
+      "cevaplar": [
+        [
+          "20",
+          "yirmi"
+        ],
+        [
+          "30",
+          "otuz"
+        ]
+      ],
+      "aciklama": "Optimum sıcaklık 20–30 °C'dir.",
+      "etiketler": [
+        "agrobacterium"
+      ]
+    },
+    {
+      "id": "q061",
+      "tip": "bosluk",
+      "soru": "T-DNA bölgesinden tümör genlerinin çıkarıldığı plazmitlere ___ Ti plazmitleri denir.",
+      "cevaplar": [
+        [
+          "non-onkogenik",
+          "nononkogenik",
+          "non onkogenik",
+          "tümör oluşturmayan"
+        ]
+      ],
+      "aciklama": "Onkogenleri çıkarılmış (disarmed) plazmitler non-onkogenik Ti plazmitleridir.",
+      "etiketler": [
+        "agrobacterium",
+        "ti-plazmit"
+      ]
+    },
+    {
+      "id": "q062",
+      "tip": "bosluk",
+      "soru": "Böceklere dayanıklı transgenik bitkiler için *Bacillus thuringiensis*'ten aktarılan genler ___ genleridir.",
+      "cevaplar": [
+        [
+          "Cry",
+          "Cry genleri",
+          "kristal protein"
+        ]
+      ],
+      "aciklama": "Cry (kristal protein / δ-endotoksin) genleri.",
+      "etiketler": [
+        "bt",
+        "bocek-dayanikliligi"
+      ]
+    },
+    {
+      "id": "q063",
+      "tip": "bosluk",
+      "soru": "*VirD2* proteininin görevi T-DNA bölgesini ___ kesmektir.",
+      "cevaplar": [
+        [
+          "sınırlardan",
+          "sınır dizilerinden",
+          "sınırından"
+        ]
+      ],
+      "aciklama": "*VirD2* T-DNA'yı sağ ve sol sınır dizilerinden keser.",
+      "etiketler": [
+        "agrobacterium",
+        "vir-genleri"
+      ]
+    },
+    {
+      "id": "q064",
+      "tip": "bosluk",
+      "soru": "Dünya genelinde 2018 yılında GD bitkilerin toplam ekim alanı yaklaşık ___ milyon hektardır.",
+      "cevaplar": [
+        [
+          "191,7",
+          "191.7",
+          "192"
+        ]
+      ],
+      "aciklama": "2018'de toplam GD ekim alanı 191,7 milyon hektar.",
+      "etiketler": [
+        "gd-bitkiler"
+      ]
+    }
+  ]
+}
