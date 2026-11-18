@@ -1029,6 +1029,318 @@
       "etiketler": [
         "kok-curuklugu"
       ]
+    },
+    {
+      "id": "q081",
+      "tip": "coktan_secmeli",
+      "soru": "Hint sürmesinin etmeni hangisidir?",
+      "secenekler": [
+        "*Neovossia indica*",
+        "*Tilletia controversa*",
+        "*Tilletia caries*",
+        "*Ustilago nigra*"
+      ],
+      "dogru": 0,
+      "aciklama": "Hint sürmesi etmeni *Neovossia (Tilletia) indica*'dır; ülkemizde yoktur ve karantinaya tabidir.",
+      "etiketler": [
+        "etmenler",
+        "surme"
+      ]
+    },
+    {
+      "id": "q082",
+      "tip": "coktan_secmeli",
+      "soru": "Cüce sürmenin etmeni hangisidir?",
+      "secenekler": [
+        "*Tilletia caries*",
+        "*Tilletia controversa*",
+        "*Neovossia indica*",
+        "*Ustilago hordei*"
+      ],
+      "dogru": 1,
+      "aciklama": "Cüce sürme *Tilletia controversa* ile oluşur; enfeksiyon topraktaki teliosporlarla gerçekleşir.",
+      "etiketler": [
+        "etmenler",
+        "surme"
+      ]
+    },
+    {
+      "id": "q083",
+      "tip": "coktan_secmeli",
+      "soru": "Buğdayda adi sürmenin etmenlerinden biri hangisidir?",
+      "secenekler": [
+        "*Tilletia controversa*",
+        "*Neovossia indica*",
+        "*Tilletia caries*",
+        "*Ustilago nuda*"
+      ],
+      "dogru": 2,
+      "aciklama": "Adi sürmenin etmenleri *Tilletia caries* ve *T. foetida* (*T. laevis*)'dır.",
+      "etiketler": [
+        "etmenler",
+        "surme"
+      ]
+    },
+    {
+      "id": "q084",
+      "tip": "coktan_secmeli",
+      "soru": "Buğday kara pasının (sap pası) etmeni hangisidir?",
+      "secenekler": [
+        "*Puccinia striiformis* f. sp. *tritici*",
+        "*Puccinia recondita* f. sp. *tritici*",
+        "*Puccinia coronata* f. sp. *avenae*",
+        "*Puccinia graminis* f. sp. *tritici*"
+      ],
+      "dogru": 3,
+      "aciklama": "Kara pas *Puccinia graminis tritici*'dir; ara konukçuları *Berberis* ve *Mahonia*'dır.",
+      "etiketler": [
+        "etmenler",
+        "pas",
+        "kara-pas"
+      ]
+    },
+    {
+      "id": "q085",
+      "tip": "coktan_secmeli",
+      "soru": "Buğday sarı pasının etmeni hangisidir?",
+      "secenekler": [
+        "*Puccinia striiformis*",
+        "*Puccinia graminis*",
+        "*Puccinia recondita*",
+        "*Puccinia coronata*"
+      ],
+      "dogru": 0,
+      "aciklama": "Sarı pas *Puccinia striiformis*'tir; püstülleri makine dikişi şeklinde dizilir.",
+      "etiketler": [
+        "etmenler",
+        "pas",
+        "sari-pas"
+      ]
+    },
+    {
+      "id": "q086",
+      "tip": "coktan_secmeli",
+      "soru": "Buğday kahverengi pasının (yaprak pası) etmeni hangisidir?",
+      "secenekler": [
+        "*Puccinia striiformis*",
+        "*Puccinia recondita*",
+        "*Puccinia graminis*",
+        "*Puccinia coronata*"
+      ],
+      "dogru": 1,
+      "aciklama": "Kahverengi pas *Puccinia recondita tritici* (*P. triticina*) ile oluşur; ara konukçusu *Thalictrum*'dur.",
+      "etiketler": [
+        "etmenler",
+        "pas",
+        "kahverengi-pas"
+      ]
+    },
+    {
+      "id": "q087",
+      "tip": "coktan_secmeli",
+      "soru": "Yulaf taç pasının etmeni hangisidir?",
+      "secenekler": [
+        "*Puccinia graminis*",
+        "*Puccinia striiformis*",
+        "*Puccinia coronata*",
+        "*Puccinia recondita*"
+      ],
+      "dogru": 2,
+      "aciklama": "Yulaf taç pası *Puccinia coronata* ile oluşur; teliospor ucunda taç gibi çıkıntılar bulunur.",
+      "etiketler": [
+        "etmenler",
+        "pas"
+      ]
+    },
+    {
+      "id": "q088",
+      "tip": "coktan_secmeli",
+      "soru": "Arpada kapalı rastığın etmeni hangisidir?",
+      "secenekler": [
+        "*Ustilago nuda*",
+        "*Ustilago nigra*",
+        "*Tilletia caries*",
+        "*Ustilago hordei*"
+      ],
+      "dogru": 3,
+      "aciklama": "Kapalı rastık *Ustilago hordei* ile oluşur; mücadelede tohum ilaçlaması başarılıdır.",
+      "etiketler": [
+        "etmenler",
+        "rastik"
+      ]
+    },
+    {
+      "id": "q089",
+      "tip": "coktan_secmeli",
+      "soru": "Arpada açık rastığın etmeni hangisidir?",
+      "secenekler": [
+        "*Ustilago nuda*",
+        "*Ustilago hordei*",
+        "*Ustilago nigra*",
+        "*Tilletia caries*"
+      ],
+      "dogru": 0,
+      "aciklama": "Açık rastık *Ustilago nuda* ile oluşur; çiçek (embriyo) enfeksiyonu yapar.",
+      "etiketler": [
+        "etmenler",
+        "rastik"
+      ]
+    },
+    {
+      "id": "q090",
+      "tip": "coktan_secmeli",
+      "soru": "Arpada yarı açık rastığın etmeni hangisidir?",
+      "secenekler": [
+        "*Ustilago nuda*",
+        "*Ustilago nigra*",
+        "*Ustilago hordei*",
+        "*Tilletia controversa*"
+      ],
+      "dogru": 1,
+      "aciklama": "Yarı açık rastık *Ustilago nigra* ile oluşur; açık rastıktan teliosporları çimlendirilerek ayrılır.",
+      "etiketler": [
+        "etmenler",
+        "rastik"
+      ]
+    },
+    {
+      "id": "q092",
+      "tip": "coktan_secmeli",
+      "soru": "Tahıl küllemesinin etmeni hangisidir?",
+      "secenekler": [
+        "*Septoria tritici*",
+        "*Rhynchosporium commune*",
+        "*Pyrenophora teres*",
+        "*Erysiphe graminis*"
+      ],
+      "dogru": 3,
+      "aciklama": "Tahıl küllemesi *Erysiphe* (*Blumeria*) *graminis* ile oluşur; obligat ve ektofit bir fungustur.",
+      "etiketler": [
+        "etmenler",
+        "kulleme"
+      ]
+    },
+    {
+      "id": "q093",
+      "tip": "coktan_secmeli",
+      "soru": "Buğdayda Septoria yaprak lekesinin etmeni hangisidir?",
+      "secenekler": [
+        "*Zymoseptoria tritici*",
+        "*Pyrenophora graminea*",
+        "*Rhynchosporium commune*",
+        "*Bipolaris sorokiniana*"
+      ],
+      "dogru": 0,
+      "aciklama": "Eşeyli dönemi *Zymoseptoria tritici* (*Mycosphaerella graminicola*), eşeysiz dönemi *Septoria tritici*'dir.",
+      "etiketler": [
+        "etmenler",
+        "yaprak-lekesi",
+        "septoria"
+      ]
+    },
+    {
+      "id": "q094",
+      "tip": "coktan_secmeli",
+      "soru": "Arpa yaprak lekesinin (baklava dilimi lekeler) etmeni hangisidir?",
+      "secenekler": [
+        "*Pyrenophora teres*",
+        "*Rhynchosporium commune*",
+        "*Pyrenophora graminea*",
+        "*Zymoseptoria tritici*"
+      ],
+      "dogru": 1,
+      "aciklama": "Arpa yaprak lekesi *Rhynchosporium commune* (*R. secalis*) ile oluşur; eşeyli dönemi bilinmez.",
+      "etiketler": [
+        "etmenler",
+        "yaprak-lekesi"
+      ]
+    },
+    {
+      "id": "q095",
+      "tip": "coktan_secmeli",
+      "soru": "Arpa ağbenek hastalığının etmeni hangisidir?",
+      "secenekler": [
+        "*Pyrenophora graminea*",
+        "*Rhynchosporium commune*",
+        "*Pyrenophora teres*",
+        "*Bipolaris sorokiniana*"
+      ],
+      "dogru": 2,
+      "aciklama": "Ağbenek *Pyrenophora teres* (eşeysiz dönemi *Drechslera teres*) ile oluşur.",
+      "etiketler": [
+        "etmenler",
+        "yaprak-lekesi",
+        "agbenek"
+      ]
+    },
+    {
+      "id": "q096",
+      "tip": "coktan_secmeli",
+      "soru": "Arpa ağbeneğinin nokta formunun etmeni hangisidir?",
+      "secenekler": [
+        "*Drechslera teres* f. *teres*",
+        "*Drechslera graminea*",
+        "*Bipolaris sorokiniana*",
+        "*Drechslera teres* f. *maculata*"
+      ],
+      "dogru": 3,
+      "aciklama": "Nokta formu *D. teres* f. *maculata*, ağ formu ise *D. teres* f. *teres* ile oluşur.",
+      "etiketler": [
+        "etmenler",
+        "yaprak-lekesi",
+        "agbenek"
+      ]
+    },
+    {
+      "id": "q097",
+      "tip": "coktan_secmeli",
+      "soru": "Arpa çizgili yaprak lekesinin etmeni hangisidir?",
+      "secenekler": [
+        "*Pyrenophora graminea*",
+        "*Pyrenophora teres*",
+        "*Rhynchosporium commune*",
+        "*Zymoseptoria tritici*"
+      ],
+      "dogru": 0,
+      "aciklama": "Çizgili yaprak lekesi *Pyrenophora graminea* (*Drechslera graminea*) ile oluşur; tohum kökenlidir.",
+      "etiketler": [
+        "etmenler",
+        "yaprak-lekesi"
+      ]
+    },
+    {
+      "id": "q098",
+      "tip": "coktan_secmeli",
+      "soru": "Buğdayda adi kök çürüklüğünün etmeni hangisidir?",
+      "secenekler": [
+        "*Fusarium culmorum*",
+        "*Bipolaris sorokiniana*",
+        "*Rhizoctonia solani*",
+        "*Pyrenophora graminea*"
+      ],
+      "dogru": 1,
+      "aciklama": "Adi kök çürüklüğü *Bipolaris sorokiniana* (*Cochliobolus sativus*) ile oluşur; subcrown internode'da kararma yapar.",
+      "etiketler": [
+        "etmenler",
+        "kok-curuklugu"
+      ]
+    },
+    {
+      "id": "q099",
+      "tip": "coktan_secmeli",
+      "soru": "Buğdayda ak başağa yol açan kök boğazı çürüklüğünün etmeni hangisidir?",
+      "secenekler": [
+        "*Bipolaris sorokiniana*",
+        "*Rhizoctonia solani*",
+        "*Fusarium culmorum*",
+        "*Erysiphe graminis*"
+      ],
+      "dogru": 2,
+      "aciklama": "Kök boğazı çürüklüğü *Fusarium culmorum* ile oluşur; başaklar beyaz (ak) kalır.",
+      "etiketler": [
+        "etmenler",
+        "kok-curuklugu"
+      ]
     }
   ]
 }
