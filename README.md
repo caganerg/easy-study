@@ -1,5 +1,7 @@
 # Ders Çalış
 
+**Uygulama:** https://caganerg.github.io/easy-study/
+
 Telefon ve tablet için, internetsiz de çalışabilen ders çalışma uygulaması (PWA). Sorular repodaki JSON dosyalarında durur; ilerleme yalnızca cihazınızda (IndexedDB) saklanır, hiçbir veri dışarı gönderilmez.
 
 - Soru tipleri: çoktan seçmeli, doğru/yanlış, (çok boşluklu) boşluk doldurma
