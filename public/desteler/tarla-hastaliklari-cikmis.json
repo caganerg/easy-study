@@ -1353,6 +1353,52 @@
         "surme",
         "rastik"
       ]
+    },
+    {
+      "id": "q101",
+      "tip": "dogru_yanlis",
+      "soru": "*Zymoseptoria tritici* çoğunlukla pseudothecium (eşeyli üreme organı), bazen de piknidium (eşeysiz) olarak kışlar.",
+      "dogru": true,
+      "aciklama": "Etmen anız ve bitki artıklarında çoğunlukla eşeyli pseudotheciumlar, bazen de eşeysiz piknidiumlar halinde kışlar.",
+      "etiketler": [
+        "yaprak-lekesi",
+        "septoria"
+      ]
+    },
+    {
+      "id": "q102",
+      "tip": "bosluk",
+      "soru": "Obligat parazitlerin oluşturduğu hastalıklara örnek olarak *Puccinia* türlerinin yaptığı ___ ve *Erysiphe graminis*'in yaptığı ___ verilebilir.",
+      "cevaplar": [
+        [
+          "pas",
+          "paslar",
+          "pas hastalıkları",
+          "pas hastalığı"
+        ],
+        [
+          "külleme",
+          "tahıl küllemesi",
+          "küllemesi"
+        ]
+      ],
+      "aciklama": "Paslar ve külleme etmenleri obligat parazittir; yalnızca canlı konukçu üzerinde gelişir, yapay ortamda yetiştirilemez. Mildiyöler de obligat parazitlerle oluşur.",
+      "etiketler": [
+        "genel",
+        "pas",
+        "kulleme"
+      ]
+    },
+    {
+      "id": "q103",
+      "tip": "dogru_yanlis",
+      "soru": "Tahıl küllemesi, tahıllarda sık görülen en önemli hastalıklardandır.",
+      "dogru": true,
+      "aciklama": "Külleme tahıllarda yaygın görülen ve ciddi verim kaybına yol açabilen en önemli hastalıklardan biridir.",
+      "etiketler": [
+        "kulleme",
+        "genel"
+      ]
     }
   ]
 }
