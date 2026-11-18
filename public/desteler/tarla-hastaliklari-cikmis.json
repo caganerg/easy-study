@@ -1399,6 +1399,56 @@
         "kulleme",
         "genel"
       ]
+    },
+    {
+      "id": "q104",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdaki yaprak lekesi hastalıklarından hangisi sistemik olan tek yaprak lekesidir?",
+      "secenekler": [
+        "Septoria yaprak lekesi",
+        "Arpa yaprak lekesi (*Rhynchosporium*)",
+        "Arpa ağ benek hastalığı",
+        "Arpa çizgili yaprak lekesi"
+      ],
+      "dogru": 3,
+      "aciklama": "Arpa çizgili yaprak lekesi (*Pyrenophora graminea*) tohum kökenlidir ve bitki içinde sistemik ilerler; diğer yaprak lekeleri lokal enfeksiyon yapar.",
+      "etiketler": [
+        "yaprak-lekesi",
+        "genel"
+      ]
+    },
+    {
+      "id": "q105",
+      "tip": "bosluk",
+      "soru": "Arpa ağ benek hastalığında ___ miktarının yüksek olması hastalığın şiddetini artırır.",
+      "cevaplar": [
+        [
+          "azot",
+          "azotlu gübre",
+          "N"
+        ]
+      ],
+      "aciklama": "Fazla azotlu gübreleme bitkiyi hastalığa daha duyarlı hale getirir ve ağ benek hastalığının şiddetini artırır.",
+      "etiketler": [
+        "yaprak-lekesi",
+        "agbenek"
+      ]
+    },
+    {
+      "id": "q106",
+      "tip": "bosluk",
+      "soru": "Arpa yaprak lekesi hastalığında etmenin ___ dönemi henüz bilinmemektedir.",
+      "cevaplar": [
+        [
+          "eşeyli",
+          "eşeyli üreme",
+          "teleomorf"
+        ]
+      ],
+      "aciklama": "Arpa yaprak lekesi etmeni *Rhynchosporium commune* (*secalis*)'in eşeyli dönemi bilinmemektedir; hastalık eşeysiz konidilerle yayılır.",
+      "etiketler": [
+        "yaprak-lekesi"
+      ]
     }
   ]
 }
