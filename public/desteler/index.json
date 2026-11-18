@@ -1,6 +1,5 @@
 {
   "desteler": [
-    { "dosya": "tarla-hastaliklari-cikmis.json", "baslik": "Tarla Bitkileri Genel Hastalıkları – Çıkmış Sorular", "ders": "Tarla Bitkileri Genel Hastalıkları" },
-    { "dosya": "molekuler-biyoteknoloji-cikmis.json", "baslik": "Moleküler Biyoloji ve Bitki Biyoteknolojisi – Çıkmış Sorular", "ders": "Moleküler Biyoloji ve Bitki Biyoteknolojisi" }
+    { "dosya": "tarla-hastaliklari-cikmis.json", "baslik": "Tarla Bitkileri Genel Hastalıkları – Çıkmış Sorular", "ders": "Tarla Bitkileri Genel Hastalıkları" }
   ]
 }

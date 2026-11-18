@@ -700,9 +700,9 @@
     {
       "id": "q046",
       "tip": "dogru_yanlis",
-      "soru": "Açık rastıkta teliosporları bir arada tutan bir zar bulunur.",
+      "soru": "Açık rastıkta teliosporları çevreleyen zar serttir ve sporları uzun süre korur.",
       "dogru": false,
-      "aciklama": "Açık rastıkta zar yoktur; zar kapalı rastıkta (ve sertliği farklı olarak yarı açıkta) bulunur.",
+      "aciklama": "Açık rastıkta taneleri saran zar incedir ve başak çıkınca kolayca yırtılır; sporlar etrafa yayılır, geriye yalnızca başak ekseni kalır. Sporları uzun süre koruyan sert zar kapalı rastığa özgüdür; yarı açık rastıkta zarın sertliği farklıdır.",
       "etiketler": [
         "rastik"
       ]
@@ -1117,13 +1117,13 @@
     {
       "id": "q077",
       "tip": "bosluk",
-      "soru": "Tahıl küllemesi %___'e varan verim kaybına neden olabilir.",
+      "soru": "Tahıl küllemesi %___ ve üzerinde verim kaybına neden olabilir.",
       "cevaplar": [
         [
           "34"
         ]
       ],
-      "aciklama": "Külleme yaprağı kaplayarak fotosentezi engeller; %34'e varan verim kaybı yapar.",
+      "aciklama": "Külleme yaprağı kaplayarak fotosentezi engeller; %34 ve üzerinde verim kaybına neden olabilir.",
       "etiketler": [
         "kulleme"
       ]
