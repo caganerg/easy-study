@@ -1341,6 +1341,18 @@
         "etmenler",
         "kok-curuklugu"
       ]
+    },
+    {
+      "id": "q100",
+      "tip": "dogru_yanlis",
+      "soru": "Sürme, rastık ve arpa çizgili yaprak lekesi sistemik hastalıklardır.",
+      "dogru": true,
+      "aciklama": "Sürmeler, rastıklar (açık, kapalı, yarı açık) ve arpa çizgili yaprak lekesi bitki bünyesinde sistemik ilerler. Mısır ur rastığı ise lokal enfeksiyon yapar.",
+      "etiketler": [
+        "genel",
+        "surme",
+        "rastik"
+      ]
     }
   ]
 }
