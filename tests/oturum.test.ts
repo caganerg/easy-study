@@ -6,6 +6,7 @@ import {
   dogruSay,
   haritadanBul,
   onceki,
+  yanlisSay,
   sonraki,
   bosSayisi,
   cevaplandiMi,
@@ -122,6 +123,11 @@ describe("oturum akışı", () => {
     expect(o.sonuclar[0]).toMatchObject({ dogru: false, cevap: { secilen: 1 } });
     o = dogruSay(o);
     expect(o.sonuclar[0]).toMatchObject({ dogru: true, duzeltildi: true });
+    o = yanlisSay(o); // "Aslında yanlıştı" geri alır
+    expect(o.sonuclar[0]).toMatchObject({ dogru: false, duzeltildi: false });
+    expect(yanlisSay(o)).toBe(o); // düzeltilmemiş cevap değişmez
+    o = dogruSay(o);
+    expect(o.sonuclar[0]).toMatchObject({ dogru: true, duzeltildi: true });
     o = sonraki(o);
     o = sonraki(cevapKaydet(o, { tip: "dogru_yanlis", secilen: false }, false));
     o = sonraki(cevapKaydet(o, { tip: "bosluk", girilen: ["a"] }, true));
@@ -152,5 +158,6 @@ describe("oturum akışı", () => {
     o = sonraki(o);
     expect(o.indeks).toBe(3);
     expect(ozet(o)).toMatchObject({ dogru: 1, yanlis: 1, bos: 1, yuzde: 33 });
+    expect(idler(ozet(o).boslar)).toEqual(["q003"]);
   });
 });

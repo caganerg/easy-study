@@ -69,14 +69,7 @@ export function desteIstatistigi(deste: Deste): DesteIstatistigi {
   return { toplam: deste.sorular.length, ogrenilen, yanlis };
 }
 
-/** Tüm destelerde son cevabı yanlış olan sorular (deste sırasıyla). */
-export function tumYanlislar(): OturumSorusu[] {
-  const havuz: OturumSorusu[] = [];
-  for (const y of durum.katalog?.desteler ?? []) {
-    if (!y.deste) continue;
-    for (const soru of y.deste.sorular) {
-      if (sonCevapYanlisMi(kayitBul(y.deste.id, soru.id))) havuz.push({ desteId: y.deste.id, soru });
-    }
-  }
-  return havuz;
+/** Destede son cevabı yanlış olan sorular (deste sırasıyla). */
+export function desteYanlislari(deste: Deste): OturumSorusu[] {
+  return deste.sorular.filter((soru) => sonCevapYanlisMi(kayitBul(deste.id, soru.id))).map((soru) => ({ desteId: deste.id, soru }));
 }

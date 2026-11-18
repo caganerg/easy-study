@@ -1,9 +1,10 @@
 import type { YuklenenDeste } from "../desteler";
 import { el } from "../dom";
 import { durum } from "../durum";
-import { desteIstatistigi, tumYanlislar } from "../ilerleme";
+import { desteIstatistigi, desteYanlislari } from "../ilerleme";
 import { karistir } from "../oturum";
 import { M } from "../metinler";
+import type { Deste } from "../tipler";
 import { oturumBaslat } from "./oturum-ayari";
 import { ayarlarBaglantisi, ekran, hataliSoruSayisi, sorunListesiGoster, ustBar } from "./ortak";
 
@@ -44,19 +45,20 @@ function ilerlemeCubugu(ogrenilen: number, toplam: number): HTMLElement {
   return c;
 }
 
-/** Tüm destelerdeki yanlış cevaplanmış soruları tekrar çözme seçeneği; yoksa gösterilmez. */
-function yanlislarKisayolu(): HTMLElement | null {
-  const sorular = tumYanlislar();
-  if (sorular.length === 0) return null;
+/** Destenin yanlış cevaplanmış sorularını tekrar çözme düğmesi; yanlış yoksa gösterilmez. */
+function yanlislarDugmesi(d: Deste, adet: number): HTMLElement | null {
+  if (adet === 0) return null;
   return el(
-    "section",
-    { class: "kart yanlislar-kisayolu" },
-    el("p", null, M.yanlisSoruVar(sorular.length)),
-    el(
-      "button",
-      { type: "button", class: "dugme birincil", onclick: () => oturumBaslat(M.yanlislarimBaslik, karistir(sorular, Math.random)) },
-      M.yanlislariCoz,
-    ),
+    "button",
+    {
+      type: "button",
+      class: "dugme yanlis-cozme",
+      onclick: () => {
+        const sorular = desteYanlislari(d);
+        if (sorular.length > 0) oturumBaslat(M.yanlislarimBaslik(d.baslik), karistir(sorular, Math.random));
+      },
+    },
+    M.yanlislariCoz(adet),
   );
 }
 
@@ -75,9 +77,9 @@ function desteKarti(y: YuklenenDeste): HTMLElement {
       "p",
       { class: "kart-alt" },
       d ? M.soruSayisi(d.sorular.length) : M.desteYuklenemedi(y.ozet.dosya),
-      ist && ist.yanlis > 0 ? el("span", { class: "yanlis-sayisi" }, ` · ${M.yanlisSayisiKisa(ist.yanlis)}`) : null,
     ),
     ist ? ilerlemeCubugu(ist.ogrenilen, ist.toplam) : null,
+    d && ist ? yanlislarDugmesi(d, ist.yanlis) : null,
     sorunRozeti(y),
   );
 }
@@ -91,8 +93,6 @@ export function anaSayfaEkrani(): HTMLElement {
   } else if (k.desteler.length === 0) {
     icerik.push(el("p", { class: "bos" }, M.desteYok));
   } else {
-    const kisayol = yanlislarKisayolu();
-    if (kisayol) icerik.push(kisayol);
     // Derse göre grupla (index.json sırası korunur).
     const gruplar = new Map<string, YuklenenDeste[]>();
     for (const y of k.desteler) {

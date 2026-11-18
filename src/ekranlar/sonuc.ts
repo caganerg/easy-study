@@ -38,16 +38,24 @@ export function sonucEkrani(): HTMLElement {
         );
 
   const dugmeler = el("div", { class: "dugme-satiri dikey" });
-  if (oz.yanlislar.length > 0) {
-    dugmeler.append(
-      el(
-        "button",
-        { type: "button", class: "dugme birincil genis", onclick: () => oturumBaslat(o.baslik, oz.yanlislar, true) },
-        M.yanlislariTekrarCoz,
-      ),
+  const tekrarDugmesi = (etiket: string, sorular: typeof oz.yanlislar) =>
+    el(
+      "button",
+      {
+        type: "button",
+        class: `dugme ${dugmeler.childElementCount === 0 ? "birincil" : "ikincil"} genis`,
+        onclick: () => oturumBaslat(o.baslik, sorular, true),
+      },
+      etiket,
     );
+  if (oz.yanlislar.length > 0) dugmeler.append(tekrarDugmesi(M.yanlislariTekrarCoz, oz.yanlislar));
+  if (oz.boslar.length > 0) dugmeler.append(tekrarDugmesi(M.boslariCoz, oz.boslar));
+  if (oz.yanlislar.length > 0 && oz.boslar.length > 0) {
+    // Soruların oturumdaki sırası korunur.
+    const secilen = new Set([...oz.yanlislar, ...oz.boslar]);
+    dugmeler.append(tekrarDugmesi(M.yanlisVeBoslariCoz, o.sorular.filter((s) => secilen.has(s))));
   }
-  dugmeler.append(el("a", { class: `dugme ${oz.yanlislar.length > 0 ? "ikincil" : "birincil"} genis`, href: "#/" }, M.anaSayfa));
+  dugmeler.append(el("a", { class: `dugme ${dugmeler.childElementCount === 0 ? "birincil" : "ikincil"} genis`, href: "#/" }, M.anaSayfa));
 
   return ekran(
     ustBar(M.sonuc, { geri: "#/" }),

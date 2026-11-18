@@ -150,6 +150,15 @@ export function dogruSay(o: Oturum): Oturum {
   return { ...o, sonuclar };
 }
 
+/** "Aslında doğruydu" düzeltmesini geri alır ("Aslında yanlıştı"). */
+export function yanlisSay(o: Oturum): Oturum {
+  const son = mevcutSonuc(o);
+  if (!son || !son.duzeltildi) return o;
+  const sonuclar = [...o.sonuclar];
+  sonuclar[o.indeks] = { ...son, dogru: false, duzeltildi: false };
+  return { ...o, sonuclar };
+}
+
 /** Verilen soruya geçer (cevaplanmış olsun ya da olmasın); sorular.length oturumu bitirir. */
 export function git(o: Oturum, indeks: number): Oturum {
   const yeni = Math.min(Math.max(0, indeks), o.sorular.length);
@@ -177,6 +186,8 @@ export interface OturumOzeti {
   /** Doğruların tüm sorulara oranı; 0–100 arası tam sayı. */
   yuzde: number;
   yanlislar: OturumSorusu[];
+  /** Cevaplanmadan bırakılan sorular. */
+  boslar: OturumSorusu[];
 }
 
 export function ozet(o: Oturum): OturumOzeti {
@@ -188,6 +199,10 @@ export function ozet(o: Oturum): OturumOzeti {
     const os = o.sorular[i];
     return s && !s.dogru && os ? [os] : [];
   });
+  const boslar = o.sonuclar.flatMap((s, i) => {
+    const os = o.sorular[i];
+    return s === null && os ? [os] : [];
+  });
   const yuzde = o.sorular.length === 0 ? 0 : Math.round((dogru / o.sorular.length) * 100);
-  return { dogru, yanlis, bos, yuzde, yanlislar };
+  return { dogru, yanlis, bos, yuzde, yanlislar, boslar };
 }

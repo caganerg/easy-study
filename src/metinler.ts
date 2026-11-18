@@ -21,10 +21,8 @@ export const M = {
   ogrenilen: (ogrenilen: number, toplam: number) => `${ogrenilen} / ${toplam} öğrenildi`,
   hataliSoru: (n: number) => `${n} soru hatalı`,
   uyariSayisi: (n: number) => `${n} uyarı`,
-  yanlisSoruVar: (n: number) => `Yanlış çözdüğün ${n} soru var`,
-  yanlislariCoz: "Tekrar çöz",
-  yanlislarimBaslik: "Yanlışlarım",
-  yanlisSayisiKisa: (n: number) => `${n} yanlış`,
+  yanlislariCoz: (n: number) => `Yanlışları çöz (${n})`,
+  yanlislarimBaslik: (deste: string) => `${deste} – Yanlışlarım`,
   kaliciDegil: "İlerleme bu tarayıcıda kalıcı olarak saklanamıyor (gizli mod?). Sayfa kapanınca kaybolur.",
   cevrimdisi: "Çevrimdışısınız; son indirilen desteler gösteriliyor.",
 
@@ -86,6 +84,7 @@ export const M = {
   yanlisCevap: "Yanlış",
   dogruCevapNe: "Doğru cevap:",
   aslindaDogruydu: "Aslında doğruydu",
+  aslindaYanlisti: "Aslında yanlıştı",
   dogruSayildi: "Doğru sayıldı",
 
   // Sonuç
@@ -98,6 +97,8 @@ export const M = {
   hepsiDogru: "Tebrikler, hepsi doğru!",
   yanlisYok: "Yanlış cevabınız yok.",
   yanlislariTekrarCoz: "Yanlışları tekrar çöz",
+  boslariCoz: "Boşları çöz",
+  yanlisVeBoslariCoz: "Yanlış ve boşları çöz",
   oturumYok: "Aktif oturum yok.",
 
   // Ayarlar
