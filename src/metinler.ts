@@ -47,6 +47,8 @@ export const M = {
   modYanlislar: "Sadece yanlışlarım",
   etiketler: "Etiketler",
   etiketAciklama: "Hiçbiri seçilmezse tüm etiketler dahil edilir.",
+  haricEtiketler: "Çıkarılacak etiketler",
+  haricEtiketAciklama: "Seçilen etiketlerden birini taşıyan sorular sorulmaz.",
   basla: "Başla",
   uygunSoruYok: "Bu seçimlere uyan soru yok.",
   uygunSoruSayisi: (n: number) => `Uygun soru: ${n}`,

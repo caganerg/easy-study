@@ -44,6 +44,8 @@ export interface OturumSecimi {
   adet: SoruAdedi;
   /** Boşsa etiket filtresi uygulanmaz; doluysa en az birini taşıyan sorular. */
   etiketler: readonly string[];
+  /** Bunlardan herhangi birini taşıyan sorular dışarıda bırakılır (seçili etiketlerden önceliklidir). */
+  haricEtiketler: readonly string[];
 }
 
 /** Fisher–Yates; girdiyi değiştirmez. */
@@ -62,7 +64,9 @@ export function karistir<T>(dizi: readonly T[], rastgele: Rastgele): T[] {
 export function filtrele(havuz: readonly OturumSorusu[], secim: OturumSecimi): OturumSorusu[] {
   return havuz.filter(({ soru }) => {
     if (secim.tipler.length > 0 && !secim.tipler.includes(soru.tip)) return false;
-    if (secim.etiketler.length > 0 && !(soru.etiketler ?? []).some((e) => secim.etiketler.includes(e))) return false;
+    const etiketler = soru.etiketler ?? [];
+    if (secim.etiketler.length > 0 && !etiketler.some((e) => secim.etiketler.includes(e))) return false;
+    if (etiketler.some((e) => secim.haricEtiketler.includes(e))) return false;
     return true;
   });
 }

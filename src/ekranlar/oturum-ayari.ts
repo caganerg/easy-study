@@ -57,9 +57,10 @@ export function oturumAyariEkrani(desteId: string): HTMLElement {
     const adetHam = String(veri.get("adet") ?? "10");
     const adet: SoruAdedi = adetHam === "tumu" ? "tumu" : Number(adetHam);
     const etiketler = veri.getAll("etiket").map(String);
+    const haricEtiketler = veri.getAll("haric").map(String);
     const modHam = String(veri.get("mod") ?? "karisik");
     const mod: Mod = MODLAR.find((m) => m === modHam) ?? "karisik";
-    return { mod, tipler, adet, etiketler };
+    return { mod, tipler, adet, etiketler, haricEtiketler };
   };
 
   const guncelle = () => {
@@ -88,6 +89,13 @@ export function oturumAyariEkrani(desteId: string): HTMLElement {
         el("legend", null, M.etiketler),
         el("p", { class: "ipucu" }, M.etiketAciklama),
         el("div", { class: "cipler" }, ...tumEtiketler.map((e) => onayKutusu("etiket", e, e, false, guncelle))),
+      ),
+      el(
+        "fieldset",
+        null,
+        el("legend", null, M.haricEtiketler),
+        el("p", { class: "ipucu" }, M.haricEtiketAciklama),
+        el("div", { class: "cipler" }, ...tumEtiketler.map((e) => onayKutusu("haric", e, e, false, guncelle))),
       ),
     );
   }

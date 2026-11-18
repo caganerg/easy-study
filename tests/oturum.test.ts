@@ -67,7 +67,7 @@ const ilerleme = new Map<string, IlerlemeKaydi>(
   ].map((k) => [anahtar(k.desteId, k.soruId), k]),
 );
 const bul = haritadanBul(ilerleme);
-const secim = (ek: Partial<OturumSecimi> = {}): OturumSecimi => ({ mod: "karisik", tipler: [], adet: "tumu", etiketler: [], ...ek });
+const secim = (ek: Partial<OturumSecimi> = {}): OturumSecimi => ({ mod: "karisik", tipler: [], adet: "tumu", etiketler: [], haricEtiketler: [], ...ek });
 const idler = (l: OturumSorusu[]) => l.map((o) => o.soru.id);
 
 describe("soru seçimi", () => {
@@ -99,6 +99,17 @@ describe("soru seçimi", () => {
   test("etiket filtresi", () => {
     const s = soruSec(havuz, secim({ etiketler: ["tarih"] }), bul, tohumlu(1));
     expect(idler(s).sort()).toEqual(["q001", "q002", "q003", "q004", "q005"]);
+  });
+
+  test("çıkarılan etiket filtresi", () => {
+    const s = soruSec(havuz, secim({ haricEtiketler: ["tarih"] }), bul, tohumlu(1));
+    expect(s).toHaveLength(25);
+    expect(s.some((o) => o.soru.etiketler?.includes("tarih"))).toBe(false);
+  });
+
+  test("aynı etiket hem seçili hem çıkarılmışsa çıkarma önceliklidir", () => {
+    const s = soruSec(havuz, secim({ etiketler: ["tarih"], haricEtiketler: ["tarih"] }), bul, tohumlu(1));
+    expect(s).toHaveLength(0);
   });
 
   test("sadece yanlışlarım: son cevabı yanlış olanlar", () => {
