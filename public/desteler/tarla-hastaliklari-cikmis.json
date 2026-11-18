@@ -3,7 +3,7 @@
   "id": "tarla-hastaliklari-cikmis",
   "baslik": "Tarla Bitkileri Genel Hastalıkları – Çıkmış Sorular",
   "ders": "Tarla Bitkileri Genel Hastalıkları",
-  "aciklama": "Yarıyıl sonu ve test sınavlarından çıkmış sorular ile el yazısı konu notlarından derlenmiş sorular: paslar, sürme, rastık, külleme, yaprak lekeleri, kök çürüklükleri.",
+  "aciklama": "Yarıyıl sonu ve test sınavlarından çıkmış sorular ile el yazısı konu notlarından derlenmiş sorular: paslar, sürme, rastık, külleme, yaprak lekeleri, kök çürüklükleri, embriyo kararması.",
   "sorular": [
     {
       "id": "q001",
@@ -84,38 +84,6 @@
       "aciklama": "*Fusarium culmorum* kök boğazı çürüklüğü yapar; bunun sonucunda başaklar beyaz (ak) kalır.",
       "etiketler": [
         "kok-curuklugu"
-      ]
-    },
-    {
-      "id": "q006",
-      "tip": "coktan_secmeli",
-      "soru": "Sklerotları ergot alkaloidleri olarak bilinen zehirli alkaloidler içeren fungal hastalık hangisidir?",
-      "secenekler": [
-        "*Sclerotinia* kök çürüklüğü",
-        "Çavdar mahmuzu",
-        "*Rhynchosporium* yaprak lekesi",
-        "Arpa ağbenek hastalığı"
-      ],
-      "dogru": 1,
-      "aciklama": "Çavdar mahmuzu (*Claviceps purpurea*) sklerotları ergot alkaloidleri içerir.",
-      "etiketler": [
-        "diger-hastaliklar"
-      ]
-    },
-    {
-      "id": "q007",
-      "tip": "coktan_secmeli",
-      "soru": "Teliosporlarının üst kısmında karakteristik çıkıntılar bulunan fungus hangisidir?",
-      "secenekler": [
-        "*Puccinia recondita*",
-        "*Puccinia striiformis*",
-        "*Puccinia coronata* f. sp. *avenae*",
-        "*Puccinia graminis*"
-      ],
-      "dogru": 2,
-      "aciklama": "Yulaf taç pası etmeni *P. coronata*'nın teliospor ucunda taç gibi çıkıntılar vardır.",
-      "etiketler": [
-        "pas"
       ]
     },
     {
@@ -377,24 +345,6 @@
       ]
     },
     {
-      "id": "q023",
-      "tip": "coktan_secmeli",
-      "soru": "Aşağıdakilerden hangisi **yanlıştır**?",
-      "secenekler": [
-        "Hububatta *Fusarium* türleri ve *Bipolaris sorokiniana* kök çürüklüğü oluşturabilir.",
-        "*Pythium*, *Diplodia maydis* ve *Macrophomina phaseolina* mısırda kök ve sap çürüklüğü yapabilir.",
-        "*Rosellinia necatrix* mısırda kök çürüklüğü oluşturan yaygın bir fungustur.",
-        "*Helminthosporium maydis* ve *H. turcicum* mısırda yaprak lekeleri oluşturabilir.",
-        "Mısırda koçan ve dane çürüklükleri *Penicillium*, *Aspergillus* ve *Fusarium* ile oluşur."
-      ],
-      "dogru": 2,
-      "aciklama": "*Rosellinia necatrix* meyve ağaçları ve bağlarda beyaz kök çürüklüğü etmenidir; mısır etmeni değildir.",
-      "etiketler": [
-        "kok-curuklugu",
-        "misir"
-      ]
-    },
-    {
       "id": "q024",
       "tip": "coktan_secmeli",
       "soru": "Buğdayda embriyo kararması (danede siyahlaşma ve leke) ile ilgili hangisi **doğru değildir**?",
@@ -545,22 +495,6 @@
       "etiketler": [
         "surme",
         "rastik"
-      ]
-    },
-    {
-      "id": "q033",
-      "tip": "coktan_secmeli",
-      "soru": "*Pseudocercosporella herpotrichoides* hangi hastalığın etmenidir?",
-      "secenekler": [
-        "Göz lekesi (sap kırılması)",
-        "Ak başak",
-        "Pembe kar küfü",
-        "Arpa ağbenek"
-      ],
-      "dogru": 0,
-      "aciklama": "*P. herpotrichoides* tahıllarda göz lekesi / sap kırılması yapan bir kök ve sap hastalığı etmenidir.",
-      "etiketler": [
-        "kok-curuklugu"
       ]
     },
     {
@@ -749,17 +683,6 @@
       ]
     },
     {
-      "id": "q051",
-      "tip": "dogru_yanlis",
-      "soru": "Mısır ur rastığı (*Ustilago maydis*) sistemik bir hastalıktır.",
-      "dogru": false,
-      "aciklama": "Mısır ur rastığı lokal enfeksiyon yapar; sistemik değildir.",
-      "etiketler": [
-        "rastik",
-        "misir"
-      ]
-    },
-    {
       "id": "q052",
       "tip": "dogru_yanlis",
       "soru": "Tahıl küllemesi etmeni yaprak dokusunun içinde gelişen endofit bir fungustur.",
@@ -854,39 +777,6 @@
       ]
     },
     {
-      "id": "q061",
-      "tip": "bosluk",
-      "soru": "Patates hastalıklarından ___ ülkemizde karantinaya tabidir.",
-      "cevaplar": [
-        [
-          "patates siğili",
-          "siğil",
-          "Synchytrium endobioticum",
-          "S. endobioticum"
-        ]
-      ],
-      "aciklama": "Patates siğili (*Synchytrium endobioticum*) karantina etmenidir.",
-      "etiketler": [
-        "karantina",
-        "patates"
-      ]
-    },
-    {
-      "id": "q062",
-      "tip": "bosluk",
-      "soru": "Yulaf taç pası (*Puccinia coronata* f. sp. *avenae*) fungusunun ara konukçusu ___ türleridir.",
-      "cevaplar": [
-        [
-          "Rhamnus",
-          "cehri"
-        ]
-      ],
-      "aciklama": "Yulaf taç pasının ara konukçusu *Rhamnus* (cehri) türleridir.",
-      "etiketler": [
-        "pas"
-      ]
-    },
-    {
       "id": "q063",
       "tip": "bosluk",
       "soru": "Kahverengi pasın en çok anılan ara konukçusu *speciosissimum* türüyle bilinen ___ cinsidir.",
@@ -899,36 +789,6 @@
       "etiketler": [
         "pas",
         "kahverengi-pas"
-      ]
-    },
-    {
-      "id": "q064",
-      "tip": "bosluk",
-      "soru": "Mısırın sap, boğum, koçan ve tepe püskülünde ur oluşturan rastığın etmeni *Ustilago* ___'dir.",
-      "cevaplar": [
-        [
-          "maydis",
-          "zeae"
-        ]
-      ],
-      "aciklama": "Mısır ur rastığı: *Ustilago maydis* (= *U. zeae*).",
-      "etiketler": [
-        "rastik",
-        "misir"
-      ]
-    },
-    {
-      "id": "q065",
-      "tip": "bosluk",
-      "soru": "Çavdar mahmuzunun etmeni *Claviceps* ___'dır.",
-      "cevaplar": [
-        [
-          "purpurea"
-        ]
-      ],
-      "aciklama": "*Claviceps purpurea* sklerotları ergot alkaloidleri içerir.",
-      "etiketler": [
-        "diger-hastaliklar"
       ]
     },
     {
@@ -1168,20 +1028,6 @@
       "aciklama": "*F. graminearum*'un eşeyli dönemi *Gibberella zeae*'dir.",
       "etiketler": [
         "kok-curuklugu"
-      ]
-    },
-    {
-      "id": "q081",
-      "tip": "bosluk",
-      "soru": "Buğdayda pembe kar küfü hastalığının etmeni *Fusarium* ___'dir.",
-      "cevaplar": [
-        [
-          "nivale"
-        ]
-      ],
-      "aciklama": "Pembe kar küfü: *Fusarium nivale*.",
-      "etiketler": [
-        "diger-hastaliklar"
       ]
     }
   ]
