@@ -1,0 +1,472 @@
+{
+  "surum": 1,
+  "id": "bugday-temel",
+  "baslik": "Buğday – Temel Bilgiler",
+  "ders": "Tarla Bitkileri",
+  "aciklama": "Buğdayın sistematiği, sitogenetiği ve gelişme dönemleri üzerine örnek sorular.",
+  "sorular": [
+    {
+      "id": "q001",
+      "tip": "coktan_secmeli",
+      "soru": "Ekmeklik buğdayın kromozom sayısı kaçtır?",
+      "secenekler": [
+        "2n=14",
+        "2n=28",
+        "2n=42",
+        "2n=56"
+      ],
+      "dogru": 2,
+      "aciklama": "Ekmeklik buğday hekzaploittir (2n=6x=42).",
+      "etiketler": [
+        "sitogenetik"
+      ]
+    },
+    {
+      "id": "q002",
+      "tip": "coktan_secmeli",
+      "soru": "Makarnalık buğdayın bilimsel adı hangisidir?",
+      "secenekler": [
+        "*Triticum durum*",
+        "*Triticum aestivum*",
+        "*Triticum monococcum*",
+        "*Triticum spelta*"
+      ],
+      "dogru": 0,
+      "aciklama": "Makarnalık buğday *Triticum durum* Desf., tetraploit (2n=4x=28) bir türdür.",
+      "etiketler": [
+        "sistematik"
+      ]
+    },
+    {
+      "id": "q003",
+      "tip": "coktan_secmeli",
+      "soru": "Buğday hangi familyaya aittir?",
+      "secenekler": [
+        "Fabaceae",
+        "Brassicaceae",
+        "Poaceae",
+        "Solanaceae"
+      ],
+      "dogru": 2,
+      "aciklama": "Buğday, buğdaygiller (Poaceae / Gramineae) familyasındandır.",
+      "etiketler": [
+        "sistematik"
+      ]
+    },
+    {
+      "id": "q004",
+      "tip": "coktan_secmeli",
+      "soru": "Buğday tanesinin botanik adı nedir?",
+      "secenekler": [
+        "Bakla",
+        "Kapsül",
+        "Akene",
+        "Karyopsis"
+      ],
+      "dogru": 3,
+      "aciklama": "Tahıl tanesi, meyve kabuğu ile tohum kabuğunun kaynaştığı bir karyopsistir.",
+      "etiketler": [
+        "morfoloji"
+      ]
+    },
+    {
+      "id": "q005",
+      "tip": "coktan_secmeli",
+      "soru": "Hamura esneklik ve uzama yeteneği kazandıran **gluten** hangi proteinlerden oluşur?",
+      "secenekler": [
+        "Albumin ve globulin",
+        "Gliadin ve glutenin",
+        "Kazein ve laktalbumin",
+        "Zein ve hordein"
+      ],
+      "dogru": 1,
+      "aciklama": "Gluten, gliadin (uzama) ve glutenin (esneklik) proteinlerinin su ile oluşturduğu ağdır.",
+      "etiketler": [
+        "kalite"
+      ]
+    },
+    {
+      "id": "q006",
+      "tip": "coktan_secmeli",
+      "soru": "Kışlık buğdayın generatif döneme geçebilmesi için belirli süre düşük sıcaklığa maruz kalmasına ne ad verilir?",
+      "secenekler": [
+        "Fotoperiyodizm",
+        "Dormansi",
+        "Vernalizasyon",
+        "Stratifikasyon"
+      ],
+      "dogru": 2,
+      "aciklama": "Vernalizasyon: çiçeklenmeyi uyarmak için gereken soğuklanma.",
+      "etiketler": [
+        "fizyoloji"
+      ]
+    },
+    {
+      "id": "q007",
+      "tip": "coktan_secmeli",
+      "soru": "Buğdayın çiçek durumu hangisidir?",
+      "secenekler": [
+        "Başak",
+        "Salkım",
+        "Koçan",
+        "Şemsiye"
+      ],
+      "dogru": 0,
+      "aciklama": "Buğdayda çiçek durumu, başakçıklardan oluşan bir başaktır.",
+      "etiketler": [
+        "morfoloji"
+      ]
+    },
+    {
+      "id": "q008",
+      "tip": "coktan_secmeli",
+      "soru": "Türkiye'de “siyez” adıyla bilinen diploit kavuzlu buğday hangisidir?",
+      "secenekler": [
+        "*Triticum dicoccum*",
+        "*Triticum monococcum*",
+        "*Triticum spelta*",
+        "*Triticum durum*"
+      ],
+      "dogru": 1,
+      "aciklama": "Siyez (einkorn), diploit (2n=2x=14) *Triticum monococcum* türüdür.",
+      "etiketler": [
+        "sistematik",
+        "sitogenetik"
+      ]
+    },
+    {
+      "id": "q009",
+      "tip": "coktan_secmeli",
+      "soru": "Buğdayda kardeşlenmeden hemen sonra gelen gelişme dönemi hangisidir?",
+      "secenekler": [
+        "Başaklanma",
+        "Çiçeklenme",
+        "Süt olumu",
+        "Sapa kalkma"
+      ],
+      "dogru": 3,
+      "aciklama": "Sıra: çimlenme → kardeşlenme → sapa kalkma → başaklanma → çiçeklenme → olum.",
+      "etiketler": [
+        "fizyoloji"
+      ]
+    },
+    {
+      "id": "q010",
+      "tip": "coktan_secmeli",
+      "soru": "Ekmeklik buğdaya D genomunu kazandıran yabani tür hangisidir?",
+      "secenekler": [
+        "*Triticum urartu*",
+        "*Aegilops speltoides*",
+        "*Aegilops tauschii*",
+        "*Secale cereale*"
+      ],
+      "dogru": 2,
+      "aciklama": "D genomu *Aegilops tauschii*'den gelir; A genomu *T. urartu*'dan.",
+      "etiketler": [
+        "sitogenetik"
+      ]
+    },
+    {
+      "id": "q011",
+      "tip": "coktan_secmeli",
+      "soru": "Hektolitre ağırlığı neyi ifade eder?",
+      "secenekler": [
+        "100 litre hacimdeki tanenin kilogram cinsinden ağırlığını",
+        "1000 tanenin gram cinsinden ağırlığını",
+        "Bir dekardan alınan tane verimini",
+        "100 kg tanedeki protein miktarını"
+      ],
+      "dogru": 0,
+      "aciklama": "Hektolitre ağırlığı (kg/hl), tanenin dolgunluğu ve un verimiyle ilişkili bir kalite ölçütüdür.",
+      "etiketler": [
+        "kalite"
+      ]
+    },
+    {
+      "id": "q012",
+      "tip": "coktan_secmeli",
+      "soru": "1000 tane ağırlığı hangi birimle ifade edilir?",
+      "secenekler": [
+        "Kilogram",
+        "Gram",
+        "Miligram",
+        "Ton"
+      ],
+      "dogru": 1,
+      "aciklama": "Bin tane ağırlığı gram cinsinden verilir; buğdayda genellikle 30–50 g arasındadır.",
+      "etiketler": [
+        "kalite"
+      ]
+    },
+    {
+      "id": "q013",
+      "tip": "dogru_yanlis",
+      "soru": "Makarnalık buğday tetraploittir.",
+      "dogru": true,
+      "aciklama": "*Triticum durum*, 2n=4x=28 kromozomludur.",
+      "etiketler": [
+        "sitogenetik"
+      ]
+    },
+    {
+      "id": "q014",
+      "tip": "dogru_yanlis",
+      "soru": "Buğday bir baklagil bitkisidir.",
+      "dogru": false,
+      "aciklama": "Buğday baklagil (Fabaceae) değil, buğdaygil (Poaceae) bitkisidir.",
+      "etiketler": [
+        "sistematik"
+      ]
+    },
+    {
+      "id": "q015",
+      "tip": "dogru_yanlis",
+      "soru": "Siyez buğdayı hekzaploittir.",
+      "dogru": false,
+      "aciklama": "Siyez (*T. monococcum*) diploittir (2n=2x=14).",
+      "etiketler": [
+        "sitogenetik"
+      ]
+    },
+    {
+      "id": "q016",
+      "tip": "dogru_yanlis",
+      "soru": "Buğday büyük ölçüde kendine döllenen bir bitkidir.",
+      "dogru": true,
+      "aciklama": "Buğdayda yabancı döllenme oranı genellikle %1–4 düzeyindedir.",
+      "etiketler": [
+        "fizyoloji"
+      ]
+    },
+    {
+      "id": "q017",
+      "tip": "dogru_yanlis",
+      "soru": "Kışlık buğday çeşitlerinin vernalizasyon ihtiyacı yoktur.",
+      "dogru": false,
+      "aciklama": "Kışlık çeşitler çiçeklenmek için soğuklanmaya (vernalizasyon) ihtiyaç duyar.",
+      "etiketler": [
+        "fizyoloji"
+      ]
+    },
+    {
+      "id": "q018",
+      "tip": "dogru_yanlis",
+      "soru": "Kardeşlenme, ana sapın toprak altındaki boğumlarından yan sapların oluşmasıdır.",
+      "dogru": true,
+      "aciklama": "Kardeşler, kardeşlenme boğumundan çıkan yan sürgünlerdir.",
+      "etiketler": [
+        "fizyoloji"
+      ]
+    },
+    {
+      "id": "q019",
+      "tip": "dogru_yanlis",
+      "soru": "Gluten, mısır ununda bulunan başlıca proteindir.",
+      "dogru": false,
+      "aciklama": "Mısırın başlıca depo proteini zeindir; mısır unu gluten oluşturmaz.",
+      "etiketler": [
+        "kalite"
+      ]
+    },
+    {
+      "id": "q020",
+      "tip": "dogru_yanlis",
+      "soru": "Ekmeklik buğdayın genom formülü AABBDD'dir.",
+      "dogru": true,
+      "aciklama": "Ekmeklik buğday A, B ve D genomlarını taşıyan bir allohekzaploittir.",
+      "etiketler": [
+        "sitogenetik"
+      ]
+    },
+    {
+      "id": "q021",
+      "tip": "dogru_yanlis",
+      "soru": "Makarnalık buğdayda D genomu bulunur.",
+      "dogru": false,
+      "aciklama": "Makarnalık buğdayın genom formülü AABB'dir.",
+      "etiketler": [
+        "sitogenetik"
+      ]
+    },
+    {
+      "id": "q022",
+      "tip": "dogru_yanlis",
+      "soru": "Buğday tanesindeki nişasta büyük ölçüde endospermde depolanır.",
+      "dogru": true,
+      "aciklama": "Endosperm, tanenin yaklaşık %80–85'ini oluşturur ve nişastanın deposudur.",
+      "etiketler": [
+        "morfoloji"
+      ]
+    },
+    {
+      "id": "q023",
+      "tip": "bosluk",
+      "soru": "Ekmeklik buğdayın bilimsel adı *Triticum* ___ L.'dir.",
+      "cevaplar": [
+        [
+          "aestivum"
+        ]
+      ],
+      "aciklama": "Ekmeklik buğday: *Triticum aestivum* L.",
+      "etiketler": [
+        "sistematik"
+      ]
+    },
+    {
+      "id": "q024",
+      "tip": "bosluk",
+      "soru": "Makarnalık buğdayın kromozom sayısı 2n = ___, ekmeklik buğdayınki ise 2n = ___ olarak bilinir.",
+      "cevaplar": [
+        [
+          "28"
+        ],
+        [
+          "42"
+        ]
+      ],
+      "aciklama": "Makarnalık tetraploit (4x=28), ekmeklik hekzaploittir (6x=42).",
+      "etiketler": [
+        "sitogenetik"
+      ]
+    },
+    {
+      "id": "q025",
+      "tip": "bosluk",
+      "soru": "Buğday tanesinin botanik adı ___'tir.",
+      "cevaplar": [
+        [
+          "karyopsis",
+          "kariyopsis"
+        ]
+      ],
+      "aciklama": "Tahıl tanesi bir karyopsistir.",
+      "etiketler": [
+        "morfoloji"
+      ]
+    },
+    {
+      "id": "q026",
+      "tip": "bosluk",
+      "soru": "Kışlık buğdayın çiçeklenmeye geçebilmek için ihtiyaç duyduğu soğuklanmaya ___ denir.",
+      "cevaplar": [
+        [
+          "vernalizasyon",
+          "vernalization",
+          "jarovizasyon"
+        ]
+      ],
+      "aciklama": "Vernalizasyon (jarovizasyon) generatif gelişmeyi uyarır.",
+      "etiketler": [
+        "fizyoloji"
+      ]
+    },
+    {
+      "id": "q027",
+      "tip": "bosluk",
+      "soru": "Glutende hamura uzama özelliği veren protein ___, esneklik veren protein ise ___'dir.",
+      "cevaplar": [
+        [
+          "gliadin"
+        ],
+        [
+          "glutenin"
+        ]
+      ],
+      "aciklama": "Gliadin uzama (ekstensibilite), glutenin esneklik (elastikiyet) sağlar.",
+      "etiketler": [
+        "kalite"
+      ]
+    },
+    {
+      "id": "q028",
+      "tip": "bosluk",
+      "soru": "Ekmeklik buğdayın D genomu *Aegilops* ___ türünden gelmiştir.",
+      "cevaplar": [
+        [
+          "tauschii",
+          "squarrosa"
+        ]
+      ],
+      "aciklama": "*Aegilops tauschii* (eski adıyla *Ae. squarrosa*).",
+      "etiketler": [
+        "sitogenetik"
+      ]
+    },
+    {
+      "id": "q029",
+      "tip": "bosluk",
+      "soru": "Buğdayın çiçek durumuna ___ denir.",
+      "cevaplar": [
+        [
+          "başak"
+        ]
+      ],
+      "aciklama": "Buğdayın çiçek durumu başaktır.",
+      "etiketler": [
+        "morfoloji"
+      ]
+    },
+    {
+      "id": "q030",
+      "tip": "bosluk",
+      "soru": "Buğday, ___ familyasına aittir.",
+      "cevaplar": [
+        [
+          "Poaceae",
+          "Gramineae",
+          "buğdaygiller"
+        ]
+      ],
+      "aciklama": "Poaceae (Gramineae), buğdaygiller familyası.",
+      "etiketler": [
+        "sistematik"
+      ]
+    },
+    {
+      "id": "q031",
+      "tip": "bosluk",
+      "soru": "Buğdayda gelişme sırası: kardeşlenme → ___ → başaklanma → ___ → olum.",
+      "cevaplar": [
+        [
+          "sapa kalkma",
+          "sapa kalkış"
+        ],
+        [
+          "çiçeklenme"
+        ]
+      ],
+      "aciklama": "Çimlenme, kardeşlenme, sapa kalkma, başaklanma, çiçeklenme ve olum.",
+      "etiketler": [
+        "fizyoloji"
+      ]
+    },
+    {
+      "id": "q032",
+      "tip": "bosluk",
+      "soru": "Siyez buğdayının bilimsel adı *Triticum* ___'dur.",
+      "cevaplar": [
+        [
+          "monococcum"
+        ]
+      ],
+      "aciklama": "Siyez: *Triticum monococcum*.",
+      "etiketler": [
+        "sistematik"
+      ]
+    },
+    {
+      "id": "q033",
+      "tip": "bosluk",
+      "soru": "100 litre hacimdeki tanenin kilogram cinsinden ağırlığına ___ ağırlığı denir.",
+      "cevaplar": [
+        [
+          "hektolitre"
+        ]
+      ],
+      "aciklama": "Hektolitre ağırlığı kg/hl olarak ifade edilir.",
+      "etiketler": [
+        "kalite"
+      ]
+    }
+  ]
+}

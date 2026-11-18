@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deste.schema.json",
+  "title": "Deste",
+  "description": "Ders çalışma uygulaması deste dosyası (surum 1). Şemanın ifade edemediği kurallar SORU_FORMATI.md'de yazılıdır.",
+  "type": "object",
+  "required": [
+    "surum",
+    "id",
+    "baslik",
+    "ders",
+    "sorular"
+  ],
+  "properties": {
+    "surum": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Deste id'si: küçük harf, rakam, tire. Tüm desteler arasında benzersiz ve değişmez."
+    },
+    "baslik": {
+      "$ref": "#/$defs/metin"
+    },
+    "ders": {
+      "$ref": "#/$defs/metin",
+      "description": "Ana sayfada gruplama için ders adı."
+    },
+    "aciklama": {
+      "$ref": "#/$defs/metin"
+    },
+    "sorular": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/soru"
+      }
+    }
+  },
+  "$defs": {
+    "metin": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "soru": {
+      "type": "object",
+      "required": [
+        "id",
+        "tip",
+        "soru"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]+$",
+          "description": "Deste içinde benzersiz ve değişmez soru id'si (ör. q001)."
+        },
+        "tip": {
+          "enum": [
+            "coktan_secmeli",
+            "dogru_yanlis",
+            "bosluk"
+          ]
+        },
+        "soru": {
+          "$ref": "#/$defs/metin",
+          "description": "Soru metni. Yalnızca **kalın** ve *italik* biçimlendirme desteklenir."
+        },
+        "aciklama": {
+          "$ref": "#/$defs/metin"
+        },
+        "etiketler": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/metin"
+          },
+          "description": "Konu etiketleri; oturumda filtre olarak kullanılır."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "type": "object",
+            "properties": {
+              "tip": {
+                "const": "coktan_secmeli"
+              }
+            },
+            "required": [
+              "tip"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/coktanSecmeli"
+          }
+        },
+        {
+          "if": {
+            "type": "object",
+            "properties": {
+              "tip": {
+                "const": "dogru_yanlis"
+              }
+            },
+            "required": [
+              "tip"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/dogruYanlis"
+          }
+        },
+        {
+          "if": {
+            "type": "object",
+            "properties": {
+              "tip": {
+                "const": "bosluk"
+              }
+            },
+            "required": [
+              "tip"
+            ]
+          },
+          "then": {
+            "$ref": "#/$defs/bosluk"
+          }
+        }
+      ]
+    },
+    "coktanSecmeli": {
+      "type": "object",
+      "required": [
+        "secenekler",
+        "dogru"
+      ],
+      "properties": {
+        "secenekler": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 6,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/metin"
+          },
+          "description": "2–6 farklı şık."
+        },
+        "dogru": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5,
+          "description": "Doğru şıkkın sıfırdan başlayan indeksi; secenekler uzunluğundan küçük olmalı (şemayla denetlenemez)."
+        }
+      }
+    },
+    "dogruYanlis": {
+      "type": "object",
+      "required": [
+        "dogru"
+      ],
+      "properties": {
+        "dogru": {
+          "type": "boolean",
+          "description": "Önerme doğruysa true, yanlışsa false."
+        }
+      }
+    },
+    "bosluk": {
+      "type": "object",
+      "required": [
+        "cevaplar"
+      ],
+      "properties": {
+        "soru": {
+          "type": "string",
+          "pattern": "_{3,}",
+          "description": "Her ___ (üç ya da daha fazla alt çizgi) bir boşluktur."
+        },
+        "cevaplar": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Her boşluk için kabul edilen cevapların listesi; uzunluğu boşluk sayısına eşit olmalı.",
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/$defs/metin"
+            }
+          }
+        }
+      }
+    }
+  }
+}
