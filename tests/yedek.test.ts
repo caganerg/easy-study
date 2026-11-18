@@ -11,7 +11,6 @@ const k = (soruId: string, sonCozulme: number, kutu = 2, desteId = "d"): Ilerlem
   soruId,
   kutu,
   sonCozulme,
-  sonrakiTekrar: sonCozulme + 1000,
   dogruSayisi: kutu - 1,
   yanlisSayisi: 0,
 });

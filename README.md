@@ -5,8 +5,9 @@
 Telefon ve tablet için, internetsiz de çalışabilen ders çalışma uygulaması (PWA). Sorular repodaki JSON dosyalarında durur; ilerleme yalnızca cihazınızda (IndexedDB) saklanır, hiçbir veri dışarı gönderilmez.
 
 - Soru tipleri: çoktan seçmeli, doğru/yanlış, (çok boşluklu) boşluk doldurma
-- Leitner kutu sistemiyle tekrar planlama (“Bugün tekrar edilecek”)
-- Oturum modları: karışık, sadece yanlışlarım, tekrar zamanı gelenler
+- İstediğiniz desteye istediğiniz zaman çalışın; her destede kaç sorunun öğrenildiği görünür (art arda 4 doğru cevap)
+- Yanlış çözülen sorular ana sayfadan tek dokunuşla tekrar çözülebilir
+- Oturum modları: karışık, sadece yanlışlarım
 - Açık/koyu tema, büyük yazı, ilerlemeyi dışa/içe aktarma
 
 Teknik: TypeScript (strict) + Vite + `vite-plugin-pwa`, UI framework yok, paket yöneticisi ve test aracı **Bun**.
@@ -99,7 +100,7 @@ src/
   dogrulama.ts       unknown → Deste (hatalı sorular atlanır)
   soru-tipleri/      her soru tipi: doğrulama + cevap kontrolü + çizim; kayit.ts tablosu
   cevap.ts           normalleştirme ve cevap kontrolü
-  leitner.ts         kutu ve tekrar zamanı hesabı (saf)
+  leitner.ts         soru başına ilerleme kaydı ve kutu hesabı (saf)
   oturum.ts          oturum mantığı (saf)
   depo.ts            IndexedDB sarmalayıcı
   yedek.ts           dışa/içe aktarma (saf)

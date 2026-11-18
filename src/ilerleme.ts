@@ -2,7 +2,7 @@
 
 import { kayitYaz, topluYaz, tumKayitlar, tumunuSil } from "./depo";
 import { durum } from "./durum";
-import { anahtar, kayitGuncelle, ogrenildiMi, tekrarZamaniGeldiMi, tekrarSirasi, type IlerlemeKaydi } from "./leitner";
+import { anahtar, kayitGuncelle, ogrenildiMi, sonCevapYanlisMi, type IlerlemeKaydi } from "./leitner";
 import type { OturumSorusu } from "./oturum";
 import type { Deste } from "./tipler";
 
@@ -53,34 +53,30 @@ export async function ilerlemeyiSifirla(): Promise<void> {
 export interface DesteIstatistigi {
   toplam: number;
   ogrenilen: number;
-  tekrar: number;
-  yeni: number;
+  /** Son cevabı yanlış olan soru sayısı. */
+  yanlis: number;
 }
 
 /** Yalnızca destede hâlâ var olan sorular sayılır; silinmiş soruların kayıtları yok sayılır. */
-export function desteIstatistigi(deste: Deste, simdi: number): DesteIstatistigi {
+export function desteIstatistigi(deste: Deste): DesteIstatistigi {
   let ogrenilen = 0;
-  let tekrar = 0;
-  let yeni = 0;
+  let yanlis = 0;
   for (const s of deste.sorular) {
     const k = kayitBul(deste.id, s.id);
-    if (!k) yeni++;
-    else {
-      if (ogrenildiMi(k)) ogrenilen++;
-      if (tekrarZamaniGeldiMi(k, simdi)) tekrar++;
-    }
+    if (ogrenildiMi(k)) ogrenilen++;
+    if (sonCevapYanlisMi(k)) yanlis++;
   }
-  return { toplam: deste.sorular.length, ogrenilen, tekrar, yeni };
+  return { toplam: deste.sorular.length, ogrenilen, yanlis };
 }
 
-/** Tüm destelerde tekrar zamanı gelmiş sorular (yeni sorular hariç). */
-export function bugunTekrarEdilecekler(simdi: number): OturumSorusu[] {
+/** Tüm destelerde son cevabı yanlış olan sorular (deste sırasıyla). */
+export function tumYanlislar(): OturumSorusu[] {
   const havuz: OturumSorusu[] = [];
   for (const y of durum.katalog?.desteler ?? []) {
     if (!y.deste) continue;
     for (const soru of y.deste.sorular) {
-      if (tekrarZamaniGeldiMi(kayitBul(y.deste.id, soru.id), simdi)) havuz.push({ desteId: y.deste.id, soru });
+      if (sonCevapYanlisMi(kayitBul(y.deste.id, soru.id))) havuz.push({ desteId: y.deste.id, soru });
     }
   }
-  return tekrarSirasi(havuz, (o) => kayitBul(o.desteId, o.soru.id), simdi);
+  return havuz;
 }

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { anahtar, gunEkle, type IlerlemeKaydi } from "../src/leitner";
+import { anahtar, type IlerlemeKaydi } from "../src/leitner";
 import {
   bittiMi,
   cevapKaydet,
@@ -49,17 +49,17 @@ const havuz: OturumSorusu[] = Array.from({ length: 30 }, (_, i) => ({
   soru: soru(i + 1, tipler[i % 3]!, i < 5 ? ["tarih"] : undefined),
 }));
 
-function kayit(soruId: string, kutu: number, sonrakiTekrar: number, yanlis = 0): IlerlemeKaydi {
-  return { desteId: "d", soruId, kutu, sonCozulme: SIMDI - 1, sonrakiTekrar, dogruSayisi: 0, yanlisSayisi: yanlis };
+function kayit(soruId: string, kutu: number, yanlis = 0): IlerlemeKaydi {
+  return { desteId: "d", soruId, kutu, sonCozulme: SIMDI - 1, dogruSayisi: kutu - 1, yanlisSayisi: yanlis };
 }
 
 const ilerleme = new Map<string, IlerlemeKaydi>(
   [
-    kayit("q001", 1, gunEkle(SIMDI, 0), 1), // yanlış, zamanı geldi
-    kayit("q002", 3, gunEkle(SIMDI, -2)), // zamanı geçti
-    kayit("q003", 2, gunEkle(SIMDI, 1)), // gelecek
-    kayit("q004", 1, gunEkle(SIMDI, -1), 2), // yanlış, zamanı geçti
-    kayit("q005", 5, gunEkle(SIMDI, 10)), // öğrenildi
+    kayit("q001", 1, 1), // son cevap yanlış
+    kayit("q002", 3), // önce yanlış olsa da son cevap doğru
+    kayit("q003", 2),
+    kayit("q004", 1, 2), // son cevap yanlış
+    kayit("q005", 5), // öğrenildi
   ].map((k) => [anahtar(k.desteId, k.soruId), k]),
 );
 const bul = haritadanBul(ilerleme);
@@ -68,57 +68,44 @@ const idler = (l: OturumSorusu[]) => l.map((o) => o.soru.id);
 
 describe("soru seçimi", () => {
   test("adet sınırı", () => {
-    expect(soruSec(havuz, secim({ adet: 10 }), bul, SIMDI, tohumlu(1))).toHaveLength(10);
-    expect(soruSec(havuz, secim({ adet: 20 }), bul, SIMDI, tohumlu(1))).toHaveLength(20);
-    expect(soruSec(havuz, secim({ adet: "tumu" }), bul, SIMDI, tohumlu(1))).toHaveLength(30);
-    expect(soruSec(havuz.slice(0, 4), secim({ adet: 10 }), bul, SIMDI, tohumlu(1))).toHaveLength(4);
+    expect(soruSec(havuz, secim({ adet: 10 }), bul, tohumlu(1))).toHaveLength(10);
+    expect(soruSec(havuz, secim({ adet: 20 }), bul, tohumlu(1))).toHaveLength(20);
+    expect(soruSec(havuz, secim({ adet: "tumu" }), bul, tohumlu(1))).toHaveLength(30);
+    expect(soruSec(havuz.slice(0, 4), secim({ adet: 10 }), bul, tohumlu(1))).toHaveLength(4);
   });
 
   test("karışık mod tüm soruları karıştırır, tekrarsız", () => {
-    const s = idler(soruSec(havuz, secim(), bul, SIMDI, tohumlu(7)));
+    const s = idler(soruSec(havuz, secim(), bul, tohumlu(7)));
     expect(new Set(s).size).toBe(30);
     expect(s).not.toEqual(idler(havuz));
   });
 
   test("aynı tohumla aynı sonuç", () => {
-    expect(idler(soruSec(havuz, secim({ adet: 10 }), bul, SIMDI, tohumlu(3)))).toEqual(
-      idler(soruSec(havuz, secim({ adet: 10 }), bul, SIMDI, tohumlu(3))),
+    expect(idler(soruSec(havuz, secim({ adet: 10 }), bul, tohumlu(3)))).toEqual(
+      idler(soruSec(havuz, secim({ adet: 10 }), bul, tohumlu(3))),
     );
   });
 
   test("tip filtresi", () => {
-    const s = soruSec(havuz, secim({ tipler: ["bosluk"] }), bul, SIMDI, tohumlu(1));
+    const s = soruSec(havuz, secim({ tipler: ["bosluk"] }), bul, tohumlu(1));
     expect(s).toHaveLength(10);
     expect(s.every((o) => o.soru.tip === "bosluk")).toBe(true);
   });
 
   test("etiket filtresi", () => {
-    const s = soruSec(havuz, secim({ etiketler: ["tarih"] }), bul, SIMDI, tohumlu(1));
+    const s = soruSec(havuz, secim({ etiketler: ["tarih"] }), bul, tohumlu(1));
     expect(idler(s).sort()).toEqual(["q001", "q002", "q003", "q004", "q005"]);
   });
 
   test("sadece yanlışlarım: son cevabı yanlış olanlar", () => {
-    const s = soruSec(havuz, secim({ mod: "yanlislar" }), bul, SIMDI, tohumlu(1));
+    const s = soruSec(havuz, secim({ mod: "yanlislar" }), bul, tohumlu(1));
     expect(idler(s).sort()).toEqual(["q001", "q004"]);
   });
 
-  test("tekrar zamanı gelenler: önce zamanı geçenler (en eski önce), sonra yeniler", () => {
-    const s = idler(soruSec(havuz, secim({ mod: "tekrar" }), bul, SIMDI, tohumlu(1)));
-    expect(s.slice(0, 3)).toEqual(["q002", "q004", "q001"]);
-    expect(s).toHaveLength(3 + 25); // q003 ve q005'in zamanı gelmedi
-    expect(s).not.toContain("q003");
-    expect(s).not.toContain("q005");
-  });
-
-  test("tekrar modu + adet sınırı önce zamanı gelenleri alır", () => {
-    const s = idler(soruSec(havuz, secim({ mod: "tekrar", adet: 2 }), bul, SIMDI, tohumlu(1)));
-    expect(s).toEqual(["q002", "q004"]);
-  });
-
   test("filtreler modla birleşir", () => {
-    const cs = soruSec(havuz, secim({ mod: "yanlislar", tipler: ["coktan_secmeli"] }), bul, SIMDI, tohumlu(1));
+    const cs = soruSec(havuz, secim({ mod: "yanlislar", tipler: ["coktan_secmeli"] }), bul, tohumlu(1));
     expect(idler(cs).sort()).toEqual(["q001", "q004"]);
-    const dy = soruSec(havuz, secim({ mod: "yanlislar", tipler: ["dogru_yanlis"] }), bul, SIMDI, tohumlu(1));
+    const dy = soruSec(havuz, secim({ mod: "yanlislar", tipler: ["dogru_yanlis"] }), bul, tohumlu(1));
     expect(dy).toEqual([]);
   });
 });

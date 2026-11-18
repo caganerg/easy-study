@@ -1,7 +1,7 @@
 // Çalışma oturumu mantığı. DOM'dan ve tarayıcı API'lerinden bağımsızdır;
 // rastgelelik dışarıdan verilir ki testler tekrarlanabilir olsun.
 
-import { anahtar, sonCevapYanlisMi, tekrarSirasi, type IlerlemeKaydi } from "./leitner";
+import { anahtar, sonCevapYanlisMi, type IlerlemeKaydi } from "./leitner";
 import type { Cevap, Soru, SoruTipi } from "./tipler";
 
 export type Rastgele = () => number;
@@ -30,9 +30,9 @@ export interface Oturum {
 
 export type SoruAdedi = number | "tumu";
 
-/** karisik: tüm sorular rastgele; yanlislar: son cevabı yanlış olanlar; tekrar: zamanı gelenler, sonra yeniler. */
-export type Mod = "karisik" | "yanlislar" | "tekrar";
-export const MODLAR: readonly Mod[] = ["karisik", "yanlislar", "tekrar"];
+/** karisik: tüm sorular rastgele; yanlislar: son cevabı yanlış olanlar. */
+export type Mod = "karisik" | "yanlislar";
+export const MODLAR: readonly Mod[] = ["karisik", "yanlislar"];
 
 export interface OturumSecimi {
   mod: Mod;
@@ -79,7 +79,6 @@ export function moduUygula(
   havuz: readonly OturumSorusu[],
   secim: OturumSecimi,
   kayit: KayitBul,
-  simdi: number,
   rastgele: Rastgele,
 ): OturumSorusu[] {
   const filtreli = filtrele(havuz, secim);
@@ -92,9 +91,6 @@ export function moduUygula(
         filtreli.filter((o) => sonCevapYanlisMi(k(o))),
         rastgele,
       );
-    case "tekrar":
-      // Zamanı gelenler aynı sırada kalsın; yeniler karıştırılsın.
-      return tekrarSirasi(karistir(filtreli, rastgele), k, simdi);
     default: {
       const x: never = secim.mod;
       return x;
@@ -106,10 +102,9 @@ export function soruSec(
   havuz: readonly OturumSorusu[],
   secim: OturumSecimi,
   kayit: KayitBul,
-  simdi: number,
   rastgele: Rastgele,
 ): OturumSorusu[] {
-  return adetSinirla(moduUygula(havuz, secim, kayit, simdi, rastgele), secim.adet);
+  return adetSinirla(moduUygula(havuz, secim, kayit, rastgele), secim.adet);
 }
 
 export function oturumOlustur(baslik: string, sorular: readonly OturumSorusu[]): Oturum {

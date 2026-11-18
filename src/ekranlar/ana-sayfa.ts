@@ -1,7 +1,8 @@
 import type { YuklenenDeste } from "../desteler";
 import { el } from "../dom";
 import { durum } from "../durum";
-import { bugunTekrarEdilecekler, desteIstatistigi } from "../ilerleme";
+import { desteIstatistigi, tumYanlislar } from "../ilerleme";
+import { karistir } from "../oturum";
 import { M } from "../metinler";
 import { oturumBaslat } from "./oturum-ayari";
 import { ayarlarBaglantisi, ekran, hataliSoruSayisi, sorunListesiGoster, ustBar } from "./ortak";
@@ -43,20 +44,25 @@ function ilerlemeCubugu(ogrenilen: number, toplam: number): HTMLElement {
   return c;
 }
 
-function tekrarKisayolu(simdi: number): HTMLElement {
-  const sorular = bugunTekrarEdilecekler(simdi);
-  const n = sorular.length;
+/** Tüm destelerdeki yanlış cevaplanmış soruları tekrar çözme seçeneği; yoksa gösterilmez. */
+function yanlislarKisayolu(): HTMLElement | null {
+  const sorular = tumYanlislar();
+  if (sorular.length === 0) return null;
   return el(
     "section",
-    { class: `kart tekrar-kisayolu${n > 0 ? " var" : ""}` },
-    el("p", null, el("span", { attr: { "aria-hidden": "true" } }, "🔁 "), n > 0 ? M.bugunTekrar(n) : M.bugunTekrarYok),
-    n > 0 ? el("button", { type: "button", class: "dugme birincil", onclick: () => oturumBaslat(M.modTekrar, sorular) }, M.tekrarBasla) : null,
+    { class: "kart yanlislar-kisayolu" },
+    el("p", null, M.yanlisSoruVar(sorular.length)),
+    el(
+      "button",
+      { type: "button", class: "dugme birincil", onclick: () => oturumBaslat(M.yanlislarimBaslik, karistir(sorular, Math.random)) },
+      M.yanlislariCoz,
+    ),
   );
 }
 
-function desteKarti(y: YuklenenDeste, simdi: number): HTMLElement {
+function desteKarti(y: YuklenenDeste): HTMLElement {
   const d = y.deste;
-  const ist = d ? desteIstatistigi(d, simdi) : null;
+  const ist = d ? desteIstatistigi(d) : null;
   const baslik = d?.baslik ?? y.ozet.baslik;
   const ust = d
     ? el("a", { class: "kart-baglanti", href: `#/deste/${encodeURIComponent(d.id)}` }, baslik)
@@ -69,7 +75,7 @@ function desteKarti(y: YuklenenDeste, simdi: number): HTMLElement {
       "p",
       { class: "kart-alt" },
       d ? M.soruSayisi(d.sorular.length) : M.desteYuklenemedi(y.ozet.dosya),
-      ist && ist.tekrar > 0 ? el("span", { class: "tekrar-sayisi" }, ` · ${M.tekrarSayisi(ist.tekrar)}`) : null,
+      ist && ist.yanlis > 0 ? el("span", { class: "yanlis-sayisi" }, ` · ${M.yanlisSayisiKisa(ist.yanlis)}`) : null,
     ),
     ist ? ilerlemeCubugu(ist.ogrenilen, ist.toplam) : null,
     sorunRozeti(y),
@@ -79,14 +85,14 @@ function desteKarti(y: YuklenenDeste, simdi: number): HTMLElement {
 export function anaSayfaEkrani(): HTMLElement {
   const k = durum.katalog;
   const icerik: HTMLElement[] = [];
-  const simdi = Date.now();
 
   if (!k || k.listeHatasi) {
     icerik.push(el("p", { class: "uyari-kutu" }, k?.listeHatasi ?? M.listeYuklenemedi));
   } else if (k.desteler.length === 0) {
     icerik.push(el("p", { class: "bos" }, M.desteYok));
   } else {
-    icerik.push(tekrarKisayolu(simdi));
+    const kisayol = yanlislarKisayolu();
+    if (kisayol) icerik.push(kisayol);
     // Derse göre grupla (index.json sırası korunur).
     const gruplar = new Map<string, YuklenenDeste[]>();
     for (const y of k.desteler) {
@@ -94,7 +100,7 @@ export function anaSayfaEkrani(): HTMLElement {
       gruplar.set(ders, [...(gruplar.get(ders) ?? []), y]);
     }
     for (const [ders, liste] of gruplar) {
-      icerik.push(el("section", { class: "ders-grubu" }, el("h2", null, ders), el("div", { class: "kartlar" }, ...liste.map((y) => desteKarti(y, simdi)))));
+      icerik.push(el("section", { class: "ders-grubu" }, el("h2", null, ders), el("div", { class: "kartlar" }, ...liste.map(desteKarti))));
     }
   }
   if (k && k.listeSorunlari.length > 0) {

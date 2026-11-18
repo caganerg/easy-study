@@ -540,9 +540,9 @@ a { color: var(--vurgu); }
   background: var(--dogru);
   border-radius: inherit;
 }
-.tekrar-sayisi { color: var(--vurgu); font-weight: 600; }
+.yanlis-sayisi { color: var(--yanlis); font-weight: 600; }
 
-.tekrar-kisayolu {
+.yanlislar-kisayolu {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -550,9 +550,9 @@ a { color: var(--vurgu); }
   margin-bottom: 1.25rem;
   padding: 0.75rem 1rem;
 }
-.tekrar-kisayolu p { margin: 0; font-weight: 600; }
-.tekrar-kisayolu:not(.var) p { color: var(--soluk); font-weight: 400; }
-.tekrar-kisayolu.var { border-color: var(--vurgu); background: var(--vurgu-acik); }
+.yanlislar-kisayolu p { margin: 0; font-weight: 600; }
+.yanlislar-kisayolu .dugme { flex: none; white-space: nowrap; }
+.yanlislar-kisayolu { border-color: var(--yanlis); background: var(--yanlis-arka); }
 
 /* ---- Güncelleme çubuğu ---- */
 

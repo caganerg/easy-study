@@ -8,7 +8,7 @@ import type { SoruTipi } from "../tipler";
 import { ekran, ustBar } from "./ortak";
 
 const ADETLER: readonly SoruAdedi[] = [10, 20, "tumu"];
-const MOD_ADI: Record<Mod, string> = { karisik: M.modKarisik, yanlislar: M.modYanlislar, tekrar: M.modTekrar };
+const MOD_ADI: Record<Mod, string> = { karisik: M.modKarisik, yanlislar: M.modYanlislar };
 
 /**
  * Oturumu başlatır ve soru ekranına geçer. degistir: geçmişe yeni kayıt
@@ -65,7 +65,7 @@ export function oturumAyariEkrani(desteId: string): HTMLElement {
   const guncelle = () => {
     const s = secimiOku();
     // Hiç tip seçilmemişse oturum başlatılamaz (boş tip listesi "tümü" anlamına gelir).
-    const uygun = s.tipler.length === 0 ? 0 : moduUygula(havuz, s, kayitBul, Date.now(), Math.random).length;
+    const uygun = s.tipler.length === 0 ? 0 : moduUygula(havuz, s, kayitBul, Math.random).length;
     sayac.textContent = uygun > 0 ? M.uygunSoruSayisi(uygun) : M.uygunSoruYok;
     basla.disabled = uygun === 0;
   };
@@ -96,7 +96,7 @@ export function oturumAyariEkrani(desteId: string): HTMLElement {
     e.preventDefault();
     const s = secimiOku();
     if (s.tipler.length === 0) return;
-    const sorular = soruSec(havuz, s, kayitBul, Date.now(), Math.random);
+    const sorular = soruSec(havuz, s, kayitBul, Math.random);
     if (sorular.length > 0) oturumBaslat(deste.baslik, sorular);
   });
   guncelle();
