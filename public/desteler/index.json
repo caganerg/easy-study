@@ -1,5 +1,6 @@
 {
   "desteler": [
-    { "dosya": "tarla-hastaliklari-cikmis.json", "baslik": "Tarla Bitkileri Genel Hastalıkları – Çıkmış Sorular", "ders": "Tarla Bitkileri Genel Hastalıkları" }
+    { "dosya": "tarla-hastaliklari-cikmis.json", "baslik": "Tarla Bitkileri Genel Hastalıkları – Çıkmış Sorular", "ders": "Tarla Bitkileri Genel Hastalıkları" },
+    { "dosya": "gida-guvenligi.json", "baslik": "Gıda Güvenliği", "ders": "Gıda Güvenliği" }
   ]
 }

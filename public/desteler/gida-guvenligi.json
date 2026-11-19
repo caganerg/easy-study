@@ -1,0 +1,2214 @@
+{
+  "surum": 1,
+  "id": "gida-guvenligi",
+  "baslik": "Gıda Güvenliği",
+  "ders": "Gıda Güvenliği",
+  "aciklama": "Katkı maddeleri, GDO, HACCP ve gıda muhafaza yöntemleri. Konular etiketlerle ayrılır: katki-maddeleri, gdo, haccp, gida-muhafaza.",
+  "sorular": [
+    {
+      "id": "q001",
+      "tip": "coktan_secmeli",
+      "soru": "Gıdalara katılan en eski katkı maddeleri olarak hangileri bildirilmektedir?",
+      "secenekler": [
+        "Şeker ve sirke",
+        "Tuz ve odun tütsü bileşenleri",
+        "Nitrat ve nitrit",
+        "Sorbik asit ve benzoatlar"
+      ],
+      "dogru": 1,
+      "aciklama": "Notlara göre gıdalara katılan en eski katkılar tuz ve odun tütsü bileşenleridir.",
+      "etiketler": [
+        "katki-maddeleri",
+        "tarihce"
+      ]
+    },
+    {
+      "id": "q002",
+      "tip": "coktan_secmeli",
+      "soru": "Katkı maddelerinin E kodundaki “E” harfi neyi simgeler?",
+      "secenekler": [
+        "Enerji değerini",
+        "Emülgatör sınıfını",
+        "Etiketleme zorunluluğunu",
+        "Avrupa'yı (Europe)"
+      ],
+      "dogru": 3,
+      "aciklama": "E harfi Avrupa Birliği'ni (Europe) simgeler; ardından gelen üç rakam fonksiyonel sınıfı gösterir.",
+      "etiketler": [
+        "katki-maddeleri",
+        "e-kodu"
+      ]
+    },
+    {
+      "id": "q003",
+      "tip": "coktan_secmeli",
+      "soru": "E kodları her katkı maddesi için hangi kurum tarafından belirlenir?",
+      "secenekler": [
+        "Avrupa Birliği Gıda Bilim Komitesi",
+        "WHO-FAO ortak komitesi JECFA",
+        "ABD Gıda ve İlaç Dairesi (FDA)",
+        "Tarım ve Orman Bakanlığı"
+      ],
+      "dogru": 0,
+      "aciklama": "E kodları Avrupa Birliği'nin “Gıda Bilim Komitesi” tarafından belirlenir.",
+      "etiketler": [
+        "katki-maddeleri",
+        "e-kodu"
+      ]
+    },
+    {
+      "id": "q004",
+      "tip": "coktan_secmeli",
+      "soru": "Pancar suyundan elde edilen kırmızı renklendirici betanin (E162), kaynağına göre hangi gruptadır?",
+      "secenekler": [
+        "Doğala özdeş katkı maddeleri",
+        "Yapay katkı maddeleri",
+        "Doğal katkı maddeleri",
+        "Modifiye katkı maddeleri"
+      ],
+      "dogru": 2,
+      "aciklama": "Betanin doğada var olan bir maddedir; bu nedenle doğal katkı maddesidir.",
+      "etiketler": [
+        "katki-maddeleri",
+        "siniflandirma"
+      ]
+    },
+    {
+      "id": "q005",
+      "tip": "coktan_secmeli",
+      "soru": "Kaynağına göre sınıflandırmada “doğala özdeş” katkı maddesine örnek hangisidir?",
+      "secenekler": [
+        "Sakarin",
+        "Betanin",
+        "Dodesil gallat",
+        "Vanilya"
+      ],
+      "dogru": 3,
+      "aciklama": "Doğala özdeş katkı, doğadaki maddenin insan yapımı ikizidir; notlarda örneği vanilyadır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "siniflandirma"
+      ]
+    },
+    {
+      "id": "q006",
+      "tip": "coktan_secmeli",
+      "soru": "E 300 kodlu antioksidan hangisidir?",
+      "secenekler": [
+        "Askorbik asit (C vitamini)",
+        "α-tokoferol (E vitamini)",
+        "Riboflavin (B2 vitamini)",
+        "Butillendirilmiş hidroksi toluen (BHT)"
+      ],
+      "dogru": 0,
+      "aciklama": "E 300 askorbik asittir; E 306 α-tokoferol, E 321 BHT, E 101 ise riboflavindir.",
+      "etiketler": [
+        "katki-maddeleri",
+        "antioksidanlar"
+      ]
+    },
+    {
+      "id": "q007",
+      "tip": "coktan_secmeli",
+      "soru": "E 330 sitrik asit, kullanım amacına göre hangi gruba girer?",
+      "secenekler": [
+        "Topaklanmayı önleyiciler",
+        "Emülgatörler",
+        "Asitlik düzenleyiciler",
+        "Renklendiriciler"
+      ],
+      "dogru": 2,
+      "aciklama": "Notlarda asetik, sitrik, laktik, malik ve tartarik asit asitlik düzenleyiciler arasında sayılır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "siniflandirma"
+      ]
+    },
+    {
+      "id": "q008",
+      "tip": "coktan_secmeli",
+      "soru": "Lesitin, kullanım amacına göre hangi katkı grubundadır?",
+      "secenekler": [
+        "Koruyucular",
+        "Emülgatörler",
+        "Renklendiriciler",
+        "Topaklanmayı önleyiciler"
+      ],
+      "dogru": 1,
+      "aciklama": "Lesitin ve mono-digliseritler emülgatör olarak sınıflandırılır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "siniflandirma"
+      ]
+    },
+    {
+      "id": "q009",
+      "tip": "coktan_secmeli",
+      "soru": "Monosodyum glutamat (E 621) hangi işlevsel gruptadır?",
+      "secenekler": [
+        "Aroma arttırıcılar",
+        "Yapay tatlandırıcılar",
+        "Antimikrobiyal koruyucular",
+        "Asitlik düzenleyiciler"
+      ],
+      "dogru": 0,
+      "aciklama": "E 621 monosodyum glutamat ve E 627 sodyum guanilat aroma arttırıcılardır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "siniflandirma"
+      ]
+    },
+    {
+      "id": "q010",
+      "tip": "coktan_secmeli",
+      "soru": "Agar agar, guar gum ve arap zamkı hangi katkı grubunda yer alır?",
+      "secenekler": [
+        "Eritici (emülsiyonlaştırıcı) tuzlar",
+        "Çözücü ve taşıyıcı solventler",
+        "Jelleştirici ve kıvam arttırıcılar",
+        "Yapışkanlığı azaltıcı ve kaplama maddeleri"
+      ],
+      "dogru": 2,
+      "aciklama": "E 406 agar agar, E 402 guar gum ve E 414 arap zamkı jelleştirici ve kıvam arttırıcılardır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "siniflandirma"
+      ]
+    },
+    {
+      "id": "q011",
+      "tip": "coktan_secmeli",
+      "soru": "Tuzun gıdaları koruma mekanizmalarından hangisi **değildir**?",
+      "secenekler": [
+        "Su aktivitesini düşürmesi",
+        "Proteolitik enzimlerin etkisini azaltması",
+        "Osmotik basıncı arttırması",
+        "Suda çözünmüş oksijen oranını azaltması"
+      ],
+      "dogru": 1,
+      "aciklama": "Tuz proteolitik enzimlerin etkisini azaltmaz, tersine arttırır. Diğerleri tuzun etki mekanizmalarıdır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "koruyucular",
+        "tuz"
+      ]
+    },
+    {
+      "id": "q012",
+      "tip": "coktan_secmeli",
+      "soru": "Kapağı iyi kapatılmamış bal veya reçelin yüzeyinde maya ve küf gelişmesinin nedeni nedir?",
+      "secenekler": [
+        "Şekerin oksijenle tepkimeye girerek asitliği arttırması",
+        "Işık etkisiyle şekerin parçalanması",
+        "Sıcaklık artışıyla osmotik basıncın yükselmesi",
+        "Havadan nem çekilmesiyle yüzeydeki şeker oranının düşmesi"
+      ],
+      "dogru": 3,
+      "aciklama": "Ürün havadan nem çeker, yüzeydeki şeker oranı düşer ve maya-küf gelişebilir.",
+      "etiketler": [
+        "katki-maddeleri",
+        "koruyucular",
+        "seker"
+      ]
+    },
+    {
+      "id": "q013",
+      "tip": "coktan_secmeli",
+      "soru": "Nitrit ve nitrat kullanılan asitli besinlerde ısı ve oksijen etkisiyle hangi zararlı bileşikler oluşabilir?",
+      "secenekler": [
+        "Peroksitler",
+        "Tiosülfinatlar",
+        "Nitrozaminler",
+        "Mikotoksinler"
+      ],
+      "dogru": 2,
+      "aciklama": "Asitli besinlerde ısı ve O2 etkisiyle nitrit/nitrattan nitrozaminler oluşabilir.",
+      "etiketler": [
+        "katki-maddeleri",
+        "koruyucular",
+        "nitrit-nitrat"
+      ]
+    },
+    {
+      "id": "q014",
+      "tip": "coktan_secmeli",
+      "soru": "Düşük pH'larda daha etkili olduğu için gazlı içecek, meyve suyu ve turşuda kullanılan koruyucu hangisidir?",
+      "secenekler": [
+        "Propiyonik asit ve propiyonatlar",
+        "Benzoik asit ve benzoatlar",
+        "Hidrojen peroksit",
+        "Etilen oksit"
+      ],
+      "dogru": 1,
+      "aciklama": "Benzoik asit ve benzoatların aktivitesi düşük pH'da daha yüksektir.",
+      "etiketler": [
+        "katki-maddeleri",
+        "koruyucular"
+      ]
+    },
+    {
+      "id": "q015",
+      "tip": "coktan_secmeli",
+      "soru": "Ekmek, kek ve peynirde küflenmeyi engelleyen ve bazı gıdalarda hafif peynirimsi tat oluşturan koruyucu hangisidir?",
+      "secenekler": [
+        "Benzoik asit ve benzoatlar",
+        "Sorbik asit ve sorbatlar",
+        "Asetik asit ve asetatlar",
+        "Propiyonik asit ve propiyonatlar"
+      ],
+      "dogru": 3,
+      "aciklama": "Kalsiyum ve sodyum propiyonat küflenmeyi önler ve hafif peynirimsi tat oluşturur.",
+      "etiketler": [
+        "katki-maddeleri",
+        "koruyucular"
+      ]
+    },
+    {
+      "id": "q016",
+      "tip": "coktan_secmeli",
+      "soru": "Hidrojen peroksit kullanılan sütte kalıntı H2O2 hangi enzimle giderilmelidir?",
+      "secenekler": [
+        "Katalaz",
+        "Lipaz",
+        "Pepsin",
+        "Rennet"
+      ],
+      "dogru": 0,
+      "aciklama": "Kalıntı hidrojen peroksitin zararlı etkilerinden sakınmak için katalaz enzimi kullanılır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "koruyucular",
+        "enzimler"
+      ]
+    },
+    {
+      "id": "q017",
+      "tip": "coktan_secmeli",
+      "soru": "Sert kabuklu gıdalar ve baharatların dumanlama yöntemiyle sterilize edilmesinde hangileri kullanılır?",
+      "secenekler": [
+        "Etil alkol ve gliserol",
+        "Etilen oksit ve propilen oksit",
+        "Hidrojen peroksit ve katalaz",
+        "Asetik asit ve asetatlar"
+      ],
+      "dogru": 1,
+      "aciklama": "Etilen oksit ve propilen oksit dumanlama ile sterilizasyonda kullanılır; maya ve küf gelişimini engeller.",
+      "etiketler": [
+        "katki-maddeleri",
+        "koruyucular"
+      ]
+    },
+    {
+      "id": "q018",
+      "tip": "coktan_secmeli",
+      "soru": "Deney hayvanlarında NOAEL değeri 500 mg/kg ve güvenlik faktörü 100 ise ADI değeri kaç mg/kg'dır?",
+      "secenekler": [
+        "50",
+        "0,5",
+        "500",
+        "5"
+      ],
+      "dogru": 3,
+      "aciklama": "ADI = NOAEL / güvenlik faktörü = 500 / 100 = 5 mg/kg.",
+      "etiketler": [
+        "katki-maddeleri",
+        "toksikoloji",
+        "adi"
+      ]
+    },
+    {
+      "id": "q019",
+      "tip": "coktan_secmeli",
+      "soru": "İnsan üzerinde veri yoksa bireysel duyarlılık farkları için ek ×10 faktörüyle toplam güvenlik faktörü kaç olur?",
+      "secenekler": [
+        "1000",
+        "100",
+        "10",
+        "10000"
+      ],
+      "dogru": 0,
+      "aciklama": "Standart faktör 100'dür; insan verisi yoksa ek ×10 ile toplam 1000 kullanılır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "toksikoloji",
+        "adi"
+      ]
+    },
+    {
+      "id": "q020",
+      "tip": "coktan_secmeli",
+      "soru": "Katkı maddelerinin maksimum kullanım düzeylerine karar veren WHO ve FAO ortak komitesi hangisidir?",
+      "secenekler": [
+        "SCF",
+        "FDA",
+        "JECFA",
+        "Codex Alimentarius"
+      ],
+      "dogru": 2,
+      "aciklama": "JECFA toksikolojik çalışmaları değerlendirir ve maksimum kullanım düzeylerine karar verir.",
+      "etiketler": [
+        "katki-maddeleri",
+        "mevzuat"
+      ]
+    },
+    {
+      "id": "q021",
+      "tip": "coktan_secmeli",
+      "soru": "Türkiye'de gıda katkı maddelerini denetleyen kuruluş hangisidir?",
+      "secenekler": [
+        "Sağlık Bakanlığı",
+        "Ticaret Bakanlığı",
+        "Türk Standartları Enstitüsü",
+        "Tarım ve Orman Bakanlığı"
+      ],
+      "dogru": 3,
+      "aciklama": "Denetleyen kuruluş Tarım ve Orman Bakanlığı'dır; değerlendirme kriteri Codex Alimentarius ve Türk Gıda Kodeksi'dir.",
+      "etiketler": [
+        "katki-maddeleri",
+        "mevzuat"
+      ]
+    },
+    {
+      "id": "q022",
+      "tip": "coktan_secmeli",
+      "soru": "“Biyoteknoloji” terimini ilk kez 1919 yılında kullanan kişi kimdir?",
+      "secenekler": [
+        "Karl Ereky",
+        "Louis Pasteur",
+        "Gregor Mendel",
+        "Norman Borlaug"
+      ],
+      "dogru": 0,
+      "aciklama": "Biyoteknoloji terimi ilk olarak 1919'da Karl Ereky tarafından kullanılmıştır.",
+      "etiketler": [
+        "gdo",
+        "biyoteknoloji"
+      ]
+    },
+    {
+      "id": "q023",
+      "tip": "coktan_secmeli",
+      "soru": "Biyoteknolojiyi 1982 yılında yayınladığı raporda tanımlayan kuruluş hangisidir?",
+      "secenekler": [
+        "FAO",
+        "UNIDO",
+        "OECD",
+        "UNEP"
+      ],
+      "dogru": 2,
+      "aciklama": "1982 tarihli OECD raporu biyoteknolojiyi temel bilim ve mühendislik ilkelerinin biyolojik süreçlere uygulanması olarak tanımlar.",
+      "etiketler": [
+        "gdo",
+        "biyoteknoloji"
+      ]
+    },
+    {
+      "id": "q024",
+      "tip": "coktan_secmeli",
+      "soru": "Biyoteknoloji tarihçesinde “Biyoteknoloji Devrimi” olarak anılan genetik olarak değiştirilmiş bitkilerin üretimi yaklaşık hangi yıla denk gelir?",
+      "secenekler": [
+        "1960",
+        "1990",
+        "1940",
+        "1880"
+      ],
+      "dogru": 1,
+      "aciklama": "~1960 Yeşil Devrim, ~1940 antibiyotikler, ~1880 aşılar; GD bitkiler ise ~1990'dır.",
+      "etiketler": [
+        "gdo",
+        "biyoteknoloji",
+        "tarihce"
+      ]
+    },
+    {
+      "id": "q025",
+      "tip": "coktan_secmeli",
+      "soru": "“Golden rice” hangi besin öğesi yönünden zenginleştirilmiş pirinçtir?",
+      "secenekler": [
+        "A vitamini",
+        "C vitamini",
+        "Demir",
+        "B12 vitamini"
+      ],
+      "dogru": 0,
+      "aciklama": "Golden rice, A vitamini eksikliğine bağlı görme bozukluklarını önlemek için geliştirilmiştir.",
+      "etiketler": [
+        "gdo",
+        "yararlar"
+      ]
+    },
+    {
+      "id": "q026",
+      "tip": "coktan_secmeli",
+      "soru": "Brezilya fındığından gen aktarılan ve alerjen protein ortaya çıkınca geliştirilmesine son verilen ürün hangisidir?",
+      "secenekler": [
+        "Mısır",
+        "Patates",
+        "Soya",
+        "Domates"
+      ],
+      "dogru": 2,
+      "aciklama": "Gen, besin içeriğini zenginleştirmek için soyaya aktarılmış; alerjen protein üretildiği görülünce çalışma durdurulmuştur.",
+      "etiketler": [
+        "gdo",
+        "riskler",
+        "alerji"
+      ]
+    },
+    {
+      "id": "q027",
+      "tip": "coktan_secmeli",
+      "soru": "Gen aktarımının başarılı olduğu organizmaları seçmek için işaretleyici olarak kullanılan ve riskleri tartışılan genler hangileridir?",
+      "secenekler": [
+        "Kısırlaştırıcı (terminatör) genler",
+        "Antibiyotiğe dirençli genler",
+        "Büyüme hormonu genleri",
+        "Alerjen protein genleri"
+      ],
+      "dogru": 1,
+      "aciklama": "Antibiyotiğe dirençli işaretleyici genlerin patojenlere geçmesi enfeksiyon kontrolünü zorlaştırabilir.",
+      "etiketler": [
+        "gdo",
+        "riskler"
+      ]
+    },
+    {
+      "id": "q028",
+      "tip": "coktan_secmeli",
+      "soru": "Bt mısırı poleninin öldürücü etkisi hangi canlıda saptanmıştır?",
+      "secenekler": [
+        "Bal arısı larvalarında",
+        "İpek böceği larvalarında",
+        "Uğur böceği larvalarında",
+        "Monarch kelebeği larvalarında"
+      ],
+      "dogru": 3,
+      "aciklama": "Bt mısırı polenleri ipek otuna ulaşarak Kuzey Amerika'daki Monarch kelebeği larvalarını öldürmüştür.",
+      "etiketler": [
+        "gdo",
+        "biyocesitlilik"
+      ]
+    },
+    {
+      "id": "q029",
+      "tip": "coktan_secmeli",
+      "soru": "Böcek öldürücü gen aktarılmış “Bt mısırı” adındaki Bt hangi bakteriyi ifade eder?",
+      "secenekler": [
+        "*Bacillus subtilis*",
+        "*Bacillus cereus*",
+        "*Bacillus thuringiensis*",
+        "*Bacillus anthracis*"
+      ],
+      "dogru": 2,
+      "aciklama": "Bt, böcek öldürücü proteini kodlayan *Bacillus thuringiensis* bakterisinin kısaltmasıdır.",
+      "etiketler": [
+        "gdo",
+        "biyocesitlilik"
+      ]
+    },
+    {
+      "id": "q030",
+      "tip": "coktan_secmeli",
+      "soru": "İthalatçı ülkelere, bilimsel kanıt olmasa da sağlık ve çevre risklerine dayanarak GDO'lu ürün ithalatını yasaklama olanağı veren düzenleme hangisidir?",
+      "secenekler": [
+        "Gündem 21",
+        "Cartagena Protokolü",
+        "Bern Konvansiyonu",
+        "Bonn Konvansiyonu"
+      ],
+      "dogru": 1,
+      "aciklama": "Cartagena Biyogüvenlik Protokolü (2000) ithalatçı ülkelere bu olanağı tanımıştır.",
+      "etiketler": [
+        "gdo",
+        "hukuk"
+      ]
+    },
+    {
+      "id": "q031",
+      "tip": "coktan_secmeli",
+      "soru": "Avrupa Birliği gıda güvenliği yetkisini hangi kurum çatısı altında toplamıştır?",
+      "secenekler": [
+        "FSA",
+        "FDA",
+        "JECFA",
+        "EFSA"
+      ],
+      "dogru": 3,
+      "aciklama": "AB, gıda güvenliği yetkisini Avrupa Gıda Güvenliği Otoritesi (EFSA) altında toplamıştır.",
+      "etiketler": [
+        "gdo",
+        "hukuk"
+      ]
+    },
+    {
+      "id": "q032",
+      "tip": "coktan_secmeli",
+      "soru": "Türkiye Cartagena Protokolü'nü hangi tarihte imzalamıştır?",
+      "secenekler": [
+        "24 Mayıs 2000",
+        "11 Eylül 2003",
+        "26 Ekim 2009",
+        "28 Ocak 2002"
+      ],
+      "dogru": 0,
+      "aciklama": "Türkiye protokolü 24 Mayıs 2000'de imzalamış, protokol 11 Eylül 2003'te yürürlüğe girmiştir.",
+      "etiketler": [
+        "gdo",
+        "hukuk",
+        "turkiye"
+      ]
+    },
+    {
+      "id": "q033",
+      "tip": "coktan_secmeli",
+      "soru": "Dünyada transgenik bitkilerin yüzde kaçı gelişmiş ülkelerde yetiştirilmektedir?",
+      "secenekler": [
+        "%27",
+        "%73",
+        "%15",
+        "%13"
+      ],
+      "dogru": 1,
+      "aciklama": "Transgenik bitkilerin %73'ü gelişmiş, %27'si gelişmekte olan ülkelerde yetiştirilmektedir.",
+      "etiketler": [
+        "gdo",
+        "sosyoekonomi"
+      ]
+    },
+    {
+      "id": "q034",
+      "tip": "coktan_secmeli",
+      "soru": "Çiftçiyi her yıl yeniden satın almak zorunda bırakan, kısırlaştırıcı genlerle üretilmiş tohumlara ne ad verilir?",
+      "secenekler": [
+        "Hibrit tohum",
+        "Sertifikalı tohum",
+        "Atalık tohum",
+        "Terminatör tohum"
+      ],
+      "dogru": 3,
+      "aciklama": "Kısırlaştırıcı genli “terminatör” tohumlar çiftçiyi çok uluslu tohum şirketlerine bağımlı kılmıştır.",
+      "etiketler": [
+        "gdo",
+        "sosyoekonomi"
+      ]
+    },
+    {
+      "id": "q035",
+      "tip": "coktan_secmeli",
+      "soru": "Hall'ün İskoçya'daki çalışmasında GDO'ların hem yararı hem de zararı olacağını benimseyen çiftçi yaklaşımı hangisidir?",
+      "secenekler": [
+        "Kaderci yaklaşım",
+        "Pozitif yaklaşım",
+        "Kararsız yaklaşım",
+        "Reddedici yaklaşım"
+      ],
+      "dogru": 0,
+      "aciklama": "Çiftçiler pozitif, kararsız ve kaderci olmak üzere üç yaklaşım benimsemiş; kaderciler hem yarar hem zarar olacağını düşünmüştür.",
+      "etiketler": [
+        "gdo",
+        "sosyoekonomi"
+      ]
+    },
+    {
+      "id": "q036",
+      "tip": "coktan_secmeli",
+      "soru": "Türkiye'de 2004 yılında yapılan ankette katılımcıların yüzde kaçı GDO'lu ürünlerin etiketlenmesinin yararlı olduğunu belirtmiştir?",
+      "secenekler": [
+        "%74",
+        "%69,3",
+        "%91,1",
+        "%85,76"
+      ],
+      "dogru": 2,
+      "aciklama": "2004 anketinde katılımcıların %91,1'i etiketlemenin yararlı olduğunu belirtmiştir.",
+      "etiketler": [
+        "gdo",
+        "tuketici",
+        "etiketleme"
+      ]
+    },
+    {
+      "id": "q037",
+      "tip": "coktan_secmeli",
+      "soru": "HACCP kısaltmasının Türkçe karşılığı nedir?",
+      "secenekler": [
+        "Hijyen Analizi ve Kalite Kontrol Prosedürleri",
+        "Tehlike Araştırması ve Kalite Kontrol Planı",
+        "Hijyenik Analiz ve Kritik Kalite Noktaları",
+        "Tehlike Analizi ve Kritik Kontrol Noktaları"
+      ],
+      "dogru": 3,
+      "aciklama": "HACCP: Hazard Analysis and Critical Control Points, yani Tehlike Analizi ve Kritik Kontrol Noktaları.",
+      "etiketler": [
+        "haccp",
+        "temel-kavramlar"
+      ]
+    },
+    {
+      "id": "q038",
+      "tip": "coktan_secmeli",
+      "soru": "HACCP sistemi ilk olarak kimler tarafından astronotlara güvenli gıda üretmek için kullanılmıştır?",
+      "secenekler": [
+        "Pillsbury firması ve NASA",
+        "FDA ve FSIS",
+        "Codex ve FAO",
+        "ICMSF ve NACMCF"
+      ],
+      "dogru": 0,
+      "aciklama": "HACCP, 1960'larda Pillsbury firması ile NASA tarafından astronot gıdaları için geliştirilmiştir.",
+      "etiketler": [
+        "haccp",
+        "tarihce"
+      ]
+    },
+    {
+      "id": "q039",
+      "tip": "coktan_secmeli",
+      "soru": "HACCP sistemi halka hangi yılda sunulmuştur?",
+      "secenekler": [
+        "1960",
+        "1993",
+        "1971",
+        "2003"
+      ],
+      "dogru": 2,
+      "aciklama": "HACCP 1960'larda geliştirilmiş, 1971'de halka sunulmuştur.",
+      "etiketler": [
+        "haccp",
+        "tarihce"
+      ]
+    },
+    {
+      "id": "q040",
+      "tip": "coktan_secmeli",
+      "soru": "AB'de 852/2004 sayılı tüzük hangi tarihte yasalaşarak çoğu gıda işletmesi için HACCP esaslı sistemi zorunlu kılmıştır?",
+      "secenekler": [
+        "1 Ocak 2004",
+        "1 Ocak 2006",
+        "16 Kasım 2005",
+        "1 Ocak 1995"
+      ],
+      "dogru": 1,
+      "aciklama": "852/2004 sayılı tüzük 1 Ocak 2006'da yasalaşmıştır.",
+      "etiketler": [
+        "haccp",
+        "mevzuat"
+      ]
+    },
+    {
+      "id": "q041",
+      "tip": "coktan_secmeli",
+      "soru": "HACCP sistemi kurulmasındaki 5 ön işlemin sonuncusu hangisidir?",
+      "secenekler": [
+        "Akış şemalarının yerinde doğrulanması",
+        "HACCP ekibinin oluşturulması",
+        "Ürünlerin kullanım amaçlarının belirlenmesi",
+        "Tehlike analizinin yapılması"
+      ],
+      "dogru": 0,
+      "aciklama": "Ön işlemler: ekip, ürün tanımı, kullanım amacı, akış şeması ve akış şemasının yerinde doğrulanması. Tehlike analizi 1. prensiptir.",
+      "etiketler": [
+        "haccp",
+        "uygulama-asamalari"
+      ]
+    },
+    {
+      "id": "q042",
+      "tip": "coktan_secmeli",
+      "soru": "HACCP'nin 7 prensibinden birincisi hangisidir?",
+      "secenekler": [
+        "HACCP ekibinin oluşturulması",
+        "Kritik kontrol noktalarının belirlenmesi",
+        "Tehlike analizinin yapılması",
+        "Kritik limitlerin belirlenmesi"
+      ],
+      "dogru": 2,
+      "aciklama": "Prensip 1 tehlike analizidir. Ekibin oluşturulması prensip değil, ön işlemdir.",
+      "etiketler": [
+        "haccp",
+        "prensipler"
+      ]
+    },
+    {
+      "id": "q043",
+      "tip": "coktan_secmeli",
+      "soru": "HACCP'nin 6. prensibi hangisidir?",
+      "secenekler": [
+        "Düzeltici önlemlerin alınması",
+        "Doğrulama prosedürlerinin belirlenmesi",
+        "Kayıtların tutulması ve dokümantasyon",
+        "İzleme sisteminin belirlenmesi"
+      ],
+      "dogru": 1,
+      "aciklama": "Sıralama: 4 izleme, 5 düzeltici önlemler, 6 doğrulama, 7 kayıt ve dokümantasyon.",
+      "etiketler": [
+        "haccp",
+        "prensipler"
+      ]
+    },
+    {
+      "id": "q044",
+      "tip": "coktan_secmeli",
+      "soru": "Kritik limit nasıl tanımlanır?",
+      "secenekler": [
+        "Üretimde hedeflenen ve sürekli tutturulması gereken ortalama değer",
+        "Üst ve alt kontrol limitleri arasındaki güvenli çalışma aralığı",
+        "Son ürün analizinde izin verilen yasal tolerans değeri",
+        "Kabul edilebilirliği kabul edilemezlikten ayıran minimum ve/veya maksimum değer"
+      ],
+      "dogru": 3,
+      "aciklama": "Kritik limit, CCP'de kabul edilebilirliği kabul edilemezlikten ayıran minimum ve/veya maksimum değerdir.",
+      "etiketler": [
+        "haccp",
+        "prensipler",
+        "kritik-limit"
+      ]
+    },
+    {
+      "id": "q045",
+      "tip": "coktan_secmeli",
+      "soru": "Sütten patojenlerin eliminasyonu örneğinde pastörizatör için verilen kritik limit hangisidir?",
+      "secenekler": [
+        "63 °C – 15 saniye",
+        "85 °C – 30 dakika",
+        "71,6 °C – 15 saniye",
+        "121 °C – 3 dakika"
+      ],
+      "dogru": 2,
+      "aciklama": "Notlardaki örnekte pastörizatör CCP'si için kritik limit 71,6 °C'de 15 saniyedir.",
+      "etiketler": [
+        "haccp",
+        "kritik-limit"
+      ]
+    },
+    {
+      "id": "q046",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdakilerden hangisi gıdada “doğal olarak bulunan” kimyasal tehlikelere örnektir?",
+      "secenekler": [
+        "Nitrit",
+        "Aflatoksin",
+        "Pestisit kalıntısı",
+        "Kurşun"
+      ],
+      "dogru": 1,
+      "aciklama": "Mikotoksinler (aflatoksin, okratoksin A, patulin) doğal kimyasal tehlikelerdir. Nitrit bilerek katılır, pestisit ve kurşun istenmeden bulaşır.",
+      "etiketler": [
+        "haccp",
+        "tehlikeler"
+      ]
+    },
+    {
+      "id": "q047",
+      "tip": "coktan_secmeli",
+      "soru": "Balıklarda bulunabilen *Anisakis* türleri HACCP'de hangi tehlike grubuna girer?",
+      "secenekler": [
+        "Kimyasal tehlike (doğal toksin)",
+        "Fiziksel tehlike",
+        "Kimyasal tehlike (kazayla bulaşan)",
+        "Biyolojik tehlike (parazit)"
+      ],
+      "dogru": 3,
+      "aciklama": "*Anisakis*, *Taenia* ve *Trichinella* gibi parazitler biyolojik tehlikelerdir.",
+      "etiketler": [
+        "haccp",
+        "tehlikeler"
+      ]
+    },
+    {
+      "id": "q048",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdakilerden hangisi HACCP sisteminde “tehlike” kapsamında **değildir**?",
+      "secenekler": [
+        "Ekonomik hile",
+        "*Salmonella* bulaşması",
+        "Üründe metal parçası",
+        "Aflatoksin varlığı"
+      ],
+      "dogru": 0,
+      "aciklama": "HACCP'de haşere, kıl-tüy, kir, bozulma ve ekonomik hile tehlike tanımına girmez.",
+      "etiketler": [
+        "haccp",
+        "tehlikeler"
+      ]
+    },
+    {
+      "id": "q049",
+      "tip": "coktan_secmeli",
+      "soru": "Notlara göre viral tehlikeler için kontrol önlemi hangisidir?",
+      "secenekler": [
+        "Kurutma",
+        "Pişirme işlemi",
+        "Fermentasyon ve pH kontrolü",
+        "Tuz ilavesi"
+      ],
+      "dogru": 1,
+      "aciklama": "Viral tehlikeler için belirtilen kontrol önlemi pişirmedir; diğerleri bakteriyel tehlikeler için sayılmıştır.",
+      "etiketler": [
+        "haccp",
+        "kontrol-onlemleri"
+      ]
+    },
+    {
+      "id": "q050",
+      "tip": "coktan_secmeli",
+      "soru": "Metal parçalarının metal dedektörüyle tespit edilip kontamine ürünün üretim zincirinden çıkarılması, tehlikenin hangi şekilde kontrolüne örnektir?",
+      "secenekler": [
+        "Tehlikenin önlenmesi",
+        "Tehlikenin kabul edilebilir sınıra çekilmesi",
+        "Tehlikenin izlenmesi",
+        "Tehlikenin elimine edilmesi"
+      ],
+      "dogru": 3,
+      "aciklama": "Metal dedektörüyle tespit edilip ürünün çıkarılması eliminasyon örneği olarak verilir.",
+      "etiketler": [
+        "haccp",
+        "ccp"
+      ]
+    },
+    {
+      "id": "q051",
+      "tip": "coktan_secmeli",
+      "soru": "Buzdolabı sıcaklığı CCP'sinin hem patojen üremesini hem de histamin oluşumunu kontrol etmesi CCP'nin hangi özelliğini gösterir?",
+      "secenekler": [
+        "Bir CCP birden fazla tehlikeyi kontrol edebilir",
+        "Bir tehlike için birden fazla CCP gerekebilir",
+        "CCP'ler ürün ve işleme özgüdür",
+        "CCP'lerde yalnızca kalite faktörleri kontrol edilir"
+      ],
+      "dogru": 0,
+      "aciklama": "Bir CCP birden fazla tehlikeyi kontrol etmek için kullanılabilir; buzdolabı sıcaklığı bunun örneğidir.",
+      "etiketler": [
+        "haccp",
+        "ccp"
+      ]
+    },
+    {
+      "id": "q052",
+      "tip": "coktan_secmeli",
+      "soru": "CCP izlemesinde tercih edilen izleme türü hangisidir?",
+      "secenekler": [
+        "Devamlı olmayan izleme",
+        "Son ürünün mikrobiyolojik analizi",
+        "Devamlı izleme",
+        "Yıllık iç tetkik"
+      ],
+      "dogru": 2,
+      "aciklama": "Tercih edilen izleme devamlı izlemedir; yapılamadığında devamlı olmayan izleme uygulanır.",
+      "etiketler": [
+        "haccp",
+        "izleme"
+      ]
+    },
+    {
+      "id": "q053",
+      "tip": "coktan_secmeli",
+      "soru": "Histamin oluşabilecek deniz ürünlerinin bozulmaya karşı periyodik duyusal muayenesi neye örnektir?",
+      "secenekler": [
+        "Devamlı izleme",
+        "Kalibrasyon",
+        "Onaylama",
+        "Devamlı olmayan izleme"
+      ],
+      "dogru": 3,
+      "aciklama": "Notlarda bu uygulama devamlı olmayan izleme örneği olarak verilmiştir.",
+      "etiketler": [
+        "haccp",
+        "izleme"
+      ]
+    },
+    {
+      "id": "q054",
+      "tip": "coktan_secmeli",
+      "soru": "Notlara göre pH metreler hangi tampon standartlarıyla kalibre edilir?",
+      "secenekler": [
+        "pH 7,0 ve 4,0",
+        "pH 5,0 ve 9,0",
+        "pH 3,0 ve 6,0",
+        "pH 2,0 ve 8,0"
+      ],
+      "dogru": 0,
+      "aciklama": "pH metreler pH 7,0 ve 4,0 tampon standartlarıyla kalibre edilir.",
+      "etiketler": [
+        "haccp",
+        "dogrulama",
+        "kalibrasyon"
+      ]
+    },
+    {
+      "id": "q055",
+      "tip": "coktan_secmeli",
+      "soru": "Rutin HACCP sistem doğrulaması hangi sıklıkta yapılır?",
+      "secenekler": [
+        "Ayda bir",
+        "Haftada bir",
+        "Yılda bir",
+        "Beş yılda bir"
+      ],
+      "dogru": 2,
+      "aciklama": "HACCP sistem doğrulaması yılda bir ve ayrıca sorun ya da değişiklik olduğunda yapılır.",
+      "etiketler": [
+        "haccp",
+        "dogrulama"
+      ]
+    },
+    {
+      "id": "q056",
+      "tip": "coktan_secmeli",
+      "soru": "Tüm CCP izleme kayıtları, kayıtlar elde edildikten sonra en geç ne kadar süre içinde gözden geçirilmelidir?",
+      "secenekler": [
+        "24 saat",
+        "1 hafta",
+        "1 ay",
+        "3 ay"
+      ],
+      "dogru": 1,
+      "aciklama": "CCP izleme kayıtları elde edildikten sonra en geç 1 hafta içinde gözden geçirilmelidir.",
+      "etiketler": [
+        "haccp",
+        "kayit"
+      ]
+    },
+    {
+      "id": "q057",
+      "tip": "coktan_secmeli",
+      "soru": "“Bir işin tanımlandığı şekilde yapıldığının kanıtıdır, geçmişi gösterir ve revizyona tabi değildir.” tanımı neye aittir?",
+      "secenekler": [
+        "Kayıt",
+        "Doküman",
+        "Prosedür",
+        "Talimat"
+      ],
+      "dogru": 0,
+      "aciklama": "Kayıt kanıttır ve revize edilmez; doküman (prosedür, talimat) ise işin nasıl yapılacağını tanımlar ve revize edilir.",
+      "etiketler": [
+        "haccp",
+        "kayit",
+        "dokumantasyon"
+      ]
+    },
+    {
+      "id": "q058",
+      "tip": "coktan_secmeli",
+      "soru": "Resmi otoritelerce, mevzuatta belirtilen kriterlere uygunluk açısından yapılan inceleme hangisidir?",
+      "secenekler": [
+        "Tetkik",
+        "Doğrulama",
+        "Denetim",
+        "İzleme"
+      ],
+      "dogru": 2,
+      "aciklama": "Denetim resmi otoritelerce yapılır. Tetkik ise sistemde yer almayan bağımsız kişilerce veya firma çalışanlarınca yapılır.",
+      "etiketler": [
+        "haccp",
+        "denetim"
+      ]
+    },
+    {
+      "id": "q059",
+      "tip": "coktan_secmeli",
+      "soru": "“Daha Güvenli Gıda Daha İyi İş” adlı basitleştirilmiş HACCP versiyonunu hangi kurum geliştirmiştir?",
+      "secenekler": [
+        "Avrupa Gıda Güvenliği Otoritesi (EFSA)",
+        "Gıda Standartları Ajansı (FSA)",
+        "Amerikan Gıda ve İlaç Dairesi (FDA)",
+        "Codex Alimentarius Komisyonu"
+      ],
+      "dogru": 1,
+      "aciklama": "Paket, FSA tarafından restoran, kafe gibi küçük hazır yemek işletmeleri için geliştirilmiştir.",
+      "etiketler": [
+        "haccp",
+        "ingiltere"
+      ]
+    },
+    {
+      "id": "q060",
+      "tip": "coktan_secmeli",
+      "soru": "Bakkal ve manav gibi hazırlık, üretim veya işleme yapmayan işletmelerde tüm tehlikelerin neyle kontrol edilebildiği kabul edilebilir?",
+      "secenekler": [
+        "Tam kapsamlı HACCP planıyla",
+        "ISO 22000 sertifikasıyla",
+        "Son ürün laboratuvar analizleriyle",
+        "Ön gereksinim programlarıyla"
+      ],
+      "dogru": 3,
+      "aciklama": "AB rehberine göre bu tür işletmelerde tehlikelerin ön gereksinim programlarıyla kontrol edilebildiği kabul edilebilir.",
+      "etiketler": [
+        "haccp",
+        "on-gereksinim"
+      ]
+    },
+    {
+      "id": "q061",
+      "tip": "coktan_secmeli",
+      "soru": "Ön gereksinim programlarında “GHP” kısaltması neyi ifade eder?",
+      "secenekler": [
+        "İyi Üretim Uygulamaları",
+        "İyi Tarım Uygulamaları",
+        "İyi Hijyen Uygulamaları",
+        "İyi Veteriner Uygulamaları"
+      ],
+      "dogru": 2,
+      "aciklama": "GHP: Good Hygiene Practice. GMP üretim, GAP tarım, GVP veteriner uygulamalarıdır.",
+      "etiketler": [
+        "haccp",
+        "on-gereksinim"
+      ]
+    },
+    {
+      "id": "q062",
+      "tip": "coktan_secmeli",
+      "soru": "AB'de 92/46/EEC sayılı direktif hangi ürün grubu için HACCP uygulamasını zorunlu kılmıştır?",
+      "secenekler": [
+        "Et ürünleri",
+        "Süt ve süt ürünleri",
+        "Balık ve su ürünleri",
+        "Meyve ve sebze ürünleri"
+      ],
+      "dogru": 1,
+      "aciklama": "91/493/EEC balık ve su ürünleri, 92/5/EEC et ürünleri, 92/46/EEC süt ve süt ürünleri içindir.",
+      "etiketler": [
+        "haccp",
+        "mevzuat",
+        "tarihce"
+      ]
+    },
+    {
+      "id": "q063",
+      "tip": "coktan_secmeli",
+      "soru": "Isıl işlemde D değeri neyi ifade eder?",
+      "secenekler": [
+        "Canlı mikroorganizma popülasyonunun %50'sini öldürmek için gereken süreyi",
+        "Tüm sporların öldürülmesi için gereken en düşük sıcaklığı",
+        "Isıl işlemde süreyi onda birine indiren sıcaklık artışını",
+        "Canlı mikroorganizma popülasyonunun %90'ını öldürmek için gereken süreyi"
+      ],
+      "dogru": 3,
+      "aciklama": "D değeri, ortamdaki canlı popülasyonun %90'ının öldürülmesi için gerekli ısıtma süresidir (dakika).",
+      "etiketler": [
+        "gida-muhafaza",
+        "isil-islem"
+      ]
+    },
+    {
+      "id": "q064",
+      "tip": "coktan_secmeli",
+      "soru": "Birkaç bakteri türü dışında mikroorganizmaların ısıya en yüksek direnci gösterdiği pH civarı hangisidir?",
+      "secenekler": [
+        "pH 7,0",
+        "pH 4,5",
+        "pH 3,0",
+        "pH 9,0"
+      ],
+      "dogru": 0,
+      "aciklama": "Isıya en yüksek direnç pH 7,0 dolayında görülür; pH düştükçe direnç azalır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "isil-islem"
+      ]
+    },
+    {
+      "id": "q065",
+      "tip": "coktan_secmeli",
+      "soru": "pH değeri hangi değerin üzerinde olan gıdalar 100 °C'nin üzerinde sterilize edilerek dayanıklı hale getirilir?",
+      "secenekler": [
+        "3,5",
+        "4,5",
+        "6,0",
+        "7,0"
+      ],
+      "dogru": 1,
+      "aciklama": "pH > 4,5 düşük asitli gıdalar (sebze, et, süt) sterilize; pH < 4,5 olanlar pastörize edilir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "isil-islem",
+        "sterilizasyon"
+      ]
+    },
+    {
+      "id": "q066",
+      "tip": "coktan_secmeli",
+      "soru": "Ortamdaki tuz hangi oran aralığında mikroorganizmaların ısı direncini arttırır?",
+      "secenekler": [
+        "%0,5-1",
+        "%10-15",
+        "%20-25",
+        "%2-4"
+      ],
+      "dogru": 3,
+      "aciklama": "%2-4 tuz ısı direncini arttırır; daha yüksek oranlarda direnç azalır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "isil-islem"
+      ]
+    },
+    {
+      "id": "q067",
+      "tip": "coktan_secmeli",
+      "soru": "İçme sütüne uygulanan LTLT pastörizasyon koşulu hangisidir?",
+      "secenekler": [
+        "61,7 °C'de en az 30 dakika",
+        "71,1 °C'de en az 15 saniye",
+        "82 °C'de 16-20 saniye",
+        "135 °C'de 1 saniye"
+      ],
+      "dogru": 0,
+      "aciklama": "LTLT: 61,7 °C'de en az 30 dakika (ülkemizde 63-65 °C).",
+      "etiketler": [
+        "gida-muhafaza",
+        "pastorizasyon"
+      ]
+    },
+    {
+      "id": "q068",
+      "tip": "coktan_secmeli",
+      "soru": "İçme sütüne uygulanan HTST pastörizasyon koşulu hangisidir?",
+      "secenekler": [
+        "61,7 °C'de en az 30 dakika",
+        "121 °C'de 3 dakika",
+        "71,1 °C'de en az 15 saniye",
+        "77 °C'de 30 dakika"
+      ],
+      "dogru": 2,
+      "aciklama": "HTST: 71,1 °C'de en az 15 saniye (ülkemizde 72-75 °C'de 15-20 saniye).",
+      "etiketler": [
+        "gida-muhafaza",
+        "pastorizasyon"
+      ]
+    },
+    {
+      "id": "q069",
+      "tip": "coktan_secmeli",
+      "soru": "Notlara göre pastörize süt üretiminde öldürülmesi hedeflenen ve sütle insanlara geçen mikroorganizma hangisidir?",
+      "secenekler": [
+        "*Clostridium botulinum*",
+        "*Bacillus cereus*",
+        "*Propionibacterium* türleri",
+        "*Mycobacterium tuberculosis*"
+      ],
+      "dogru": 3,
+      "aciklama": "Pastörize sütte hedef, süt yoluyla insana geçen verem mikrobunu (*M. tuberculosis*) öldürmektir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "pastorizasyon"
+      ]
+    },
+    {
+      "id": "q070",
+      "tip": "coktan_secmeli",
+      "soru": "Türk Gıda Kodeksi'ne göre sterilizasyon için verilen uygun zaman-sıcaklık kombinasyonu hangisidir?",
+      "secenekler": [
+        "En az 115 °C'de 13 dakika veya 121 °C'de 3 dakika",
+        "En az 135 °C'de 1 saniye",
+        "En az 100 °C'de 30 dakika",
+        "En az 72 °C'de 15 saniye"
+      ],
+      "dogru": 0,
+      "aciklama": "Sterilizasyon: en az 115 °C'de 13 dk veya 121 °C'de 3 dk. 135 °C'de 1 sn UHT tanımıdır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "sterilizasyon"
+      ]
+    },
+    {
+      "id": "q071",
+      "tip": "coktan_secmeli",
+      "soru": "Türk Gıda Kodeksi'ne göre UHT işlemi için minimum koşul hangisidir?",
+      "secenekler": [
+        "En az 121 °C'de 3 dakika",
+        "En az 115 °C'de 13 dakika",
+        "En az 135 °C'de 1 saniye",
+        "En az 85 °C'de 30 saniye"
+      ],
+      "dogru": 2,
+      "aciklama": "UHT, sürekli akış altında en az 135 °C'de 1 saniye uygulanan ısıl işlemdir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "sterilizasyon"
+      ]
+    },
+    {
+      "id": "q072",
+      "tip": "coktan_secmeli",
+      "soru": "Gıdanın ambalaja doldurulmadan önce ısıl işlem görüp soğutulduğu, ardından steril ambalaja doldurulduğu proses hangisidir?",
+      "secenekler": [
+        "Otoklavlama",
+        "Aseptik proses",
+        "Haşlama",
+        "Kesikli pastörizasyon"
+      ],
+      "dogru": 1,
+      "aciklama": "Aseptik proseste steril gıda steril ambalaja doldurulup hermetik kapatılır; böylece kalite daha iyi korunur.",
+      "etiketler": [
+        "gida-muhafaza",
+        "sterilizasyon"
+      ]
+    },
+    {
+      "id": "q073",
+      "tip": "coktan_secmeli",
+      "soru": "Soğukta muhafaza edilen gıdalarda en önemli mikroorganizma grubu hangisidir?",
+      "secenekler": [
+        "Psikrofil ve psikrotrof bakteriler",
+        "Termofil bakteriler",
+        "Mezofil bakteriler",
+        "Termodurik bakteriler"
+      ],
+      "dogru": 0,
+      "aciklama": "Psikrofil ve psikrotroflar -10 °C'ye kadar gelişebilir; optimum sıcaklıkları 15-20 °C civarıdır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "sogutma"
+      ]
+    },
+    {
+      "id": "q074",
+      "tip": "coktan_secmeli",
+      "soru": "10 °C'de muhafaza edilen bir gıda, 0 °C'de muhafaza edilene göre yaklaşık kaç kat daha hızlı bozulur?",
+      "secenekler": [
+        "2",
+        "8",
+        "4",
+        "10"
+      ],
+      "dogru": 2,
+      "aciklama": "10 °C'deki gıda 5 °C'dekine göre 2 kat, 0 °C'dekine göre 4 kat hızlı bozulur.",
+      "etiketler": [
+        "gida-muhafaza",
+        "sogutma"
+      ]
+    },
+    {
+      "id": "q075",
+      "tip": "coktan_secmeli",
+      "soru": "Donma hızı 1-5 cm/saat arasında olan dondurma hangi sınıfa girer?",
+      "secenekler": [
+        "Çok hızlı dondurma",
+        "Hızlı dondurma",
+        "Yavaş dondurma",
+        "Çok yavaş dondurma"
+      ],
+      "dogru": 1,
+      "aciklama": ">5 cm/saat çok hızlı, 1-5 hızlı, 0,2-1 yavaş, <0,2 cm/saat çok yavaş dondurmadır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "dondurma"
+      ]
+    },
+    {
+      "id": "q076",
+      "tip": "coktan_secmeli",
+      "soru": "Gıdaların dondurulmasında en çok kullanılan kriyojenik sıvı olan sıvı azotla dondurma hangi sıcaklıkta gerçekleşir?",
+      "secenekler": [
+        "-145 °C",
+        "-78 °C",
+        "-50 °C",
+        "-196 °C"
+      ],
+      "dogru": 3,
+      "aciklama": "Sıvı azot -196 °C'de, sıvı CO2 ise -145 °C'nin altında dondurma sağlar.",
+      "etiketler": [
+        "gida-muhafaza",
+        "dondurma"
+      ]
+    },
+    {
+      "id": "q077",
+      "tip": "coktan_secmeli",
+      "soru": "Notlara göre dondurulmuş besinler için en sağlıklı çözdürme yöntemi hangisidir?",
+      "secenekler": [
+        "Oda sıcaklığında tezgâhta çözdürme",
+        "Sıcak su içinde bekleterek çözdürme",
+        "Buzdolabı sıcaklığında (0 ile +5 °C) çözdürme",
+        "Bıçakla parçalayarak hızlı çözdürme"
+      ],
+      "dogru": 2,
+      "aciklama": "En sağlıklı çözdürme buzdolabı sıcaklığında yapılır; sıcak su mikroorganizmalar için ideal ortam hazırlar.",
+      "etiketler": [
+        "gida-muhafaza",
+        "dondurma"
+      ]
+    },
+    {
+      "id": "q078",
+      "tip": "coktan_secmeli",
+      "soru": "Gıdalarda bozulmaya yol açan bakterilerin gelişebildiği minimum su aktivitesi (aw) yaklaşık kaçtır?",
+      "secenekler": [
+        "0,65",
+        "0,90",
+        "0,75",
+        "0,99"
+      ],
+      "dogru": 1,
+      "aciklama": "Bakteriler için minimum aw ~0,90'dır; küf ve mayalar daha düşük değerlerde gelişebilir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "kurutma",
+        "su-aktivitesi"
+      ]
+    },
+    {
+      "id": "q079",
+      "tip": "coktan_secmeli",
+      "soru": "Maillard reaksiyonları hangi su aktivitesi aralığında en hızlı gerçekleşir?",
+      "secenekler": [
+        "0,90-0,95",
+        "0,20-0,30",
+        "0,40-0,50",
+        "0,65-0,75"
+      ],
+      "dogru": 3,
+      "aciklama": "Maillard reaksiyonları aw 0,65-0,75 arasında en hızlıdır; kurutmada bu aralık hızlı geçilmelidir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "kurutma",
+        "esmerlesme"
+      ]
+    },
+    {
+      "id": "q080",
+      "tip": "coktan_secmeli",
+      "soru": "Üzümün kabuğundaki doğal mum tabakasını gidermek için K2CO3 içeren alkali çözeltiye daldırma işlemine ne ad verilir?",
+      "secenekler": [
+        "Bandırma",
+        "Kükürtleme",
+        "Haşlama",
+        "Fumigasyon"
+      ],
+      "dogru": 0,
+      "aciklama": "Alkali banyosuna daldırma işlemine ülkemizde “bandırma” denir; kurumayı hızlandırır ve rengi korur.",
+      "etiketler": [
+        "gida-muhafaza",
+        "kurutma"
+      ]
+    },
+    {
+      "id": "q081",
+      "tip": "coktan_secmeli",
+      "soru": "Aşağıdakilerden hangisi kükürtlemenin **dezavantajıdır**?",
+      "secenekler": [
+        "A ve C vitaminlerinin korunmasını sağlaması",
+        "B1 vitamininin parçalanmasına yol açması",
+        "Maya ve küf faaliyetlerini önlemesi",
+        "Meyvenin doğal rengini koruması"
+      ],
+      "dogru": 1,
+      "aciklama": "Kükürtleme B1 vitaminini parçalar, korozyon ve kötü tada yol açabilir. Diğer seçenekler avantajlarıdır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "kurutma",
+        "kukurtleme"
+      ]
+    },
+    {
+      "id": "q082",
+      "tip": "coktan_secmeli",
+      "soru": "Dondurarak kurutmanın (liyofilizasyon) temel ilkesi nedir?",
+      "secenekler": [
+        "Gıdadaki suyun sıcak hava akımıyla buharlaştırılması",
+        "Gıdanın alkali çözeltiye daldırılarak kurutulması",
+        "Gıdanın güneş kolektörlü sistemde kurutulması",
+        "Dondurulmuş gıdadaki buzun vakum altında süblimleştirilmesi"
+      ],
+      "dogru": 3,
+      "aciklama": "Liyofilizasyonda ürün dondurulur, ardından buz vakum altında doğrudan buhara dönüştürülür (süblimasyon).",
+      "etiketler": [
+        "gida-muhafaza",
+        "kurutma"
+      ]
+    },
+    {
+      "id": "q083",
+      "tip": "coktan_secmeli",
+      "soru": "Haşlamada parçalanması asıl amaçlanan enzimler hangileridir?",
+      "secenekler": [
+        "Peroksidaz ve lipoksigenaz",
+        "Amilaz ve maltaz",
+        "Pepsin ve rennet",
+        "Katalaz ve lipaz"
+      ],
+      "dogru": 0,
+      "aciklama": "Haşlamanın asıl amacı peroksidaz ve lipoksigenaz enzimlerinin inaktivasyonudur.",
+      "etiketler": [
+        "gida-muhafaza",
+        "haslama"
+      ]
+    },
+    {
+      "id": "q084",
+      "tip": "coktan_secmeli",
+      "soru": "Emmental ve Gravyer gibi İsviçre tipi büyük gözenekli peynirlerin üretiminde rol oynayan fermantasyon hangisidir?",
+      "secenekler": [
+        "Laktik asit fermantasyonu",
+        "Alkol fermantasyonu",
+        "Propiyonik asit fermantasyonu",
+        "Asetik asit fermantasyonu"
+      ],
+      "dogru": 2,
+      "aciklama": "*Propionibacterium* cinsi bakteriler propiyonik asit, asetik asit ve CO2 üreterek gözenek oluşturur.",
+      "etiketler": [
+        "gida-muhafaza",
+        "fermantasyon"
+      ]
+    },
+    {
+      "id": "q085",
+      "tip": "coktan_secmeli",
+      "soru": "Depolamada temel ilke olan “stok rotasyonu”na göre hangi kural uygulanır?",
+      "secenekler": [
+        "Son giren ilk çıkar",
+        "Raf ömrü en uzun olan ilk çıkar",
+        "En yüksek maliyetli ürün ilk çıkar",
+        "İlk giren ilk çıkar"
+      ],
+      "dogru": 3,
+      "aciklama": "Stok rotasyonunda “ilk giren ilk çıkar” kuralı uygulanır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "depolama"
+      ]
+    },
+    {
+      "id": "q086",
+      "tip": "coktan_secmeli",
+      "soru": "Kuru depolarda sıcaklık hangi aralıkta olmalıdır?",
+      "secenekler": [
+        "15-20 °C",
+        "0-4 °C",
+        "25-30 °C",
+        "5-10 °C"
+      ],
+      "dogru": 0,
+      "aciklama": "Kuru depolarda sıcaklık 15-20 °C olmalı ve 20 °C'yi geçmemelidir; nem %50-60 olmalıdır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "depolama"
+      ]
+    },
+    {
+      "id": "q087",
+      "tip": "coktan_secmeli",
+      "soru": "Dağıtım ve perakende depoları ile süpermarket derin dondurucularında zorunlu sıcaklık kaçtır?",
+      "secenekler": [
+        "-30 °C",
+        "-10 °C",
+        "-18 °C",
+        "-40 °C"
+      ],
+      "dogru": 2,
+      "aciklama": "Fabrika deposu için -30 °C önerilir; dağıtım ve perakendede -18 °C zorunludur.",
+      "etiketler": [
+        "gida-muhafaza",
+        "soguk-zincir"
+      ]
+    },
+    {
+      "id": "q088",
+      "tip": "coktan_secmeli",
+      "soru": "Elmaların 0 °C'de kontrollü atmosferde depolanmasında genellikle kullanılan gaz karışımı hangisidir?",
+      "secenekler": [
+        "%21 oksijen ve %0,03 karbondioksit",
+        "%3 oksijen ve %3-5 karbondioksit",
+        "%10 oksijen ve %15-20 karbondioksit",
+        "%0 oksijen ve %20 karbondioksit"
+      ],
+      "dogru": 1,
+      "aciklama": "Elmalar için 0 °C'de %3 O2 ve %3-5 CO2 kullanılır; 7-9 aya kadar saklanabilir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "ca-map"
+      ]
+    },
+    {
+      "id": "q089",
+      "tip": "coktan_secmeli",
+      "soru": "Modifiye atmosferde ambalajlamada azot kullanılmasının nedeni nedir?",
+      "secenekler": [
+        "Su ve yağlarda çözünmemesi",
+        "Mikroorganizmaları doğrudan öldürmesi",
+        "Etilen üretimini hızlandırması",
+        "Gıdaya istenen rengi vermesi"
+      ],
+      "dogru": 0,
+      "aciklama": "Azot su ve yağlarda çözünmez, oksijenin yerini alır ve ambalajın kırışmasını önleyen ideal dolgu gazıdır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "ca-map"
+      ]
+    },
+    {
+      "id": "q090",
+      "tip": "coktan_secmeli",
+      "soru": "Ambalaj içindeki oksijeni azaltan “Ageless” adlı atmosfer modifiye edicinin aktif maddesi nedir?",
+      "secenekler": [
+        "Silikon dioksite hapsedilmiş etil alkol",
+        "Kalsiyum hidroksit",
+        "Demir oksit",
+        "Kalsiyum klorür"
+      ],
+      "dogru": 2,
+      "aciklama": "Ageless'in aktif maddesi demir oksittir. Etil alkol Ethicap'te, Ca(OH)2 ve CaCl2 Natural Pak Purifier'da bulunur.",
+      "etiketler": [
+        "gida-muhafaza",
+        "ca-map"
+      ]
+    },
+    {
+      "id": "q091",
+      "tip": "coktan_secmeli",
+      "soru": "Gıdaların ışınlanmasında endüstride en yaygın kullanılan ışın türü hangisidir?",
+      "secenekler": [
+        "Ultraviyole ışınları",
+        "Gama ışınları",
+        "Mikrodalga ışınları",
+        "Hızlandırılmış elektron ışınları"
+      ],
+      "dogru": 1,
+      "aciklama": "En yaygın kullanılan gama ışınlarıdır; Co-60 ve Cs-137 kaynaklarından elde edilir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "isinlama"
+      ]
+    },
+    {
+      "id": "q092",
+      "tip": "coktan_secmeli",
+      "soru": "Işınlama absorblama dozu birimlerinde 1 gray kaç rad'a eşittir?",
+      "secenekler": [
+        "10",
+        "1000",
+        "1",
+        "100"
+      ],
+      "dogru": 3,
+      "aciklama": "1 gray = 100 rad; 1 rad bir gram maddede 100 erg enerji bırakır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "isinlama"
+      ]
+    },
+    {
+      "id": "q093",
+      "tip": "dogru_yanlis",
+      "soru": "Çevresel kirlilik ve bulaşma sonucu gıdaya girmiş maddeler de gıda katkı maddesi tanımına girer.",
+      "dogru": false,
+      "aciklama": "Katkı maddesi bilinçli olarak ve belirli bir amaçla eklenir; çevresel bulaşmalar kapsam dışıdır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "tanim"
+      ]
+    },
+    {
+      "id": "q094",
+      "tip": "dogru_yanlis",
+      "soru": "Gıda ambalaj maddeleri gibi gıdayla dolaylı olarak temas eden maddeler de gıda katkı maddeleri kapsamındadır.",
+      "dogru": true,
+      "aciklama": "Katkı maddeleri doğrudan katılanların dışında ambalaj gibi indirekt temas edenleri de kapsar.",
+      "etiketler": [
+        "katki-maddeleri",
+        "tanim"
+      ]
+    },
+    {
+      "id": "q095",
+      "tip": "dogru_yanlis",
+      "soru": "Ortaçağda et ürünlerine nitrat konarak botulizm önlenmeye çalışılmıştır.",
+      "dogru": true,
+      "aciklama": "Ortaçağda nitratla hem botulizm önlenmeye çalışılmış hem de etin daha parlak kırmızı göründüğü fark edilmiştir.",
+      "etiketler": [
+        "katki-maddeleri",
+        "tarihce"
+      ]
+    },
+    {
+      "id": "q096",
+      "tip": "dogru_yanlis",
+      "soru": "Katkı maddeleri gıdaların besin değerini düşürmemelidir.",
+      "dogru": true,
+      "aciklama": "Bu, katkı maddelerinin kullanımındaki temel kurallardan biridir.",
+      "etiketler": [
+        "katki-maddeleri",
+        "kullanim-kurallari"
+      ]
+    },
+    {
+      "id": "q097",
+      "tip": "dogru_yanlis",
+      "soru": "Sirkede %4'ten az asetik asit bulunur.",
+      "dogru": false,
+      "aciklama": "Notlara göre sirkede %4'ten fazla asetik asit vardır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "koruyucular"
+      ]
+    },
+    {
+      "id": "q098",
+      "tip": "dogru_yanlis",
+      "soru": "Sorbatlar başlıca küflenmeyi önlemek amacıyla peynir, kek ve margarin gibi gıdalarda kullanılır.",
+      "dogru": true,
+      "aciklama": "Potasyum ve sodyum sorbat birçok gıdada küflenmeyi önlemek için kullanılır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "koruyucular"
+      ]
+    },
+    {
+      "id": "q099",
+      "tip": "dogru_yanlis",
+      "soru": "Baharatlar düşük konsantrasyonlarda kullanılmalarına rağmen antimikrobiyal etkilerini tek başlarına güçlü biçimde gösterir.",
+      "dogru": false,
+      "aciklama": "Baharatlar düşük konsantrasyonda kullanıldığından bu etkiyi ancak diğer maddelerle birlikte gösterir.",
+      "etiketler": [
+        "katki-maddeleri",
+        "koruyucular"
+      ]
+    },
+    {
+      "id": "q100",
+      "tip": "dogru_yanlis",
+      "soru": "Soğan ve sarımsakta birçok küfün gelişmesini engelleyen bileşikler tiosülfinatlardır.",
+      "dogru": true,
+      "aciklama": "Soğan ve sarımsağın içerdiği tiosülfinat bileşikleri birçok küf gelişimini engeller.",
+      "etiketler": [
+        "katki-maddeleri",
+        "koruyucular"
+      ]
+    },
+    {
+      "id": "q101",
+      "tip": "dogru_yanlis",
+      "soru": "Güvenliği epidemiyolojik verilerle kanıtlanmış katkılarda güvenlik faktörü 1000'e çıkarılır.",
+      "dogru": false,
+      "aciklama": "Bu durumda güvenlik faktörü küçültülebilir (10). Toksisite verisinde şüphe varsa 1000'e çıkarılır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "toksikoloji"
+      ]
+    },
+    {
+      "id": "q102",
+      "tip": "dogru_yanlis",
+      "soru": "Hiçbir olumsuz etkisi olmadığı için bazı katkı maddelerine ADI değeri tanımlanmamıştır.",
+      "dogru": true,
+      "aciklama": "Bazı katkılarda olumsuz etki söz konusu olmadığından ADI değeri tanımlanmamıştır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "toksikoloji",
+        "adi"
+      ]
+    },
+    {
+      "id": "q103",
+      "tip": "dogru_yanlis",
+      "soru": "Bir katkının zararlı olup olmamasını belirleyen temel faktör, doğal ya da yapay olmasıdır.",
+      "dogru": false,
+      "aciklama": "Doğal ya da yapay olsun, zararlı olup olmamasını belirleyen faktör kullanılan miktardır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "yanlis-bilinenler"
+      ]
+    },
+    {
+      "id": "q104",
+      "tip": "dogru_yanlis",
+      "soru": "Dodesil gallat ve oktil gallat doğala özdeş antioksidanlardır.",
+      "dogru": false,
+      "aciklama": "Bunlar doğada bulunmayan, insan tarafından üretilmiş yapay antioksidanlardır.",
+      "etiketler": [
+        "katki-maddeleri",
+        "siniflandirma",
+        "antioksidanlar"
+      ]
+    },
+    {
+      "id": "q105",
+      "tip": "dogru_yanlis",
+      "soru": "Katkı maddelerinin toksisite testleri yalnızca kısa süreli (akut) testlerden oluşur.",
+      "dogru": false,
+      "aciklama": "Testler kısa (akut) ve uzun (kronik) süreli çalışmaları, fetus ve nörotoksisite testlerini içerir.",
+      "etiketler": [
+        "katki-maddeleri",
+        "toksikoloji"
+      ]
+    },
+    {
+      "id": "q106",
+      "tip": "dogru_yanlis",
+      "soru": "Laktoz intoleransı olan bireyler için üretilen laktozu azaltılmış süt, GD besinlerin tedavi amaçlı kullanımına örnektir.",
+      "dogru": true,
+      "aciklama": "Makalede laktoz içeriği azaltılmış süt, tedavi amaçlı çalışmalara örnek gösterilir.",
+      "etiketler": [
+        "gdo",
+        "yararlar"
+      ]
+    },
+    {
+      "id": "q107",
+      "tip": "dogru_yanlis",
+      "soru": "Tarımda biyoteknolojiden daha çok yararlanılmasıyla herbisit ve pestisit kullanımının artacağı düşünülmektedir.",
+      "dogru": false,
+      "aciklama": "Tarım ilaçlarının kullanımının azalacağı, böylece sağlık sorunları ve çevre kirliliğinin azalacağı düşünülmektedir.",
+      "etiketler": [
+        "gdo",
+        "yararlar"
+      ]
+    },
+    {
+      "id": "q108",
+      "tip": "dogru_yanlis",
+      "soru": "Son araştırmalar, besinler yoluyla alınan yabancı DNA'nın hücrelerimize taşınabileceğini göstermiştir.",
+      "dogru": true,
+      "aciklama": "Önceden DNA'nın sindirildiği düşünülürken, son araştırmalar hücrelere taşınabileceğini göstermiştir.",
+      "etiketler": [
+        "gdo",
+        "riskler"
+      ]
+    },
+    {
+      "id": "q109",
+      "tip": "dogru_yanlis",
+      "soru": "Monarch kelebekleri doğrudan mısırla beslendikleri için Bt mısırı poleninden etkilenmiştir.",
+      "dogru": false,
+      "aciklama": "Kelebekler mısırla beslenmez; polenler temel besinleri olan ipek otu üzerine ulaştığı için etkilenmişlerdir.",
+      "etiketler": [
+        "gdo",
+        "biyocesitlilik"
+      ]
+    },
+    {
+      "id": "q110",
+      "tip": "dogru_yanlis",
+      "soru": "AB üye ülkelerinde GDO ürünlerinin üretimine ve satışına izin verilmiş, ancak etiketlerinde bu durumun belirtilmesi gerektiği vurgulanmıştır.",
+      "dogru": true,
+      "aciklama": "Direktifler doğrultusunda izin verilmiş, etiketleme zorunluluğu vurgulanmıştır.",
+      "etiketler": [
+        "gdo",
+        "hukuk",
+        "etiketleme"
+      ]
+    },
+    {
+      "id": "q111",
+      "tip": "dogru_yanlis",
+      "soru": "Eurobarometer anketine göre kadınların GDO'lu gıdaları satın alma olasılığı erkeklerden daha yüksektir.",
+      "dogru": false,
+      "aciklama": "Kadınların GDO'lu gıdaları satın alma olasılığı erkeklere kıyasla daha düşüktür.",
+      "etiketler": [
+        "gdo",
+        "tuketici"
+      ]
+    },
+    {
+      "id": "q112",
+      "tip": "dogru_yanlis",
+      "soru": "GDO'lu ürünlerin patent hakları dünyada çok sayıda küçük üreticiye dağılmış durumdadır.",
+      "dogru": false,
+      "aciklama": "Patent hakları tüm dünyada birkaç çok uluslu şirketin elindedir; bu ekonomik açıdan en büyük sakıncalardandır.",
+      "etiketler": [
+        "gdo",
+        "sosyoekonomi"
+      ]
+    },
+    {
+      "id": "q113",
+      "tip": "dogru_yanlis",
+      "soru": "Biyogüvenlik Kanunu Tasarısı genetiği değiştirilmiş bitki ve hayvanların üretimini yasaklamıştır.",
+      "dogru": true,
+      "aciklama": "TBMM'de görüşülen Biyogüvenlik Kanunu Tasarısı GD bitki ve hayvanların üretimini yasaklamıştır.",
+      "etiketler": [
+        "gdo",
+        "hukuk",
+        "turkiye"
+      ]
+    },
+    {
+      "id": "q114",
+      "tip": "dogru_yanlis",
+      "soru": "2003 yılında genetiği değiştirilmiş ürünler 30 milyar dolarlık ticari tohum pazarının yaklaşık yarısını oluşturmuştur.",
+      "dogru": false,
+      "aciklama": "GD ürünler tarımsal ürün pazarının %15'ini, ticari tohum pazarının ise %13'ünü oluşturmuştur.",
+      "etiketler": [
+        "gdo",
+        "sosyoekonomi"
+      ]
+    },
+    {
+      "id": "q115",
+      "tip": "dogru_yanlis",
+      "soru": "Türkiye'de yapılan bir ankette yaş arttıkça ürün etiketi okuma oranının arttığı ve GDO'lu gıdalara yaklaşımın daha olumsuz hale geldiği saptanmıştır.",
+      "dogru": true,
+      "aciklama": "913 kişilik ankette yaş arttıkça etiket okuma artmış, GDO'lu gıdalara yaklaşım olumsuzlaşmıştır.",
+      "etiketler": [
+        "gdo",
+        "tuketici"
+      ]
+    },
+    {
+      "id": "q116",
+      "tip": "dogru_yanlis",
+      "soru": "HACCP sıfır-risk sistemidir.",
+      "dogru": false,
+      "aciklama": "HACCP sıfır-risk sistemi değildir; risk faktörlerini en aza indirmek için tasarlanmıştır.",
+      "etiketler": [
+        "haccp",
+        "temel-kavramlar"
+      ]
+    },
+    {
+      "id": "q117",
+      "tip": "dogru_yanlis",
+      "soru": "HACCP sistemi son ürün kontrolünden çok her aşamada proses kontrolüne dayanır.",
+      "dogru": true,
+      "aciklama": "Sistem son üründen daha çok her aşamada proses kontrolüne dayalıdır.",
+      "etiketler": [
+        "haccp",
+        "temel-kavramlar"
+      ]
+    },
+    {
+      "id": "q118",
+      "tip": "dogru_yanlis",
+      "soru": "Kritik kontrol noktaları kaliteyi değil gıda güvenliğini esas almalıdır.",
+      "dogru": true,
+      "aciklama": "CCP'ler bilimsel temelli olmalı ve gıda güvenliğini esas almalıdır.",
+      "etiketler": [
+        "haccp",
+        "ccp"
+      ]
+    },
+    {
+      "id": "q119",
+      "tip": "dogru_yanlis",
+      "soru": "852/2004 sayılı tüzüğe göre HACCP sistemi resmi kontrollerin yerine geçebilir.",
+      "dogru": false,
+      "aciklama": "HACCP kendi kendini düzenleyen bir metot olarak görülmemeli ve resmi kontrollerin yerine geçmemelidir.",
+      "etiketler": [
+        "haccp",
+        "mevzuat"
+      ]
+    },
+    {
+      "id": "q120",
+      "tip": "dogru_yanlis",
+      "soru": "852/2004 sayılı tüzüğe göre HACCP kuralları birincil üretime de uygulanır.",
+      "dogru": false,
+      "aciklama": "HACCP kuralları henüz birincil üretime uygulanabilir değildir; çiftlik düzeyinde iyi hijyen uygulamaları teşvik edilir.",
+      "etiketler": [
+        "haccp",
+        "mevzuat"
+      ]
+    },
+    {
+      "id": "q121",
+      "tip": "dogru_yanlis",
+      "soru": "Ön gereksinim programları HACCP prosedürleri oluşturulmadan önce gerçekleştirilmelidir.",
+      "dogru": true,
+      "aciklama": "ÖGP'ler HACCP'in etkin uygulanmasını sağlar ve ondan önce gerçekleştirilmelidir.",
+      "etiketler": [
+        "haccp",
+        "on-gereksinim"
+      ]
+    },
+    {
+      "id": "q122",
+      "tip": "dogru_yanlis",
+      "soru": "852/2004'e göre kritik limit belirleme şartı her vakada sayısal bir limit sabitlemeyi gerektirir.",
+      "dogru": false,
+      "aciklama": "Tüzük, kritik limit şartının her vakada sayısal bir limit sabitlemek anlamına gelmediğini belirtir.",
+      "etiketler": [
+        "haccp",
+        "mevzuat",
+        "kritik-limit"
+      ]
+    },
+    {
+      "id": "q123",
+      "tip": "dogru_yanlis",
+      "soru": "Kontrol noktalarında, HACCP düzenlemesi gerekmeden kalite faktörleri kontrol edilebilir.",
+      "dogru": true,
+      "aciklama": "Kontrol noktaları HACCP düzenlemesi gerekmeden kontrol edilebilen ve kalite faktörlerinin izlenebildiği noktalardır.",
+      "etiketler": [
+        "haccp",
+        "ccp"
+      ]
+    },
+    {
+      "id": "q124",
+      "tip": "dogru_yanlis",
+      "soru": "Tehlike analizi, tehlikenin belirlenmesi ve tehlikenin değerlendirilmesi olmak üzere iki aşamalıdır.",
+      "dogru": true,
+      "aciklama": "Tehlike analizi bu iki aşamadan oluşur.",
+      "etiketler": [
+        "haccp",
+        "tehlikeler"
+      ]
+    },
+    {
+      "id": "q125",
+      "tip": "dogru_yanlis",
+      "soru": "Kritik limit aşıldığında ürünün imhası genellikle ilk tercih edilen düzeltici seçenektir.",
+      "dogru": false,
+      "aciklama": "İmha, büyük ekonomik kayıp yarattığı için son çare olarak düşünülür.",
+      "etiketler": [
+        "haccp",
+        "duzeltici-faaliyet"
+      ]
+    },
+    {
+      "id": "q126",
+      "tip": "dogru_yanlis",
+      "soru": "Sapma ve limit aşma sorunları sıklıkla ortaya çıkıyorsa HACCP planı tekrar gözden geçirilmelidir.",
+      "dogru": true,
+      "aciklama": "Sık sapmalar HACCP planının yeniden gözden geçirilmesini gerektirir.",
+      "etiketler": [
+        "haccp",
+        "duzeltici-faaliyet"
+      ]
+    },
+    {
+      "id": "q127",
+      "tip": "dogru_yanlis",
+      "soru": "Doküman bir işin nasıl yapılacağını tanımlar, kontrole tabidir ve revize edilebilir.",
+      "dogru": true,
+      "aciklama": "Doküman (prosedür, talimat, teknik resim) revize edilir; kayıt ise revizyona tabi değildir.",
+      "etiketler": [
+        "haccp",
+        "dokumantasyon"
+      ]
+    },
+    {
+      "id": "q128",
+      "tip": "dogru_yanlis",
+      "soru": "İşletme sahibi ve çalışanlarının katkısı olmadan yalnızca bir danışman tarafından hazırlanan HACCP sisteminin başarılı olması beklenir.",
+      "dogru": false,
+      "aciklama": "HACCP sistemi üretici firma tarafından kurulmalıdır; yalnızca dışarıdan hazırlanan sistemin başarılı olması olası değildir.",
+      "etiketler": [
+        "haccp",
+        "basarisizlik-nedenleri"
+      ]
+    },
+    {
+      "id": "q129",
+      "tip": "dogru_yanlis",
+      "soru": "Avrupa Birliği'nin listelediği alerjenler arasında sülfitler ve kükürt dioksit de yer alır.",
+      "dogru": true,
+      "aciklama": "AB alerjen listesinde sülfitler ve sülfür dioksit bulunur.",
+      "etiketler": [
+        "haccp",
+        "alerjen"
+      ]
+    },
+    {
+      "id": "q130",
+      "tip": "dogru_yanlis",
+      "soru": "Gıda Hijyeni Yönetmeliği'ne göre HACCP ilkelerine dayalı prosedürlerin uygulanmasından Bakanlık sorumludur.",
+      "dogru": false,
+      "aciklama": "5996 sayılı kanun ve Gıda Hijyeni Yönetmeliği'ne göre bundan gıda işletmecisi sorumludur; Bakanlık denetim yapar.",
+      "etiketler": [
+        "haccp",
+        "mevzuat",
+        "turkiye"
+      ]
+    },
+    {
+      "id": "q131",
+      "tip": "dogru_yanlis",
+      "soru": "Isıl işlemde sıcaklık ile süre arasında ters bir ilişki vardır.",
+      "dogru": true,
+      "aciklama": "Sıcaklık yükseldikçe mikroorganizmaları öldürmek için gerekli süre kısalır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "isil-islem"
+      ]
+    },
+    {
+      "id": "q132",
+      "tip": "dogru_yanlis",
+      "soru": "Bakteri, küf ve mayaların spor formlarının ısı direnci vejetatif formlarından daha düşüktür.",
+      "dogru": false,
+      "aciklama": "Spor formlarının ısı direnci vejetatif formlara göre daha yüksektir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "isil-islem"
+      ]
+    },
+    {
+      "id": "q133",
+      "tip": "dogru_yanlis",
+      "soru": "Ortamdaki nem yükseldikçe mikroorganizmaların ısı direnci artar.",
+      "dogru": false,
+      "aciklama": "Nem yükseldikçe ısı direnci azalır; çünkü protein parçalanması daha düşük sıcaklıkta gerçekleşir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "isil-islem"
+      ]
+    },
+    {
+      "id": "q134",
+      "tip": "dogru_yanlis",
+      "soru": "Yağlar mikroorganizma hücresini sararak ısıya karşı direncini arttırır.",
+      "dogru": true,
+      "aciklama": "Yağlar hücrenin su ile ilişkisini keser; bu nedenle yağ oranı arttıkça ısıl işlem şiddeti arttırılmalıdır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "isil-islem"
+      ]
+    },
+    {
+      "id": "q135",
+      "tip": "dogru_yanlis",
+      "soru": "Gıdaların muhafazasında pastörizasyon genellikle tek başına uygulanır.",
+      "dogru": false,
+      "aciklama": "Pastörizasyon tek başına uygulanmaz; soğukta depolama veya koruyucu katkı gibi uygulamalarla birlikte kullanılır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "pastorizasyon"
+      ]
+    },
+    {
+      "id": "q136",
+      "tip": "dogru_yanlis",
+      "soru": "Ticari steril bir üründe, normal depolama koşullarında gelişemeyen ısıya dirençli bazı sporlar canlı kalabilir.",
+      "dogru": true,
+      "aciklama": "Ticari sterilizasyonda termofilik aerob sporlar canlı kalabilir ancak ortam koşulları nedeniyle gelişemez.",
+      "etiketler": [
+        "gida-muhafaza",
+        "sterilizasyon"
+      ]
+    },
+    {
+      "id": "q137",
+      "tip": "dogru_yanlis",
+      "soru": "Dondurma bir sterilizasyon işlemidir ve amacı gıdadaki mikroorganizmaları öldürmektir.",
+      "dogru": false,
+      "aciklama": "Dondurmanın amacı mikroorganizmaları öldürmek değil, inaktif hale getirmektir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "dondurma"
+      ]
+    },
+    {
+      "id": "q138",
+      "tip": "dogru_yanlis",
+      "soru": "Toksinler dondurma işleminden etkilenmez.",
+      "dogru": true,
+      "aciklama": "Bu, dondurarak muhafazanın dezavantajlarından biridir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "dondurma"
+      ]
+    },
+    {
+      "id": "q139",
+      "tip": "dogru_yanlis",
+      "soru": "Yavaş dondurmada büyük buz kristalleri oluşur.",
+      "dogru": true,
+      "aciklama": "Yavaş dondurmada büyük, hızlı dondurmada küçük kristaller oluşur; büyük kristaller dokuya daha çok zarar verir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "dondurma"
+      ]
+    },
+    {
+      "id": "q140",
+      "tip": "dogru_yanlis",
+      "soru": "Gıdanın kalitesini korumak açısından yavaş çözündürme daha uygundur.",
+      "dogru": true,
+      "aciklama": "Yavaş çözdürmede doku hücreleri daha az hasar görür ve sızıntı kaybı azalır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "dondurma"
+      ]
+    },
+    {
+      "id": "q141",
+      "tip": "dogru_yanlis",
+      "soru": "Kurutulmuş bir gıda steril değildir.",
+      "dogru": true,
+      "aciklama": "Kurutulmuş gıdaların mikrobiyal yükü hammaddeden düşüktür ama steril değildir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "kurutma"
+      ]
+    },
+    {
+      "id": "q142",
+      "tip": "dogru_yanlis",
+      "soru": "Ülkemizde kükürtlemede en yaygın uygulama, meyvelerin sülfit çözeltisine daldırılmasıdır.",
+      "dogru": false,
+      "aciklama": "En yaygın uygulama SO2 gazı ile kükürtlemedir; çözelti yalnızca bazı meyvelerde ve zorunlu durumlarda kullanılır.",
+      "etiketler": [
+        "gida-muhafaza",
+        "kurutma",
+        "kukurtleme"
+      ]
+    },
+    {
+      "id": "q143",
+      "tip": "dogru_yanlis",
+      "soru": "Soğuk ortam bakterileri öldürür.",
+      "dogru": false,
+      "aciklama": "Soğuk ortam bakterileri öldürmez; yalnızca üremelerini yavaşlatır veya durdurur.",
+      "etiketler": [
+        "gida-muhafaza",
+        "depolama"
+      ]
+    },
+    {
+      "id": "q144",
+      "tip": "dogru_yanlis",
+      "soru": "Muz soğuk ortamda kararma yapacağı için patates ve soğan gibi daha yüksek sıcaklıkta depolanmalıdır.",
+      "dogru": true,
+      "aciklama": "Notlarda muzun soğukta kararacağı ve yüksek sıcaklıkta depolanması gerektiği belirtilir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "depolama"
+      ]
+    },
+    {
+      "id": "q145",
+      "tip": "dogru_yanlis",
+      "soru": "Işınlama gıdada radyoaktiviteye neden olur.",
+      "dogru": false,
+      "aciklama": "Işınlama gıdada radyoaktiviteye neden olmayan fiziksel bir proses, bir enerji girdisidir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "isinlama"
+      ]
+    },
+    {
+      "id": "q146",
+      "tip": "dogru_yanlis",
+      "soru": "Işınlama yöntemi “soğuk pastörizasyon” olarak da tanımlanır.",
+      "dogru": true,
+      "aciklama": "Notlarda ışınlamanın soğuk pastörizasyon yöntemi olarak da tanımlandığı belirtilir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "isinlama"
+      ]
+    },
+    {
+      "id": "q147",
+      "tip": "dogru_yanlis",
+      "soru": "Ultraviyole ışınlar yüksek enerjili olduklarından gıdanın iç kısımlarındaki mikroorganizmalar üzerinde etkilidir.",
+      "dogru": false,
+      "aciklama": "UV ışınlar düşük enerjilidir; bu yüzden yalnızca yüzeydeki mikroorganizmalar üzerinde etkilidir.",
+      "etiketler": [
+        "gida-muhafaza",
+        "isinlama"
+      ]
+    },
+    {
+      "id": "q148",
+      "tip": "dogru_yanlis",
+      "soru": "Kontrollü atmosferde ortamdan oksijen tamamen uzaklaştırılırsa üründe kötü koku oluşabilir.",
+      "dogru": true,
+      "aciklama": "Oksijen tamamen elimine edilirse üründe kötü koku oluşumu söz konusudur.",
+      "etiketler": [
+        "gida-muhafaza",
+        "ca-map"
+      ]
+    }
+  ]
+}
